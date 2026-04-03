@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import { generatePageMetadata, getBreadcrumbSchema } from '@/lib/schema-helpers';
 import SchemaMarkup from '@/components/SchemaMarkup';
-import { blogPosts } from '@/lib/blog-data';
-import { ArrowRight, Calendar, Clock, User } from 'lucide-react';
+import blogData from '@/data/blogs.json';
+import { ArrowRight, Calendar, Clock, User, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({
@@ -23,53 +23,46 @@ export default function BlogListingPage() {
             <SchemaMarkup schema={breadcrumbs} />
 
             {/* Hero */}
-            <section className="bg-gradient-to-br from-navy to-navy-light py-16 lg:py-24">
+            <section className="bg-gradient-to-br from-navy to-navy-light py-16 lg:py-24 pt-32">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-6">
                         Fertility & IVF Blog
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                        Evidence-based articles on fertility, IVF, reproductive health, and more —
-                        written by Dr. Ankita Mandal and the Maatritva IVF team.
+                        Evidence-based deep dives on fertility, IVF, reproductive health, and more —
+                        written by Dr. Ankita Mandal, Dr. Chhabi Ghosh and the expert team.
                     </p>
                 </div>
             </section>
 
             {/* Blog Grid */}
-            <section className="py-16 lg:py-24 bg-cream">
-                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {blogPosts.map((post) => (
+            <section className="py-16 lg:py-24 bg-cream min-h-screen">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {blogData.map((post) => (
                             <Link
                                 key={post.slug}
                                 href={`/blog/${post.slug}`}
-                                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg transition-all"
+                                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
                             >
-                                <div className="p-6 lg:p-8">
+                                <div className="p-6 lg:p-8 flex flex-col h-full">
                                     <div className="flex items-center gap-3 mb-4">
-                                        <span className="px-3 py-1 bg-rose-pale/30 text-rose-deep text-xs font-semibold rounded-full">
-                                            {post.category}
-                                        </span>
-                                        <span className="flex items-center gap-1 text-xs text-gray-400">
-                                            <Clock className="w-3 h-3" />
-                                            {post.readTime}
+                                        <span className="px-3 py-1 bg-rose-pale/30 text-rose-deep text-xs font-semibold rounded-full flex items-center gap-1">
+                                            <BookOpen className="w-3 h-3" /> Guide
                                         </span>
                                     </div>
-                                    <h2 className="font-heading text-xl font-bold text-navy mb-3 group-hover:text-rose-deep transition-colors">
+                                    <h2 className="font-heading text-xl lg:text-2xl font-bold text-navy mb-3 group-hover:text-rose-deep transition-colors line-clamp-2">
                                         {post.title}
                                     </h2>
-                                    <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-                                        {post.heroSubtext}
+                                    <p className="text-sm text-gray-600 mb-6 line-clamp-3 flex-grow">
+                                        {post.metaDescription || post.content?.intro}
                                     </p>
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center gap-2 text-xs text-gray-400">
-                                            <User className="w-3 h-3" />
+                                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-50">
+                                        <div className="flex items-center gap-2 text-xs text-gray-500 font-medium">
+                                            <User className="w-3 h-3 text-rose-deep" />
                                             {post.author}
-                                            <span className="mx-1">·</span>
-                                            <Calendar className="w-3 h-3" />
-                                            {new Date(post.publishedDate).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
                                         </div>
-                                        <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-rose-deep transition-colors" />
+                                        <ArrowRight className="w-4 h-4 text-rose-deep/30 group-hover:text-rose-deep transition-colors" />
                                     </div>
                                 </div>
                             </Link>

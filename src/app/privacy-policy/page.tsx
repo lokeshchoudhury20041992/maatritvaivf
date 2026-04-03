@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
                     <h1 className="font-heading text-3xl lg:text-4xl font-bold text-navy">Privacy Policy</h1>
                 </div>
                 <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm prose prose-gray max-w-none">
-                    <p className="italic text-gray-500 text-sm">Last updated: February 2026</p>
+                    <p className="italic text-gray-500 text-sm">Last updated: April 2026</p>
 
                     <h2>1. Who We Are</h2>
                     <p>
@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
                     <h2>9. Contact Us</h2>
                     <p>
                         For privacy-related queries, contact us at:<br />
-                        <strong>Email:</strong> privacy@bestivfcentreinkolkata.com<br />
+                        <strong>Email:</strong> care@maatritvaivffertility.com<br />
                         <strong>Address:</strong> Maatritva IVF, New Town, Rajarhat, Kolkata — 700156
                     </p>
                 </div>

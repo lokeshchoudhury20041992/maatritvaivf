@@ -1,0 +1,23 @@
+[
+  {
+    "id": "kolkata",
+    "slug": "kolkata",
+    "name": "Kolkata",
+    "region": "West Bengal",
+    "coordinates": { "lat": 22.5726, "lng": 88.3639 }
+  },
+  {
+    "id": "newtown",
+    "slug": "newtown-kolkata",
+    "name": "Newtown",
+    "region": "Kolkata",
+    "coordinates": { "lat": 22.5833, "lng": 88.4667 }
+  },
+  {
+    "id": "salt-lake",
+    "slug": "salt-lake-kolkata",
+    "name": "Salt Lake",
+    "region": "Kolkata",
+    "coordinates": { "lat": 22.58, "lng": 88.42 }
+  }
+]

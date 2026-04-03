@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
-import { Inter, Outfit } from 'next/font/google';
+import { Plus_Jakarta_Sans, Outfit } from 'next/font/google';
 import './tailwind.css';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import LeadForm from '@/components/LeadForm';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import StickyMobileBar from '@/components/StickyMobileBar';
 import { getMedicalClinicSchema, getPhysicianSchema } from '@/lib/schema-helpers';
 
-const inter = Inter({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-jakarta',
   display: 'swap',
 });
 
@@ -21,9 +22,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Best IVF Centre in Kolkata | Dr. Ankita Mandal - Maatritva IVF',
+  title: 'Best IVF Centre in Kolkata | Maatritva Fertility IVF and Health care',
   description:
-    'Maatritva Fertility IVF & Healthcare by Dr. Ankita Mandal — Kolkata\'s most trusted IVF, IUI, ICSI, and fertility treatment centre. Advanced assisted reproductive technology, laparoscopic surgery, and high-risk pregnancy care with transparent pricing and consistently high clinical success rates.',
+    'Maatritva Fertility IVF and Health care by Dr. Ankita Mandal — Kolkata\'s most trusted IVF, IUI, ICSI, and fertility treatment centre. Advanced assisted reproductive technology, laparoscopic surgery, and high-risk pregnancy care with transparent pricing and consistently high clinical success rates.',
   keywords: [
     'best IVF specialist',
     'best fertility doctor in Kolkata',
@@ -55,11 +56,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://bestivfcentreinkolkata.com',
   },
+  icons: {
+    icon: '/images/img/logo.png',
+    apple: '/images/img/logo.png',
+  },
   openGraph: {
-    title: 'Best IVF Centre in Kolkata | Dr. Ankita Mandal',
+    title: 'Best IVF Centre in Kolkata | Maatritva Fertility IVF and Health care',
     description: 'Kolkata\'s most trusted IVF, IUI, ICSI, and fertility treatment centre. 15,000+ happy families. Advanced ART, laparoscopic surgery, and high-risk pregnancy care.',
     url: 'https://bestivfcentreinkolkata.com',
-    siteName: 'Maatritva Fertility IVF & Healthcare',
+    siteName: 'Maatritva Fertility IVF and Health care',
     locale: 'en_IN',
     type: 'website',
   },
@@ -71,7 +76,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${jakarta.variable} ${outfit.variable}`}>
       <body className="antialiased">
         <SchemaMarkup schema={getMedicalClinicSchema()} />
         <SchemaMarkup schema={getPhysicianSchema()} />
@@ -79,6 +84,7 @@ export default function RootLayout({
         <main className="pt-16 lg:pt-20 pb-20 lg:pb-0">{children}</main>
         <Footer />
         <LeadForm />
+        <StickyMobileBar />
       </body>
     </html>
   );

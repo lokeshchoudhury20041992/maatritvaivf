@@ -193,7 +193,7 @@ export default function BestInfertilitySpecialistPage() {
                             { label: 'IUI (Insemination)', href: '/services/iui-treatment', desc: 'Processed sperm placed in uterus. Effective for mild male factor, unexplained infertility.' },
                             { label: 'IVF Treatment', href: '/services/ivf-treatment', desc: 'Lab fertilisation and embryo transfer. For complex or recurrent cases.' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment', desc: 'Single sperm injection. Essential for severe male factor.' },
-                            { label: 'Laparoscopic Surgery', href: '/services/laparoscopic-surgery', desc: 'For endometriosis, fibroids, tubal repair, adhesions.' },
+                            { label: 'Laparoscopic Surgery', href: '/services/laparoscopic-surgery-infertility', desc: 'For endometriosis, fibroids, tubal repair, adhesions.' },
                             { label: 'Male Infertility', href: '/services/male-infertility-treatment', desc: 'TESA/PESA, varicocele repair, hormonal therapy.' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="bg-white rounded-xl p-5 border border-gray-100 hover:border-rose-pale hover:shadow-md transition-all group">

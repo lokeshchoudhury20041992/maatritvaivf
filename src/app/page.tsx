@@ -6,12 +6,13 @@ import FAQSection from '@/components/FAQSection';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { getFAQSchema, getBreadcrumbSchema, SITE_URL } from '@/lib/schema-helpers';
 import { Stethoscope, Baby, Microscope, Scissors, HeartPulse, ArrowRight, Star, CheckCircle, ShieldCheck } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Best IVF Centre in Kolkata | Dr. Ankita Mandal - Maatritva IVF',
+  title: 'Best IVF Centre in Kolkata | Maatritva Fertility IVF and Health care',
   description:
-    'Dr. Ankita Mandal\'s Maatritva IVF — Kolkata\'s most trusted fertility centre. IVF, IUI, ICSI, and laparoscopic surgery with transparent pricing and high success rates.',
+    'Dr. Ankita Mandal\'s Maatritva Fertility IVF and Health care — Kolkata\'s most trusted fertility centre. IVF, IUI, ICSI, and laparoscopic surgery with transparent pricing and high success rates.',
   alternates: { canonical: 'https://bestivfcentreinkolkata.com' },
 };
 
@@ -21,30 +22,35 @@ const services = [
     description: 'Advanced In Vitro Fertilisation with personalised protocols and time-lapse embryo monitoring for optimal results.',
     href: '/services/ivf-treatment',
     icon: <Baby className="w-6 h-6" />,
+    image: '/images/img/service-1.jpg',
   },
   {
     title: 'IUI Treatment',
     description: 'A gentle, less invasive first-line fertility treatment with precise ovulation tracking for best timing.',
     href: '/services/iui-treatment',
     icon: <Stethoscope className="w-6 h-6" />,
+    image: '/images/img/service-2.jpg',
   },
   {
     title: 'ICSI Treatment',
     description: 'Precision-guided sperm injection for severe male factor infertility — maximising fertilisation rates.',
     href: '/services/icsi-treatment',
     icon: <Microscope className="w-6 h-6" />,
+    image: '/images/img/service-3.jpg',
   },
   {
     title: 'Laparoscopic Surgery',
     description: 'Minimally invasive keyhole surgery to diagnose and treat tubal blockages, cysts, and endometriosis.',
-    href: '/services/laparoscopic-surgery',
+    href: '/services/laparoscopic-surgery-infertility',
     icon: <Scissors className="w-6 h-6" />,
+    image: '/images/img/service-4.jpg',
   },
   {
     title: 'High-Risk Pregnancy',
     description: 'Expert round-the-clock management for IVF pregnancies, multiples, and complex maternal conditions.',
     href: '/services/high-risk-pregnancy',
     icon: <HeartPulse className="w-6 h-6" />,
+    image: '/images/img/service-5.jpg',
   },
 ];
 
@@ -205,6 +211,70 @@ export default function HomePage() {
                   <p className="text-xs text-gray-500">All guidelines followed</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise & Facilities */}
+      <section className="py-16 lg:py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4 pt-12">
+                  <div className="relative h-64 rounded-3xl overflow-hidden shadow-2xl">
+                    <Image src="/images/img/about-1.jpg" alt="Our Facility" fill className="object-cover" />
+                  </div>
+                  <div className="relative h-48 rounded-3xl overflow-hidden shadow-xl">
+                    <Image src="/images/img/service-6.jpg" alt="Lab tech" fill className="object-cover" />
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="relative h-48 rounded-3xl overflow-hidden shadow-xl">
+                    <Image src="/images/img/about-2.jpg" alt="Consultation room" fill className="object-cover" />
+                  </div>
+                  <div className="relative h-64 rounded-3xl overflow-hidden shadow-2xl">
+                    <Image src="/images/img/carousel-1.jpg" alt="IVF Lab" fill className="object-cover" />
+                  </div>
+                </div>
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-rose-pale/30 rounded-full blur-3xl" />
+            </div>
+
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-pale rounded-full mb-6">
+                <Microscope className="w-4 h-4 text-rose-deep" />
+                <span className="text-sm font-medium text-rose-deep">Technology & Care</span>
+              </div>
+              <h2 className="font-heading text-3xl lg:text-4xl font-bold text-navy mb-6">
+                World-Class Facilities <br/>Right Here in Kolkata
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                Maatritva IVF is equipped with a state-of-the-art modular embryology lab, high-resolution 
+                ultrasonography, and advanced cryopreservation units. We maintain international standards 
+                of hygiene and air quality to ensure the highest possible success rates for our patients.
+              </p>
+              
+              <div className="grid sm:grid-cols-2 gap-6 mb-10">
+                <div className="p-4 rounded-2xl bg-cream border border-rose-pale">
+                  <h4 className="font-bold text-navy mb-2">Modern Lab</h4>
+                  <p className="text-sm text-gray-500">ISO-certified clean room environment for embryo culture.</p>
+                </div>
+                <div className="p-4 rounded-2xl bg-cream border border-rose-pale">
+                  <h4 className="font-bold text-navy mb-2">Private Suites</h4>
+                  <p className="text-sm text-gray-500">Comfortable, private recovery areas for day-care procedures.</p>
+                </div>
+              </div>
+
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-rose-deep text-white font-bold rounded-full hover:bg-rose-700 transition-all shadow-lg hover:shadow-rose-deep/20"
+              >
+                Schedule a Visit
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>

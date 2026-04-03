@@ -246,7 +246,7 @@ export default function DrAnkitaMandal() {
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment' },
                             { label: 'Egg Freezing', href: '/services/egg-freezing' },
                             { label: 'Donor Egg IVF', href: '/services/donor-egg-ivf' },
-                            { label: 'Laparoscopic Surgery', href: '/services/laparoscopic-surgery' },
+                            { label: 'Laparoscopic Surgery', href: '/services/laparoscopic-surgery-infertility' },
                             { label: 'Hysteroscopy', href: '/services/hysteroscopy' },
                             { label: 'High-Risk Pregnancy', href: '/services/high-risk-pregnancy' },
                             { label: 'Male Infertility', href: '/services/male-infertility-treatment' },

@@ -1,178 +1,106 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getBlogPostBySlug, getAllBlogSlugs } from '@/lib/blog-data';
-import { generatePageMetadata, getFAQSchema, getBreadcrumbSchema, SITE_URL } from '@/lib/schema-helpers';
-import SchemaMarkup from '@/components/SchemaMarkup';
-import FAQSection from '@/components/FAQSection';
-import { Calendar, Clock, User, ArrowRight, BookOpen } from 'lucide-react';
+import blogs from '@/data/blogs.json';
+import CTA from '@/components/CTA';
 import Link from 'next/link';
-import MedicallyReviewed from '@/components/MedicallyReviewed';
+import SchemaMarkup from '@/components/SchemaMarkup';
 
 export async function generateStaticParams() {
-    return getAllBlogSlugs().map((slug) => ({ slug }));
+  return blogs.map((blog) => ({
+    slug: blog.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params;
-    const post = getBlogPostBySlug(slug);
-    if (!post) return {};
-    return generatePageMetadata({
-        title: post.metaTitle,
-        description: post.metaDescription,
-        path: `/blog/${post.slug}`,
-        keywords: post.keywords,
-    });
+  const resolvedParams = await params;
+  const blog = blogs.find((b) => b.slug === resolvedParams.slug);
+  
+  if (!blog) return {};
+
+  return {
+    title: `${blog.title} | Maatritva IVF`,
+    description: blog.metaDescription,
+    alternates: {
+      canonical: `https://bestivfcentreinkolkata.com/blog/${blog.slug}`,
+    },
+    openGraph: {
+      title: blog.title,
+      description: blog.metaDescription,
+      url: `https://bestivfcentreinkolkata.com/blog/${blog.slug}`,
+      type: 'article',
+    }
+  };
 }
 
-function getArticleSchema(post: NonNullable<ReturnType<typeof getBlogPostBySlug>>) {
-    return {
-        '@context': 'https://schema.org',
-        '@type': 'Article',
-        headline: post.title,
-        description: post.metaDescription,
-        author: {
-            '@type': 'Person',
-            name: post.author,
-            url: `${SITE_URL}/doctors/dr-ankita-mandal`,
-        },
-        publisher: {
-            '@type': 'Organization',
-            name: 'Maatritva Fertility IVF & Healthcare',
-            url: SITE_URL,
-        },
-        datePublished: post.publishedDate,
-        mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
-        keywords: post.keywords.join(', '),
-    };
-}
+export default async function BlogPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const blog = blogs.find((b) => b.slug === resolvedParams.slug);
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-    const post = getBlogPostBySlug(slug);
-    if (!post) notFound();
+  if (!blog) {
+    notFound();
+  }
 
-    const breadcrumbs = getBreadcrumbSchema([
-        { name: 'Home', url: '/' },
-        { name: 'Blog', url: '/blog' },
-        { name: post.title, url: `/blog/${post.slug}` },
-    ]);
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://bestivfcentreinkolkata.com/blog/${blog.slug}`
+    },
+    "headline": blog.title,
+    "description": blog.metaDescription,
+    "author": {
+      "@type": "Person",
+      "name": blog.author || "Dr. Ankita Mandal"
+    }
+  };
 
-    return (
-        <>
-            <SchemaMarkup schema={getArticleSchema(post)} />
-            <SchemaMarkup schema={breadcrumbs} />
-            <SchemaMarkup schema={getFAQSchema(post.faqs)} />
+  return (
+    <>
+      <SchemaMarkup schema={schema} />
+      <article className="max-w-3xl mx-auto px-4 py-8 md:py-16">
+        <header className="mb-10">
+          <p className="text-sm text-rose-600 font-bold mb-2 uppercase tracking-wide">Medical Blog</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">{blog.content.h1}</h1>
+          <p className="text-xl text-gray-600 mb-6 italic border-l-4 border-rose-300 pl-4 py-2 bg-rose-50 rounded-r-lg">{blog.content.intro}</p>
+          <div className="flex items-center gap-3 mt-8">
+            <div className="w-12 h-12 bg-gray-200 rounded-full overflow-hidden border-2 border-rose-100 flex items-center justify-center font-bold text-xl text-gray-500">
+              {blog.author ? blog.author.charAt(0) : 'D'}
+            </div>
+            <div>
+              <p className="font-bold text-gray-900">{blog.author || "Dr. Ankita Mandal"}</p>
+              <p className="text-sm text-gray-500">Fertility Specialist</p>
+            </div>
+          </div>
+        </header>
 
-            {/* Hero */}
-            <section className="bg-gradient-to-br from-navy to-navy-light py-16 lg:py-24">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center gap-3 mb-6">
-                        <span className="px-3 py-1 bg-white/10 text-white/90 text-xs font-semibold rounded-full border border-white/20">
-                            {post.category}
-                        </span>
-                        <span className="flex items-center gap-1 text-xs text-white/60">
-                            <Clock className="w-3 h-3" />
-                            {post.readTime}
-                        </span>
-                    </div>
-                    <h1 className="font-heading text-3xl lg:text-5xl font-bold text-white mb-6">
-                        {post.heroHeadline}
-                    </h1>
-                    <p className="text-lg text-white/80 max-w-2xl leading-relaxed mb-6">
-                        {post.heroSubtext}
-                    </p>
-                    <div className="flex items-center gap-4 text-sm text-white/60">
-                        <span className="flex items-center gap-1.5">
-                            <User className="w-4 h-4" />
-                            {post.author}
-                        </span>
-                        <span className="flex items-center gap-1.5">
-                            <Calendar className="w-4 h-4" />
-                            {new Date(post.publishedDate).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}
-                        </span>
-                    </div>
-                </div>
-            </section>
+        <div className="prose prose-lg prose-rose max-w-none mb-12">
+          <div className="text-gray-700 whitespace-pre-wrap leading-relaxed">{blog.content.body}</div>
+          
+          <CTA title="Want to Discuss This With An Expert?" subtitle="Schedule your confidential consultation today." />
+          
+          {blog.content.conclusion && (
+            <div className="mt-8 p-6 bg-gray-50 border-l-4 border-gray-400 rounded-r-lg">
+              <p className="font-medium text-gray-900 italic m-0">{blog.content.conclusion}</p>
+            </div>
+          )}
+        </div>
 
-            {/* Content */}
-            <section className="py-16 lg:py-24 bg-cream">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="space-y-10">
-                        {post.content.map((section, index) => (
-                            <div key={index}>
-                                <h2 className="font-heading text-2xl font-bold text-navy mb-4">
-                                    {section.heading}
-                                </h2>
-                                <p className="text-gray-700 leading-relaxed text-lg">
-                                    {section.body}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Medically Reviewed Badge */}
-            <MedicallyReviewed date={post.publishedDate} />
-
-            {/* Related Links */}
-            {(post.relatedServices.length > 0 || post.relatedConditions.length > 0) && (
-                <section className="py-12 bg-white">
-                    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                        {post.relatedServices.length > 0 && (
-                            <div className="mb-8">
-                                <h3 className="font-heading text-xl font-bold text-navy mb-4 flex items-center gap-2">
-                                    <BookOpen className="w-5 h-5 text-sage" /> Related Services
-                                </h3>
-                                <div className="flex flex-wrap gap-3">
-                                    {post.relatedServices.map((svc) => (
-                                        <Link
-                                            key={svc.slug}
-                                            href={`/services/${svc.slug}`}
-                                            className="inline-flex items-center gap-2 px-5 py-2.5 bg-cream border border-gray-200 rounded-full text-sm font-medium text-navy hover:border-rose-deep hover:text-rose-deep transition-colors"
-                                        >
-                                            {svc.label} <ArrowRight className="w-3 h-3" />
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-                        {post.relatedConditions.length > 0 && (
-                            <div>
-                                <h3 className="font-heading text-xl font-bold text-navy mb-4 flex items-center gap-2">
-                                    <BookOpen className="w-5 h-5 text-rose-deep" /> Related Conditions
-                                </h3>
-                                <div className="flex flex-wrap gap-3">
-                                    {post.relatedConditions.map((cond) => (
-                                        <Link
-                                            key={cond.slug}
-                                            href={`/conditions/${cond.slug}`}
-                                            className="inline-flex items-center gap-2 px-5 py-2.5 bg-cream border border-gray-200 rounded-full text-sm font-medium text-navy hover:border-rose-deep hover:text-rose-deep transition-colors"
-                                        >
-                                            {cond.label} <ArrowRight className="w-3 h-3" />
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </section>
-            )}
-
-            {/* FAQ */}
-            <FAQSection faqs={post.faqs} />
-
-            {/* Back to Blog */}
-            <section className="py-12 bg-cream">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <Link
-                        href="/blog"
-                        className="inline-flex items-center gap-2 px-6 py-3 bg-navy text-white font-semibold rounded-full hover:bg-navy-light transition-colors"
-                    >
-                        ← Back to All Articles
-                    </Link>
-                </div>
-            </section>
-        </>
-    );
+        {blog.relatedLinks && blog.relatedLinks.length > 0 && (
+          <div className="mt-16 pt-8 border-t border-gray-200">
+            <h3 className="text-xl font-bold text-gray-900 mb-6">Explore Further</h3>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {blog.relatedLinks.map((link, index) => (
+                <Link key={index} href={link.url} className="p-6 rounded-xl border border-gray-200 hover:border-rose-300 hover:shadow-md transition-all group">
+                  <h4 className="text-lg font-bold text-rose-700 mb-2 group-hover:text-rose-800 flex items-center justify-between">
+                    {link.text} <span className="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                  </h4>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </article>
+    </>
+  );
 }

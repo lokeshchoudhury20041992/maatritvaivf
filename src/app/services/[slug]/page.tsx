@@ -1,152 +1,120 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getServiceBySlug, getAllServiceSlugs } from '@/lib/services-data';
-import {
-    generatePageMetadata,
-    getMedicalProcedureSchema,
-    getFAQSchema,
-    getBreadcrumbSchema,
-    SITE_URL,
-} from '@/lib/schema-helpers';
+import services from '@/data/services.json';
+import CTA from '@/components/CTA';
+import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import FAQSection from '@/components/FAQSection';
-import { CheckCircle, ArrowRight, Stethoscope } from 'lucide-react';
-import Link from 'next/link';
 
 export async function generateStaticParams() {
-    return getAllServiceSlugs().map((slug) => ({ slug }));
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params;
-    const service = getServiceBySlug(slug);
-    if (!service) return {};
-    return generatePageMetadata({
-        title: service.metaTitle,
-        description: service.metaDescription,
-        path: `/services/${service.slug}`,
-        keywords: service.keywords,
-    });
+  const resolvedParams = await params;
+  const service = services.find((s) => s.slug === resolvedParams.slug);
+  
+  if (!service) return {};
+
+  return {
+    title: `${service.title} | Maatritva IVF`,
+    description: service.metaDescription,
+    alternates: {
+      canonical: `https://bestivfcentreinkolkata.com/services/${service.slug}`,
+    },
+    openGraph: {
+      title: service.title,
+      description: service.metaDescription,
+      url: `https://bestivfcentreinkolkata.com/services/${service.slug}`,
+      type: 'article',
+    }
+  };
 }
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
-    const service = getServiceBySlug(slug);
-    if (!service) notFound();
+  const resolvedParams = await params;
+  const service = services.find((s) => s.slug === resolvedParams.slug);
 
-    const procedureSchema = getMedicalProcedureSchema({
-        name: service.title,
-        description: service.overview,
-        preparation: service.preparation,
-        procedureType: service.procedureType,
-        followup: service.followup,
-        url: `${SITE_URL}/services/${service.slug}`,
-    });
+  if (!service) {
+    notFound();
+  }
 
-    const breadcrumbs = getBreadcrumbSchema([
-        { name: 'Home', url: SITE_URL },
-        { name: 'Treatments', url: `${SITE_URL}/services` },
-        { name: service.metaTitle, url: `${SITE_URL}/services/${service.slug}` },
-    ]);
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": service.title,
+    "description": service.metaDescription,
+    "about": {
+      "@type": "MedicalSpecialty",
+      "name": "Fertility Specialist"
+    }
+  };
 
-    return (
-        <>
-            <SchemaMarkup schema={procedureSchema} />
-            <SchemaMarkup schema={breadcrumbs} />
-            <SchemaMarkup schema={getFAQSchema(service.faqs)} />
+  return (
+    <>
+      <SchemaMarkup schema={schema} />
+      <article className="max-w-4xl mx-auto px-4 py-8 md:py-16">
+        <header className="mb-10 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">{service.content.h1}</h1>
+          <p className="text-xl text-gray-600 mb-8">{service.content.intro}</p>
+          
+          <div className="flex flex-wrap justify-center gap-4 bg-rose-50 p-6 rounded-2xl border border-rose-100">
+            <div className="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex-1 min-w-[200px]">
+              <p className="text-sm text-gray-500 font-medium mb-1">Estimated Cost</p>
+              <p className="text-xl font-bold text-rose-600">{service.cost}</p>
+            </div>
+            <div className="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex-1 min-w-[200px]">
+              <p className="text-sm text-gray-500 font-medium mb-1">Success Rate*</p>
+              <p className="text-xl font-bold text-green-600">{service.successRate}</p>
+              <p className="text-[10px] text-gray-400 mt-1 italic leading-tight">*Varies by age & medical history</p>
+            </div>
+          </div>
+        </header>
 
-            {/* Hero */}
-            <section className="bg-gradient-to-br from-navy to-rose-deep py-16 lg:py-24">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
-                        <Stethoscope className="w-4 h-4 text-gold" />
-                        <span className="text-sm text-white/90 font-medium">Treatment</span>
-                    </div>
-                    <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-6">
-                        {service.heroHeadline}
-                    </h1>
-                    <p className="text-lg text-white/80 max-w-2xl leading-relaxed">
-                        {service.heroSubtext}
-                    </p>
-                </div>
-            </section>
+        <div className="prose prose-lg prose-rose max-w-none mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">What is {service.title}?</h2>
+          <p className="text-gray-700 mb-6">{service.content.whatIs}</p>
 
-            {/* Overview */}
-            <section className="py-16 lg:py-20 bg-cream">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-6">
-                        What is {service.title}?
-                    </h2>
-                    <p className="text-gray-700 text-lg leading-relaxed mb-8">{service.overview}</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Who Needs This?</h2>
+          <p className="text-gray-700 mb-8">{service.content.whoNeedsThis}</p>
 
-                    <h3 className="font-heading text-xl font-bold text-navy mb-4">Who Is It For?</h3>
-                    <ul className="space-y-3 mb-8">
-                        {service.whoIsItFor.map((item) => (
-                            <li key={item} className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-sage shrink-0 mt-0.5" />
-                                <span className="text-gray-700">{item}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </section>
+          <CTA title="Ready to Start Your Journey?" subtitle="Consult with Kolkata's top fertility experts today." />
 
-            {/* Procedure Steps */}
-            <section className="py-16 lg:py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-10">
-                        Step-by-Step Process
-                    </h2>
-                    <div className="space-y-6">
-                        {service.procedureSteps.map((step) => (
-                            <div key={step.step} className="flex gap-6">
-                                <div className="shrink-0">
-                                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-rose-deep to-rose-light flex items-center justify-center text-white font-heading font-bold text-lg">
-                                        {step.step}
-                                    </div>
-                                </div>
-                                <div className="pt-1">
-                                    <h3 className="font-heading text-lg font-bold text-navy mb-1">{step.title}</h3>
-                                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Process</h2>
+          <ul className="space-y-4 mb-8">
+            {service.content.process.map((step, index) => (
+              <li key={index} className="flex item-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold">{index + 1}</span>
+                <span className="text-gray-700 py-1 font-medium">{step}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-            {/* Success Rate Note */}
-            <section className="py-12 bg-rose-pale/30">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-white rounded-2xl p-6 lg:p-8 border border-rose-pale">
-                        <h3 className="font-heading text-xl font-bold text-navy mb-3">About Our Success Rates</h3>
-                        <p className="text-gray-700 leading-relaxed">{service.successRateNote}</p>
-                    </div>
-                </div>
-            </section>
+        <CTA title="Need More Information on Cost & Success?" subtitle="Speak directly with our clinical coordinators." />
 
-            {/* Related Conditions */}
-            {service.relatedConditions.length > 0 && (
-                <section className="py-12 bg-cream">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h3 className="font-heading text-xl font-bold text-navy mb-4">Related Conditions</h3>
-                        <div className="flex flex-wrap gap-3">
-                            {service.relatedConditions.map((cond) => (
-                                <Link
-                                    key={cond.slug}
-                                    href={`/conditions/${cond.slug}`}
-                                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-navy hover:border-rose-deep hover:text-rose-deep transition-colors"
-                                >
-                                    {cond.label} <ArrowRight className="w-3 h-3" />
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-            )}
+        <div className="mt-8 border-t border-gray-200">
+           <FAQSection faqs={service.content.faqs} title="Frequently Asked Questions" />
+        </div>
 
-            {/* FAQ */}
-            <FAQSection faqs={service.faqs} />
-        </>
-    );
+        {service.relatedLinks && service.relatedLinks.length > 0 && (
+          <div className="mt-16 bg-blue-50 p-8 rounded-2xl border border-blue-100">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Related Topics</h3>
+            <ul className="flex flex-wrap gap-4">
+              {service.relatedLinks.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.url} className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1 group">
+                    <span className="border-b border-transparent group-hover:border-blue-800 transition-colors">{link.text}</span>
+                    <span className="text-lg">&rarr;</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </article>
+    </>
+  );
 }

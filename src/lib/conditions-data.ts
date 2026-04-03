@@ -56,7 +56,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'Laparoscopic Surgery',
                 description:
                     'For partial blockages or adhesions, Dr. Ankita can open the tubes through minimally invasive keyhole surgery. Recovery is fast, with many women conceiving naturally within the following months.',
-                link: '/services/laparoscopic-surgery',
+                link: '/services/laparoscopic-surgery-infertility',
             },
             {
                 name: 'IVF (In Vitro Fertilisation)',
@@ -294,7 +294,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'Laparoscopic Surgery',
                 description:
                     'Excision or ablation of endometriotic lesions, removal of endometriomas, and adhesiolysis. Surgery can restore pelvic anatomy and improve natural conception rates.',
-                link: '/services/laparoscopic-surgery',
+                link: '/services/laparoscopic-surgery-infertility',
             },
             {
                 name: 'IVF Treatment',
@@ -626,7 +626,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'Laparoscopic Myomectomy',
                 description:
                     'Larger intramural or subserosal fibroids are removed through keyhole surgery. Dr. Ankita uses meticulous surgical technique to preserve uterine integrity for future pregnancy.',
-                link: '/services/laparoscopic-surgery',
+                link: '/services/laparoscopic-surgery-infertility',
             },
             {
                 name: 'IVF After Fibroid Treatment',

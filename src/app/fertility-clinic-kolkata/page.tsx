@@ -156,7 +156,7 @@ export default function FertilityClinicPage() {
                             { label: 'IUI Treatment', href: '/services/iui-treatment', desc: 'Simpler insemination procedure' },
                             { label: 'Egg Freezing', href: '/services/egg-freezing', desc: 'Preserve fertility for the future' },
                             { label: 'Male Infertility', href: '/services/male-infertility-treatment', desc: 'Complete male factor solutions' },
-                            { label: 'Laparoscopy', href: '/services/laparoscopic-surgery', desc: 'Minimally invasive gynaecological surgery' },
+                            { label: 'Laparoscopy', href: '/services/laparoscopic-surgery-infertility', desc: 'Minimally invasive gynaecological surgery' },
                             { label: 'Donor Egg IVF', href: '/services/donor-egg-ivf', desc: 'For diminished ovarian reserve' },
                             { label: 'PGD/PGS Testing', href: '/services/ivf-with-pgd-pgs', desc: 'Genetic screening of embryos' },
                             { label: 'Hysteroscopy', href: '/services/hysteroscopy', desc: 'Diagnostic & operative uterine procedure' },

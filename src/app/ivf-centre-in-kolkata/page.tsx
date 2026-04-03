@@ -171,7 +171,7 @@ export default function IVFCentrePage() {
                             { label: 'Male Infertility', href: '/services/male-infertility-treatment' },
                             { label: 'TESA / PESA', href: '/services/testicular-sperm-extraction' },
                             { label: 'PGD / PGS', href: '/services/ivf-with-pgd-pgs' },
-                            { label: 'Laparoscopy', href: '/services/laparoscopic-surgery' },
+                            { label: 'Laparoscopy', href: '/services/laparoscopic-surgery-infertility' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="flex items-center gap-3 bg-white px-5 py-4 rounded-xl border border-gray-100 hover:border-rose-pale hover:shadow-sm transition-all group">
                                 <CheckCircle className="w-4 h-4 text-sage shrink-0" />
