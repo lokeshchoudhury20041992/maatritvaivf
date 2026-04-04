@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { generatePageMetadata, getBreadcrumbSchema } from '@/lib/schema-helpers';
 import SchemaMarkup from '@/components/SchemaMarkup';
-import { ArrowRight, Award, BookOpen, HeartPulse, GraduationCap, Users } from 'lucide-react';
+import { ArrowRight, Award, HeartPulse, GraduationCap, Users } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -276,23 +276,4 @@ export default function DoctorsPage() {
     );
 }
 
-// Minimal placeholder
-function UserIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-      <circle cx="12" cy="7" r="4" />
-    </svg>
-  )
-}
+

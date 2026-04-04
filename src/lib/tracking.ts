@@ -1,7 +1,10 @@
-export const trackEvent = (eventName: string, params: Record<string, any>) => {
+interface WindowWithGtag extends Window {
+  gtag?: (command: string, name: string, params: Record<string, unknown>) => void;
+}
+
+export const trackEvent = (eventName: string, params: Record<string, unknown>) => {
   if (typeof window !== 'undefined' && 'gtag' in window) {
-    // @ts-ignore
-    window.gtag('event', eventName, {
+    (window as unknown as WindowWithGtag).gtag?.('event', eventName, {
       ...params,
       event_time: new Date().toISOString()
     });

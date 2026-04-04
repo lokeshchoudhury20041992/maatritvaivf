@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, Phone, Award, Heart, CheckCircle2, Star, ShieldCheck } from 'lucide-react';
+import { Calendar, Phone, Award, CheckCircle2, Star, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 

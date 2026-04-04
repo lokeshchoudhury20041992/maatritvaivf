@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Clock, Heart, Facebook, Instagram, Youtube, Award, ShieldCheck, Microscope } from 'lucide-react';
+import { Phone, Mail, MapPin, Heart, Facebook, Instagram, Youtube, ShieldCheck, Microscope } from 'lucide-react';
 import Image from 'next/image';
 
 const services = [
@@ -13,16 +13,7 @@ const services = [
     { href: '/services/donor-egg-ivf', label: 'Donor Egg IVF' },
 ];
 
-const locations = [
-    { href: '/locations/salt-lake-kolkata', label: 'Salt Lake' },
-    { href: '/locations/newtown-kolkata', label: 'New Town' },
-    { href: '/locations/kolkata', label: 'South Kolkata' },
-    { href: '/locations/kolkata', label: 'Howrah' },
-    { href: '/locations/kolkata', label: 'North Kolkata' },
-    { href: '/locations/kolkata', label: 'Dum Dum & Airport' },
-    { href: '/locations/kolkata', label: 'Barasat & N24P' },
-    { href: '/locations/kolkata', label: 'Bangladesh IVF' },
-];
+
 
 const quickLinks = [
     { href: '/ivf-cost-kolkata', label: 'IVF Cost' },

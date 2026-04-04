@@ -39,7 +39,7 @@ export default function IVFCostPage() {
                     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 lg:p-12">
                         <h2 className="font-heading text-3xl font-bold text-navy mb-6">How Much Does IVF Really Cost?</h2>
                         <p className="text-gray-600 mb-6 leading-relaxed">
-                            A standard <Link href="/services/best-ivf-treatment" className="text-rose-deep font-semibold hover:underline">IVF treatment cycle</Link> in Kolkata typically ranges from <strong className="text-navy">₹1,20,000 to ₹2,50,000</strong>. This variation exists because every patient's biological protocol is different. The cost heavily depends on the amount of stimulation medications required (which is based on your age and AMH levels) and any advanced laboratory techniques needed.
+                            A standard <Link href="/services/best-ivf-treatment" className="text-rose-deep font-semibold hover:underline">IVF treatment cycle</Link> in Kolkata typically ranges from <strong className="text-navy">₹1,20,000 to ₹2,50,000</strong>. This variation exists because every patient&apos;s biological protocol is different. The cost heavily depends on the amount of stimulation medications required (which is based on your age and AMH levels) and any advanced laboratory techniques needed.
                         </p>
                         <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-100 flex items-start gap-4">
                             <Info className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />

@@ -29,7 +29,7 @@ export default function ContactPage() {
                         Book Your Consultation
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                        Take the first step towards your parenthood journey. Reach out to schedule an appointment with Kolkata's leading fertility specialists.
+                        Take the first step towards your parenthood journey. Reach out to schedule an appointment with Kolkata&apos;s leading fertility specialists.
                     </p>
                 </div>
             </section>
@@ -42,7 +42,7 @@ export default function ContactPage() {
                         {/* Info Column */}
                         <div className="space-y-8">
                             <div>
-                                <h2 className="font-heading text-3xl font-bold text-navy mb-4">We're Here to Help</h2>
+                                <h2 className="font-heading text-3xl font-bold text-navy mb-4">We&apos;re Here to Help</h2>
                                 <p className="text-gray-600 leading-relaxed max-w-sm">
                                     Whether you have a quick question or are ready to begin your treatment, our patient care team is available to guide you.
                                 </p>

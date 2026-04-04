@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import FAQSection from '@/components/FAQSection';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { getFAQSchema, generatePageMetadata, getBreadcrumbSchema } from '@/lib/schema-helpers';
-import { Award, CheckCircle, ArrowRight, Heart, ShieldCheck, Microscope, Clock, Phone, MessageCircle, Star, Baby, Users } from 'lucide-react';
+import { Award, ArrowRight, Heart, ShieldCheck, Microscope, Clock, Phone, MessageCircle, Users } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({

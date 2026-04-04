@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { generatePageMetadata, getBreadcrumbSchema } from '@/lib/schema-helpers';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import blogData from '@/data/blogs.json';
-import { ArrowRight, Calendar, Clock, User, BookOpen } from 'lucide-react';
+import { ArrowRight, User, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({
