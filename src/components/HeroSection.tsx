@@ -54,7 +54,7 @@ export default function HeroSection() {
                                 Book Consultation
                             </Link>
                             <a
-                                href="tel:+918100353839"
+                                href="tel:+918100343839"
                                 className="flex items-center justify-center gap-3 px-10 py-5 border-2 border-navy/10 text-navy font-heading font-bold text-xl rounded-2xl hover:bg-navy/5 hover:border-navy/20 transition-all duration-300"
                             >
                                 <Phone className="w-6 h-6" />

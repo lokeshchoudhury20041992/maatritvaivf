@@ -142,7 +142,7 @@ export default function Navbar() {
 
                     {/* Desktop CTA */}
                     <div className="hidden lg:flex items-center gap-3">
-                        <a href="tel:+918100353839" className="flex items-center gap-2 text-sm font-medium text-navy hover:text-rose-deep transition-colors">
+                        <a href="tel:+918100343839" className="flex items-center gap-2 text-sm font-medium text-navy hover:text-rose-deep transition-colors">
                             <Phone className="w-4 h-4" />
                             Call Now
                         </a>
@@ -214,11 +214,11 @@ export default function Navbar() {
                             ))}
                             <div className="pt-5 pb-2 border-t border-gray-100 space-y-3">
                                 <a
-                                    href="tel:+918100353839"
+                                    href="tel:+918100343839"
                                     className="flex items-center justify-center gap-2 px-4 py-3 text-navy font-medium border border-navy/20 rounded-full hover:bg-navy hover:text-white transition-all"
                                 >
                                     <Phone className="w-4 h-4" />
-                                    +91 8100 353839
+                                    +91 8100343839 / +91 8100353839
                                 </a>
                                 <Link
                                     href="/contact"

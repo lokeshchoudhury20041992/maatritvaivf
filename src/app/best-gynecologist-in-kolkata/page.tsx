@@ -98,7 +98,7 @@ export default function BestGynaecologistPage() {
                             <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-rose-deep to-rose-light text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
                                 Book Consultation <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
+                            <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
                                 <Phone className="w-4 h-4" /> Call Now
                             </a>
                         </div>
@@ -178,14 +178,14 @@ export default function BestGynaecologistPage() {
                     </h2>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         {[
-                            { label: 'PCOS / PCOD', href: '/conditions/pcos-treatment' },
+                            { label: 'PCOS / PCOD', href: '/conditions/pcos-and-infertility' },
                             { label: 'Low AMH', href: '/conditions/low-amh-treatment' },
                             { label: 'Endometriosis', href: '/conditions/endometriosis' },
                             { label: 'Blocked Tubes', href: '/conditions/blocked-fallopian-tubes' },
                             { label: 'Uterine Fibroids', href: '/conditions/uterine-fibroids' },
                             { label: 'Male Infertility', href: '/conditions/male-infertility' },
                             { label: 'Recurrent Miscarriage', href: '/conditions/recurrent-miscarriage' },
-                            { label: 'Ovulation Disorders', href: '/conditions/ovulation-disorders' },
+                            { label: 'Ovulation Disorders', href: '/conditions/pcos-and-infertility' },
                             { label: 'Unexplained Infertility', href: '/conditions/unexplained-infertility' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="flex items-center gap-3 bg-white px-5 py-3 rounded-xl border border-gray-100 hover:border-rose-pale hover:shadow-sm transition-all group">
@@ -207,8 +207,8 @@ export default function BestGynaecologistPage() {
                     <p className="text-white/90 mb-8 text-lg">15+ years of expertise in women&apos;s health. Your trusted gynaecologist in Kolkata.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"><Clock className="w-4 h-4" /> Book Appointment</Link>
-                        <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
-                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+                        <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
+                        <a href="https://wa.me/918100343839" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
                     </div>
                 </div>
             </section>

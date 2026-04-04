@@ -13,14 +13,14 @@ export default function CTA({ title = "Book Your Free Consultation Today", subti
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
           <Link 
-            href="tel:+918100353839" 
+            href="tel:+918100343839" 
             className="group px-10 py-5 bg-rose-deep text-white rounded-2xl font-bold text-lg hover:bg-rose-700 hover:shadow-2xl hover:shadow-rose-deep/30 transition-all active:scale-95 flex items-center justify-center gap-3 w-full sm:w-auto overflow-hidden relative"
           >
             <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-            +91 8100 353839
+            +91 8100343839 / +91 8100353839
           </Link>
           <Link 
-            href="https://wa.me/918100353839" 
+            href="https://wa.me/918100343839" 
             className="group px-10 py-5 bg-navy text-white rounded-2xl font-bold text-lg hover:bg-navy-light hover:shadow-2xl hover:shadow-navy/20 transition-all active:scale-95 flex items-center justify-center gap-3 w-full sm:w-auto"
           >
             <span className="w-6 h-6 flex items-center justify-center bg-green-500 rounded-full text-white text-xs">W</span>

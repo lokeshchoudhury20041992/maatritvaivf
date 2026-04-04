@@ -85,7 +85,7 @@ export default function TestTubeBabyCentrePage() {
                             <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-rose-deep to-rose-light text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
                                 Book Consultation <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
+                            <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
                                 <Phone className="w-4 h-4" /> Call Now
                             </a>
                         </div>
@@ -218,11 +218,11 @@ export default function TestTubeBabyCentrePage() {
                     <h3 className="font-heading text-xl font-bold text-navy mb-4 text-center">Related Treatments</h3>
                     <div className="flex flex-wrap gap-3 justify-center">
                         {[
-                            { label: 'IVF Treatment', href: '/services/ivf-treatment' },
+                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment' },
                             { label: 'IUI Treatment', href: '/services/iui-treatment' },
-                            { label: 'Blastocyst Transfer', href: '/services/blastocyst-transfer' },
-                            { label: 'Male Infertility', href: '/services/male-infertility-treatment' },
+                            { label: 'Blastocyst Transfer', href: '/services/best-ivf-treatment' },
+                            { label: 'Male Infertility', href: '/conditions/male-infertility' },
                             { label: 'IVF Cost', href: '/ivf-cost-kolkata' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-navy hover:border-rose-deep hover:text-rose-deep transition-colors">
@@ -242,8 +242,8 @@ export default function TestTubeBabyCentrePage() {
                     <p className="text-white/90 mb-8 text-lg">Expert care, transparent pricing, and a team that truly cares about your success.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"><Clock className="w-4 h-4" /> Book Appointment</Link>
-                        <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
-                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+                        <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
+                        <a href="https://wa.me/918100343839" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
                     </div>
                 </div>
             </section>

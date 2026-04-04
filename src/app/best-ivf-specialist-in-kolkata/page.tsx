@@ -443,7 +443,7 @@ export default function BestIVFSpecialistPage() {
                     </p>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {[
-                            { label: 'IVF Treatment', href: '/services/ivf-treatment', desc: 'Complete IVF cycle with personalised stimulation. Our flagship treatment.' },
+                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment', desc: 'Complete IVF cycle with personalised stimulation. Our flagship treatment.' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment', desc: 'Single sperm injection per egg. Essential for male factor infertility.' },
                             { label: 'IUI Treatment', href: '/services/iui-treatment', desc: 'Simpler, less invasive option for mild fertility issues.' },
                             { label: 'Egg Freezing', href: '/services/egg-freezing', desc: 'Preserve your fertility for the future. Ideal for women under 35.' },

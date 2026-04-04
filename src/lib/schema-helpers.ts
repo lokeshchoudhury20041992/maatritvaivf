@@ -46,7 +46,7 @@ export function getMedicalClinicSchema() {
         '@type': 'MedicalProcedure',
         name: 'In Vitro Fertilisation (IVF)',
         procedureType: 'Percutaneous',
-        url: `${SITE_URL}/services/ivf-treatment`,
+        url: `${SITE_URL}/services/best-ivf-treatment`,
       },
       {
         '@type': 'MedicalProcedure',
@@ -64,13 +64,13 @@ export function getMedicalClinicSchema() {
         '@type': 'MedicalProcedure',
         name: 'Laparoscopic Surgery for Infertility',
         procedureType: 'Surgical',
-        url: `${SITE_URL}/services/laparoscopic-surgery`,
+        url: `${SITE_URL}/services/laparoscopic-surgery-infertility`,
       },
       {
         '@type': 'MedicalProcedure',
         name: 'High-Risk Pregnancy Management',
         procedureType: 'Noninvasive',
-        url: `${SITE_URL}/services/high-risk-pregnancy`,
+        url: `${SITE_URL}/services/high-risk-pregnancy-management`,
       },
     ],
     // ── hasCredential: accreditation / registration signals ──
@@ -103,7 +103,7 @@ export function getMedicalClinicSchema() {
       { '@type': 'City', name: 'Kolkata' },
       { '@type': 'State', name: 'West Bengal' },
     ],
-    telephone: '+91-XXXXXXXXXX',
+    telephone: '+91 8100343839 / +91 8100353839',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',

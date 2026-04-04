@@ -62,7 +62,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF (In Vitro Fertilisation)',
                 description:
                     'When tubes are severely damaged or both are blocked, IVF bypasses the tubes entirely — eggs are collected directly from the ovaries. This is often the most effective option for bilateral tubal blockage.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
         ],
         drAnkitaApproach:
@@ -85,8 +85,8 @@ export const conditionsData: ConditionData[] = [
             },
         ],
         relatedServices: [
-            { slug: 'laparoscopic-surgery', label: 'Laparoscopic Surgery' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'laparoscopic-surgery-infertility', label: 'Laparoscopic Surgery' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         keywords: ['blocked fallopian tubes treatment Kolkata', 'tubal blockage IVF', 'HSG test Kolkata'],
     },
@@ -129,7 +129,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'Customised IVF Protocol',
                 description:
                     'Dr. Ankita uses modified stimulation protocols designed specifically for low AMH patients — focusing on quality over quantity. Even 2-3 good eggs can lead to a successful pregnancy.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
             {
                 name: 'ICSI',
@@ -164,13 +164,13 @@ export const conditionsData: ConditionData[] = [
             },
         ],
         relatedServices: [
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
             { slug: 'icsi-treatment', label: 'ICSI Treatment' },
         ],
         keywords: ['low AMH treatment Kolkata', 'diminished ovarian reserve', 'AMH less than 1 IVF'],
     },
     {
-        slug: 'pcos-treatment',
+        slug: 'pcos-and-infertility',
         title: 'PCOS — Comprehensive Diagnosis & Treatment',
         metaTitle: 'PCOS Treatment in Kolkata',
         metaDescription:
@@ -224,7 +224,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF',
                 description:
                     'For PCOS patients who do not respond to simpler treatments, IVF provides excellent success rates. PCOS patients often respond well to stimulation, producing good numbers of eggs.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
         ],
         drAnkitaApproach:
@@ -248,7 +248,7 @@ export const conditionsData: ConditionData[] = [
         ],
         relatedServices: [
             { slug: 'iui-treatment', label: 'IUI Treatment' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         keywords: ['PCOS treatment Kolkata', 'polycystic ovary syndrome specialist', 'PCOS fertility Kolkata'],
     },
@@ -300,7 +300,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF Treatment',
                 description:
                     'For moderate-to-severe endometriosis or when surgery alone has not resulted in pregnancy, IVF bypasses damaged tubes and the hostile pelvic environment.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
             {
                 name: 'Medical Management',
@@ -329,8 +329,8 @@ export const conditionsData: ConditionData[] = [
             },
         ],
         relatedServices: [
-            { slug: 'laparoscopic-surgery', label: 'Laparoscopic Surgery' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'laparoscopic-surgery-infertility', label: 'Laparoscopic Surgery' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         keywords: ['endometriosis treatment Kolkata', 'endometriosis fertility', 'endometriosis specialist Kolkata', 'chocolate cyst treatment Kolkata'],
     },
@@ -381,7 +381,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'Male Infertility Treatment',
                 description:
                     'Comprehensive evaluation and targeted treatment including lifestyle optimisation, hormonal therapy, varicocelectomy, or advanced ART procedures.',
-                link: '/services/male-infertility-treatment',
+                link: '/conditions/male-infertility',
             },
             {
                 name: 'ICSI Treatment',
@@ -393,7 +393,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'Surgical Sperm Retrieval (TESA/PESA)',
                 description:
                     'For azoospermia, sperm can be retrieved directly from the testes or epididymis for use with ICSI.',
-                link: '/services/testicular-sperm-extraction',
+                link: '/services/tesa-pesa',
             },
         ],
         drAnkitaApproach:
@@ -416,9 +416,9 @@ export const conditionsData: ConditionData[] = [
             },
         ],
         relatedServices: [
-            { slug: 'male-infertility-treatment', label: 'Male Infertility Treatment' },
+            { slug: 'male-infertility', label: 'Male Infertility Treatment' },
             { slug: 'icsi-treatment', label: 'ICSI Treatment' },
-            { slug: 'testicular-sperm-extraction', label: 'TESA / PESA' },
+            { slug: 'tesa-pesa', label: 'TESA / PESA' },
         ],
         keywords: ['male infertility Kolkata', 'male infertility causes', 'low sperm count Kolkata', 'male fertility specialist Kolkata'],
     },
@@ -467,7 +467,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF Treatment',
                 description:
                     'If 3-4 IUI cycles are unsuccessful, IVF provides the ability to observe fertilisation directly in the laboratory, often revealing the hidden cause and providing effective treatment simultaneously.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
         ],
         drAnkitaApproach:
@@ -491,7 +491,7 @@ export const conditionsData: ConditionData[] = [
         ],
         relatedServices: [
             { slug: 'iui-treatment', label: 'IUI Treatment' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         keywords: ['unexplained infertility treatment Kolkata', 'infertility all tests normal', 'idiopathic infertility Kolkata'],
     },
@@ -539,7 +539,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF with PGT (Genetic Testing)',
                 description:
                     'Testing embryos for chromosomal abnormalities before transfer significantly reduces the risk of miscarriage due to genetic causes.',
-                link: '/services/ivf-with-pgd-pgs',
+                link: '/services/best-ivf-treatment',
             },
             {
                 name: 'Hysteroscopy',
@@ -574,7 +574,7 @@ export const conditionsData: ConditionData[] = [
             },
         ],
         relatedServices: [
-            { slug: 'ivf-with-pgd-pgs', label: 'IVF with PGD/PGS' },
+            { slug: 'best-ivf-treatment', label: 'IVF with PGD/PGS' },
             { slug: 'hysteroscopy', label: 'Hysteroscopy' },
         ],
         keywords: ['recurrent miscarriage treatment Kolkata', 'repeated pregnancy loss Kolkata', 'miscarriage specialist Kolkata'],
@@ -632,7 +632,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF After Fibroid Treatment',
                 description:
                     'After surgical correction, IVF can be planned with improved chances of implantation and pregnancy success.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
         ],
         drAnkitaApproach:
@@ -657,7 +657,7 @@ export const conditionsData: ConditionData[] = [
         relatedServices: [
             { slug: 'hysteroscopy', label: 'Hysteroscopy' },
             { slug: 'laparoscopic-surgery', label: 'Laparoscopic Surgery' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         keywords: ['uterine fibroids treatment Kolkata', 'fibroids and fertility', 'myomectomy Kolkata', 'fibroid removal Kolkata'],
     },
@@ -713,7 +713,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF',
                 description:
                     'For patients who do not respond to oral medications or have other contributing factors, IVF provides controlled stimulation and fertilisation.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
         ],
         drAnkitaApproach:
@@ -737,7 +737,7 @@ export const conditionsData: ConditionData[] = [
         ],
         relatedServices: [
             { slug: 'iui-treatment', label: 'IUI Treatment' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         keywords: ['ovulation disorder treatment Kolkata', 'anovulation treatment', 'irregular ovulation Kolkata', 'ovulation induction Kolkata'],
     },
@@ -936,7 +936,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF with Optimised Protocols',
                 description:
                     'Customised stimulation protocols for older patients, focusing on maximising egg yield while maintaining quality. Blastocyst culture and PGT may be recommended.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
             {
                 name: 'IVF with PGT-A',
@@ -977,7 +977,7 @@ export const conditionsData: ConditionData[] = [
             },
         ],
         relatedServices: [
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
             { slug: 'egg-freezing', label: 'Egg Freezing' },
             { slug: 'donor-egg-ivf', label: 'Donor Egg IVF' },
             { slug: 'ivf-with-pgd-pgs', label: 'IVF with PGD/PGS' },
@@ -1024,7 +1024,7 @@ export const conditionsData: ConditionData[] = [
                 name: 'IVF',
                 description:
                     'For more complex cases or when the woman is over 35-37, IVF provides the most effective path to pregnancy.',
-                link: '/services/ivf-treatment',
+                link: '/services/best-ivf-treatment',
             },
         ],
         drAnkitaApproach:
@@ -1048,7 +1048,7 @@ export const conditionsData: ConditionData[] = [
         ],
         relatedServices: [
             { slug: 'iui-treatment', label: 'IUI Treatment' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         keywords: ['secondary infertility Kolkata', 'secondary infertility treatment', 'cannot conceive second child Kolkata'],
     },

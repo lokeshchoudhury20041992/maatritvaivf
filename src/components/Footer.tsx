@@ -3,32 +3,32 @@ import { Phone, Mail, MapPin, Clock, Heart, Facebook, Instagram, Youtube, Award,
 import Image from 'next/image';
 
 const services = [
-    { href: '/services/ivf-treatment', label: 'IVF Treatment' },
+    { href: '/services/best-ivf-treatment', label: 'IVF Treatment' },
     { href: '/services/iui-treatment', label: 'IUI Treatment' },
     { href: '/services/icsi-treatment', label: 'ICSI Treatment' },
     { href: '/services/laparoscopic-surgery-infertility', label: 'Laparoscopic Surgery' },
-    { href: '/services/high-risk-pregnancy', label: 'High-Risk Pregnancy' },
+    { href: '/services/high-risk-pregnancy-management', label: 'High-Risk Pregnancy' },
     { href: '/services/egg-freezing', label: 'Egg Freezing' },
-    { href: '/services/male-infertility-treatment', label: 'Male Infertility' },
+    { href: '/conditions/male-infertility', label: 'Male Infertility' },
     { href: '/services/donor-egg-ivf', label: 'Donor Egg IVF' },
 ];
 
 const locations = [
-    { href: '/locations/salt-lake', label: 'Salt Lake' },
-    { href: '/locations/new-town', label: 'New Town' },
-    { href: '/locations/south-kolkata', label: 'South Kolkata' },
-    { href: '/locations/howrah', label: 'Howrah' },
-    { href: '/locations/north-kolkata', label: 'North Kolkata' },
-    { href: '/locations/dum-dum-airport', label: 'Dum Dum & Airport' },
-    { href: '/locations/barasat-north-24-parganas', label: 'Barasat & N24P' },
-    { href: '/locations/bangladesh-ivf-support', label: 'Bangladesh IVF' },
+    { href: '/locations/salt-lake-kolkata', label: 'Salt Lake' },
+    { href: '/locations/newtown-kolkata', label: 'New Town' },
+    { href: '/locations/kolkata', label: 'South Kolkata' },
+    { href: '/locations/kolkata', label: 'Howrah' },
+    { href: '/locations/kolkata', label: 'North Kolkata' },
+    { href: '/locations/kolkata', label: 'Dum Dum & Airport' },
+    { href: '/locations/kolkata', label: 'Barasat & N24P' },
+    { href: '/locations/kolkata', label: 'Bangladesh IVF' },
 ];
 
 const quickLinks = [
     { href: '/ivf-cost-kolkata', label: 'IVF Cost' },
     { href: '/best-ivf-specialist-in-kolkata', label: 'Best IVF Specialist' },
     { href: '/doctors/dr-ankita-mandal', label: 'Dr. Ankita Mandal' },
-    { href: '/conditions/pcos-treatment', label: 'PCOS Treatment' },
+    { href: '/conditions/pcos-and-infertility', label: 'PCOS Treatment' },
     { href: '/conditions/low-amh-treatment', label: 'Low AMH Treatment' },
     { href: '/conditions/male-infertility', label: 'Male Infertility' },
     { href: '/blog', label: 'Blog' },
@@ -67,11 +67,11 @@ export default function Footer() {
                         </p>
 
                         <div className="space-y-4">
-                            <a href="tel:+918100353839" className="flex items-center gap-3 text-sm text-white/70 hover:text-gold transition-colors group">
+                            <a href="tel:+918100343839" className="flex items-center gap-3 text-sm text-white/70 hover:text-gold transition-colors group">
                                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-gold/20">
                                     <Phone className="w-4 h-4 text-gold" />
                                 </div>
-                                <span>+91 8100 353839</span>
+                                <span>+91 8100343839 / +91 8100353839</span>
                             </a>
                             <a href="mailto:care@maatritvaivffertility.com" className="flex items-center gap-3 text-sm text-white/70 hover:text-gold transition-colors group">
                                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-gold/20">
@@ -183,11 +183,11 @@ export default function Footer() {
                             </p>
                         </div>
                         
-                        <div className="flex items-center gap-2 px-6 py-3 bg-white/5 rounded-2xl border border-white/10">
+                        <a href="https://tageasy.org/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
                              <span className="text-[10px] font-bold text-white/30 uppercase tracking-widest">Developed by</span>
                              <span className="text-sm font-black text-gold tracking-tighter uppercase italic">Tag easy</span>
                              <Heart className="w-3 h-3 text-rose-deep animate-pulse" />
-                        </div>
+                        </a>
 
                         <div className="text-center lg:text-right max-w-md hidden md:block">
                             <p className="text-[10px] text-white/30 italic leading-relaxed">

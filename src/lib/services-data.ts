@@ -19,7 +19,7 @@ export interface ServiceData {
 
 export const servicesData: ServiceData[] = [
     {
-        slug: 'ivf-treatment',
+        slug: 'best-ivf-treatment',
         title: 'In Vitro Fertilisation (IVF)',
         metaTitle: 'IVF Treatment in Kolkata',
         metaDescription:
@@ -74,7 +74,7 @@ export const servicesData: ServiceData[] = [
         relatedConditions: [
             { slug: 'low-amh-treatment', label: 'Low AMH Treatment' },
             { slug: 'blocked-fallopian-tubes', label: 'Blocked Fallopian Tubes' },
-            { slug: 'pcos-treatment', label: 'PCOS Treatment' },
+            { slug: 'pcos-and-infertility', label: 'PCOS Treatment' },
         ],
         keywords: ['IVF treatment Kolkata', 'IVF centre Kolkata', 'best IVF doctor Kolkata', 'IVF cost Kolkata'],
     },
@@ -125,7 +125,7 @@ export const servicesData: ServiceData[] = [
             },
         ],
         relatedConditions: [
-            { slug: 'pcos-treatment', label: 'PCOS Treatment' },
+            { slug: 'pcos-and-infertility', label: 'PCOS Treatment' },
         ],
         keywords: ['IUI treatment Kolkata', 'IUI cost Kolkata', 'intrauterine insemination Kolkata'],
     },
@@ -181,7 +181,7 @@ export const servicesData: ServiceData[] = [
         keywords: ['ICSI treatment Kolkata', 'ICSI cost Kolkata', 'intracytoplasmic sperm injection'],
     },
     {
-        slug: 'laparoscopic-surgery',
+        slug: 'laparoscopic-surgery-infertility',
         title: 'Laparoscopic Surgery for Infertility',
         metaTitle: 'Laparoscopic Surgery in Kolkata',
         metaDescription:
@@ -550,7 +550,7 @@ export const servicesData: ServiceData[] = [
         keywords: ['embryo freezing Kolkata', 'embryo cryopreservation Kolkata', 'freeze embryos IVF Kolkata', 'vitrification Kolkata'],
     },
     {
-        slug: 'testicular-sperm-extraction',
+        slug: 'tesa-pesa',
         title: 'Testicular Sperm Extraction (TESA / PESA)',
         metaTitle: 'TESA & PESA in Kolkata | Surgical Sperm Retrieval — Maatritva IVF',
         metaDescription:

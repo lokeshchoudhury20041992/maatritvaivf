@@ -241,15 +241,15 @@ export default function DrAnkitaMandal() {
                     </h2>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {[
-                            { label: 'IVF Treatment', href: '/services/ivf-treatment' },
+                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment' },
                             { label: 'IUI Treatment', href: '/services/iui-treatment' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment' },
                             { label: 'Egg Freezing', href: '/services/egg-freezing' },
                             { label: 'Donor Egg IVF', href: '/services/donor-egg-ivf' },
                             { label: 'Laparoscopic Surgery', href: '/services/laparoscopic-surgery-infertility' },
                             { label: 'Hysteroscopy', href: '/services/hysteroscopy' },
-                            { label: 'High-Risk Pregnancy', href: '/services/high-risk-pregnancy' },
-                            { label: 'Male Infertility', href: '/services/male-infertility-treatment' },
+                            { label: 'High-Risk Pregnancy', href: '/services/high-risk-pregnancy-management' },
+                            { label: 'Male Infertility', href: '/conditions/male-infertility' },
                         ].map((item) => (
                             <Link
                                 key={item.href}

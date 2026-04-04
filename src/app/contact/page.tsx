@@ -55,7 +55,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-navy mb-1 uppercase tracking-wider text-xs">Call Us (24/7 Helpline)</h4>
-                                        <a href="tel:+918100353839" className="text-gray-600 hover:text-rose-deep transition-colors text-xl font-bold">+91 8100 353839</a>
+                                        <a href="tel:+918100343839" className="text-gray-600 hover:text-rose-deep transition-colors text-xl font-bold">+91 8100343839 / +91 8100353839</a>
                                     </div>
                                 </div>
 

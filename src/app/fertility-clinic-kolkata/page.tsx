@@ -151,14 +151,14 @@ export default function FertilityClinicPage() {
                     </p>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {[
-                            { label: 'IVF Treatment', href: '/services/ivf-treatment', desc: 'Lab fertilisation & embryo transfer' },
+                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment', desc: 'Lab fertilisation & embryo transfer' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment', desc: 'Single sperm injection per egg' },
                             { label: 'IUI Treatment', href: '/services/iui-treatment', desc: 'Simpler insemination procedure' },
                             { label: 'Egg Freezing', href: '/services/egg-freezing', desc: 'Preserve fertility for the future' },
-                            { label: 'Male Infertility', href: '/services/male-infertility-treatment', desc: 'Complete male factor solutions' },
+                            { label: 'Male Infertility', href: '/conditions/male-infertility', desc: 'Complete male factor solutions' },
                             { label: 'Laparoscopy', href: '/services/laparoscopic-surgery-infertility', desc: 'Minimally invasive gynaecological surgery' },
                             { label: 'Donor Egg IVF', href: '/services/donor-egg-ivf', desc: 'For diminished ovarian reserve' },
-                            { label: 'PGD/PGS Testing', href: '/services/ivf-with-pgd-pgs', desc: 'Genetic screening of embryos' },
+                            { label: 'PGD/PGS Testing', href: '/services/best-ivf-treatment', desc: 'Genetic screening of embryos' },
                             { label: 'Hysteroscopy', href: '/services/hysteroscopy', desc: 'Diagnostic & operative uterine procedure' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="bg-cream rounded-xl p-5 border border-gray-100 hover:border-rose-pale hover:shadow-md transition-all group">
@@ -204,8 +204,8 @@ export default function FertilityClinicPage() {
                     <p className="text-white/90 mb-8 text-lg">Expert fertility care with honesty, compassion, and transparency.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"><Clock className="w-4 h-4" /> Book Appointment</Link>
-                        <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
-                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+                        <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
+                        <a href="https://wa.me/918100343839" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
                     </div>
                 </div>
             </section>

@@ -182,7 +182,7 @@ export default function LeadForm() {
                 <div className="bg-white/80 backdrop-blur-xl border-t border-gray-100 shadow-[0_-10px_30px_rgba(0,0,0,0.08)] px-5 py-4 rounded-t-[32px]">
                     <div className="flex items-center gap-3 max-w-md mx-auto">
                         <a
-                            href="tel:+918100353839"
+                            href="tel:+918100343839"
                             className="flex-1 flex items-center justify-center gap-2 py-4 bg-navy text-white font-bold rounded-2xl text-sm hover:scale-[0.98] transition-all"
                         >
                             <Phone className="w-4 h-4" />

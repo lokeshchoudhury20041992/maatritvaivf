@@ -7,9 +7,9 @@ import Image from 'next/image';
 
 export const metadata: Metadata = generatePageMetadata({
     title: 'Our Doctors — Fertility Specialists at Maatritva IVF, Kolkata',
-    description: 'Meet Dr. Ankita Mandal and Dr. Chhabi Ghosh, Kolkata\'s leading fertility specialists. Combining advanced medical science with compassionate patient care.',
+    description: 'Meet our expert team at Maatritva IVF: Dr. Ankita Mandal, Dr. Chhabi Ghosh, Dr. Prattay Ghosh, and Dr. Khushboo Agarwal — Kolkata\'s leading fertility specialists.',
     path: '/doctors',
-    keywords: ['Dr Ankita Mandal', 'IVF specialist Kolkata', 'best gynecologist Kolkata', 'fertility doctors', 'Best IVF doctors in Newtown'],
+    keywords: ['Dr Ankita Mandal', 'Dr Chhabi Ghosh', 'Dr Prattay Ghosh', 'Dr Khushboo Agarwal', 'IVF specialist Kolkata', 'best gynecologist Kolkata', 'fertility doctors', 'Best IVF doctors in Newtown'],
 });
 
 export default function DoctorsPage() {
@@ -54,7 +54,8 @@ export default function DoctorsPage() {
                                 </div>
                                 <h2 className="font-heading text-3xl font-bold text-navy mb-2">Dr. Ankita Mandal</h2>
                                 <p className="text-rose-deep font-semibold text-lg mb-4">Lead IVF & Infertility Specialist</p>
-                                <p className="text-sm text-gray-600">MBBS, MS (OBG), Fellowship in Reproductive Medicine</p>
+                                <p className="text-sm text-gray-600 font-medium">MBBS, MD, Diploma in Reproductive Medicine, FIMAS</p>
+                                <p className="text-xs text-gray-400 mt-2">(G&O, Infertility & IVF specialist)</p>
                             </div>
 
                             {/* Content Side */}
@@ -74,8 +75,8 @@ export default function DoctorsPage() {
                                             Clinical Focus
                                         </h4>
                                         <ul className="space-y-2 text-sm text-gray-600">
-                                            <li><Link href="/services/ivf-treatment" className="hover:text-rose-deep transition-colors">&rarr; Advanced IVF & ICSI</Link></li>
-                                            <li><Link href="/conditions/pcos-treatment" className="hover:text-rose-deep transition-colors">&rarr; PCOS Management</Link></li>
+                                            <li><Link href="/services/best-ivf-treatment" className="hover:text-rose-deep transition-colors">&rarr; Advanced IVF & ICSI</Link></li>
+                                            <li><Link href="/conditions/pcos-and-infertility" className="hover:text-rose-deep transition-colors">&rarr; PCOS Management</Link></li>
                                             <li><Link href="/conditions/low-amh-treatment" className="hover:text-rose-deep transition-colors">&rarr; Low AMH / Poor Responders</Link></li>
                                             <li><Link href="/services/laparoscopic-surgery-infertility" className="hover:text-rose-deep transition-colors">&rarr; Fertility Enhancing Surgeries</Link></li>
                                         </ul>
@@ -86,68 +87,188 @@ export default function DoctorsPage() {
                                             Qualifications
                                         </h4>
                                         <ul className="space-y-2 text-sm text-gray-600">
-                                            <li>• MBBS</li>
-                                            <li>• Master of Surgery (MS) in Obstetrics & Gynecology</li>
-                                            <li>• Fellowship in Reproductive Medicine (FNB)</li>
+                                            <li>• MBBS, MD</li>
+                                            <li>• Diploma in Reproductive Medicine</li>
+                                            <li>• FIMAS</li>
                                         </ul>
                                     </div>
                                 </div>
                                 
-                                <Link 
-                                    href="/#book" 
+                                <a 
+                                    href="https://maatritvaivffertility.com/ankita" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex flex-row items-center gap-2 bg-gradient-to-r from-navy to-navy-light text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
                                 >
                                     Book Consultation <ArrowRight className="w-4 h-4"/>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    {/* Prattay Mazumdar */}
+                    {/* Dr. Chhabi Ghosh */}
                     <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
                         <div className="grid lg:grid-cols-12 gap-0">
                              {/* Image Side */}
-                             <div className="lg:col-span-5 lg:order-2 bg-blue-50/50 flex flex-col items-center justify-center p-8 lg:p-12 text-center border-b lg:border-b-0 lg:border-l border-gray-100">
+                             <div className="lg:col-span-5 lg:order-2 bg-rose-pale/30 flex flex-col items-center justify-center p-8 lg:p-12 text-center border-b lg:border-b-0 lg:border-l border-gray-100">
                                 <div className="relative w-56 h-56 lg:w-72 lg:h-72 rounded-3xl border-4 border-white shadow-lg mb-6 overflow-hidden">
                                     <Image 
-                                        src="/images/img/Prattay.png" 
-                                        alt="Prattay Mazumdar" 
+                                        src="/images/img/Chhabi.jpg" 
+                                        alt="Dr. Chhabi Ghosh" 
                                         fill
                                         className="object-cover object-top"
                                     />
                                 </div>
-                                <h2 className="font-heading text-3xl font-bold text-navy mb-2">Mr. Prattay Mazumdar</h2>
-                                <p className="text-blue-600 font-semibold text-lg mb-4">Director & Senior Embryologist</p>
-                                <p className="text-sm text-gray-600">M.Sc. (Clinical Embryology)</p>
+                                <h2 className="font-heading text-3xl font-bold text-navy mb-2">Dr. Chhabi Ghosh</h2>
+                                <p className="text-rose-deep font-semibold text-lg mb-4">Senior Specialist in ART</p>
+                                <p className="text-sm text-gray-600 font-bold uppercase tracking-wider">35+ Yrs Experience</p>
                             </div>
 
                             {/* Content Side */}
                             <div className="lg:col-span-7 lg:order-1 p-8 lg:p-12">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <Users className="w-6 h-6 text-gold" />
-                                    <h3 className="font-heading text-xl font-bold text-navy">About Mr. Mazumdar</h3>
+                                    <Award className="w-6 h-6 text-gold" />
+                                    <h3 className="font-heading text-xl font-bold text-navy">About Dr. Ghosh</h3>
                                 </div>
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Prattay Mazumdar is a distinguished Embryologist with a passion for helping couples achieve their dreams of parenthood. His meticulous work in the embryology lab ensures that every embryo is given the best possible environment for development, significantly contributing to the high success rates at Maatritva IVF.
+                                    Dr. Chhabi Ghosh is a veteran in the field of Assisted Reproductive Technology (ART). With over three and a half decades of experience, her clinical insights and expertise in complex fertility cases make her an invaluable pillar of the Maatritva team.
+                                </p>
+                                
+                                <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                                    <div className="space-y-3">
+                                        <h4 className="font-semibold text-navy flex items-center gap-2">
+                                            <HeartPulse className="w-4 h-4 text-rose-deep" />
+                                            Specialization
+                                        </h4>
+                                        <ul className="space-y-2 text-sm text-gray-600">
+                                            <li><Link href="/services/best-ivf-treatment" className="hover:text-rose-deep transition-colors">&rarr; Senior ART Specialist</Link></li>
+                                            <li><Link href="/services/icsi-treatment" className="hover:text-rose-deep transition-colors">&rarr; Complex Fertility Management</Link></li>
+                                            <li><Link href="/services/tesa-pesa" className="hover:text-rose-deep transition-colors">&rarr; Surgical Sperm Retrieval</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a 
+                                    href="https://maatritvaivffertility.com/chhabi" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex flex-row items-center gap-2 bg-gradient-to-r from-navy to-navy-light text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
+                                >
+                                    Book Consultation <ArrowRight className="w-4 h-4"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Dr. Prattay Ghosh */}
+                    <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div className="grid lg:grid-cols-12 gap-0">
+                             {/* Image Side */}
+                             <div className="lg:col-span-5 bg-blue-50/50 flex flex-col items-center justify-center p-8 lg:p-12 text-center border-b lg:border-b-0 lg:border-r border-gray-100">
+                                <div className="relative w-56 h-56 lg:w-72 lg:h-72 rounded-3xl border-4 border-white shadow-lg mb-6 overflow-hidden">
+                                    <Image 
+                                        src="/images/img/Prattay.png" 
+                                        alt="Dr. Prattay Ghosh" 
+                                        fill
+                                        className="object-cover object-top"
+                                    />
+                                </div>
+                                <h2 className="font-heading text-3xl font-bold text-navy mb-2">Dr. Prattay Ghosh, MD</h2>
+                                <p className="text-blue-600 font-semibold text-lg mb-4">General Physician</p>
+                                <p className="text-sm text-gray-600 font-bold uppercase tracking-wider">14+ Yrs Experience</p>
+                            </div>
+
+                            {/* Content Side */}
+                            <div className="lg:col-span-7 p-8 lg:p-12">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <Users className="w-6 h-6 text-gold" />
+                                    <h3 className="font-heading text-xl font-bold text-navy">About Dr. Prattay Ghosh</h3>
+                                </div>
+                                <p className="text-gray-600 mb-6 leading-relaxed">
+                                    Dr. Prattay Ghosh provides essential general medical support to our fertility patients, ensuring overall health optimization which is critical for successful reproductive outcomes. His 14 years of experience as a physician allow for a holistic approach to patient health at the clinic.
                                 </p>
                                 
                                 <div className="grid sm:grid-cols-2 gap-6 mb-8">
                                     <div className="space-y-3">
                                         <h4 className="font-semibold text-navy flex items-center gap-2">
                                             <HeartPulse className="w-4 h-4 text-blue-600" />
-                                            Expertise
+                                            Clinical Focus
                                         </h4>
                                         <ul className="space-y-2 text-sm text-gray-600">
-                                            <li>&rarr; Advanced Embryo Culture</li>
-                                            <li>&rarr; ICSI & Laser Assisted Hatching</li>
-                                            <li>&rarr; Blastocyst Culture</li>
-                                            <li>&rarr; Cryopreservation Techniques</li>
+                                            <li>&rarr; General Health Review</li>
+                                            <li>&rarr; Medical Optimization for IVF</li>
+                                            <li>&rarr; Patient Health Screening</li>
                                         </ul>
                                     </div>
                                 </div>
+
+                                <a 
+                                    href="https://maatritvaivffertility.com/prattayghosh" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex flex-row items-center gap-2 bg-gradient-to-r from-navy to-navy-light text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
+                                >
+                                    Book Consultation <ArrowRight className="w-4 h-4"/>
+                                </a>
                             </div>
                         </div>
                     </div>
+
+                    {/* Dr. Khushboo Agarwal */}
+                    <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div className="grid lg:grid-cols-12 gap-0">
+                             {/* Image Side */}
+                             <div className="lg:col-span-5 lg:order-2 bg-rose-pale/30 flex flex-col items-center justify-center p-8 lg:p-12 text-center border-b lg:border-b-0 lg:border-l border-gray-100">
+                                <div className="relative w-56 h-56 lg:w-72 lg:h-72 rounded-3xl border-4 border-white shadow-lg mb-6 overflow-hidden">
+                                    <Image 
+                                        src="/images/img/khushboo.jpg" 
+                                        alt="Dr. Khushboo Agarwal" 
+                                        fill
+                                        className="object-cover object-top"
+                                    />
+                                </div>
+                                <h2 className="font-heading text-3xl font-bold text-navy mb-2">Dr. Khushboo Agarwal</h2>
+                                <p className="text-rose-deep font-semibold text-lg mb-4">Consultant Fertility Specialist</p>
+                                <p className="text-sm text-gray-600 font-medium">MBBS, MS</p>
+                                <p className="text-xs text-gray-400 mt-2">(Gynae & Obs & Infertility and IVF specialist)</p>
+                            </div>
+
+                            {/* Content Side */}
+                            <div className="lg:col-span-7 lg:order-1 p-8 lg:p-12">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <Award className="w-6 h-6 text-gold" />
+                                    <h3 className="font-heading text-xl font-bold text-navy">About Dr. Agarwal</h3>
+                                </div>
+                                <p className="text-gray-600 mb-6 leading-relaxed">
+                                    Dr. Khushboo Agarwal is a dedicated Consultant Fertility Specialist with advanced training in Gynaecology and Obstetrics. She specializes in providing compassionate care for couples struggling with infertility, focusing on both diagnostic accuracy and empathetic clinical solutions.
+                                </p>
+                                
+                                <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                                    <div className="space-y-3">
+                                        <h4 className="font-semibold text-navy flex items-center gap-2">
+                                            <HeartPulse className="w-4 h-4 text-rose-deep" />
+                                            Clinical Focus
+                                        </h4>
+                                        <ul className="space-y-2 text-sm text-gray-600">
+                                            <li><Link href="/services/iui-treatment" className="hover:text-rose-deep transition-colors">&rarr; Fertility Diagnostics</Link></li>
+                                            <li><Link href="/services/laparoscopic-surgery-infertility" className="hover:text-rose-deep transition-colors">&rarr; Gynaecological Care</Link></li>
+                                            <li><Link href="/conditions/unexplained-infertility" className="hover:text-rose-deep transition-colors">&rarr; Patient Counseling</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a 
+                                    href="https://maatritvaivffertility.com/khushboo" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex flex-row items-center gap-2 bg-gradient-to-r from-navy to-navy-light text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
+                                >
+                                    Book Consultation <ArrowRight className="w-4 h-4"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </section>

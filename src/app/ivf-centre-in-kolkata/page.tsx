@@ -85,7 +85,7 @@ export default function IVFCentrePage() {
                             <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-rose-deep to-rose-light text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
                                 Book a Visit <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
+                            <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
                                 <Phone className="w-4 h-4" /> Call Now
                             </a>
                         </div>
@@ -163,14 +163,14 @@ export default function IVFCentrePage() {
                     </h2>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
                         {[
-                            { label: 'IVF Treatment', href: '/services/ivf-treatment' },
+                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment' },
                             { label: 'IUI Treatment', href: '/services/iui-treatment' },
                             { label: 'Egg Freezing', href: '/services/egg-freezing' },
                             { label: 'Donor Egg IVF', href: '/services/donor-egg-ivf' },
-                            { label: 'Male Infertility', href: '/services/male-infertility-treatment' },
-                            { label: 'TESA / PESA', href: '/services/testicular-sperm-extraction' },
-                            { label: 'PGD / PGS', href: '/services/ivf-with-pgd-pgs' },
+                            { label: 'Male Infertility', href: '/conditions/male-infertility' },
+                            { label: 'TESA / PESA', href: '/services/tesa-pesa' },
+                            { label: 'PGD / PGS', href: '/services/best-ivf-treatment' },
                             { label: 'Laparoscopy', href: '/services/laparoscopic-surgery-infertility' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="flex items-center gap-3 bg-white px-5 py-4 rounded-xl border border-gray-100 hover:border-rose-pale hover:shadow-sm transition-all group">
@@ -220,8 +220,8 @@ export default function IVFCentrePage() {
                     <p className="text-white/90 mb-8 text-lg">See our lab, meet Dr. Ankita, and start your fertility journey with confidence.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"><Clock className="w-4 h-4" /> Book Appointment</Link>
-                        <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
-                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
+                        <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>
+                        <a href="https://wa.me/918100343839" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><MessageCircle className="w-4 h-4" /> WhatsApp</a>
                     </div>
                 </div>
             </section>

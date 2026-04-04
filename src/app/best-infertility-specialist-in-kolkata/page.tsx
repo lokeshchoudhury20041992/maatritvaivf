@@ -90,7 +90,7 @@ export default function BestInfertilitySpecialistPage() {
                             <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-rose-deep to-rose-light text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
                                 Book a Consultation <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
+                            <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
                                 <Phone className="w-4 h-4" /> Call Now
                             </a>
                         </div>
@@ -189,12 +189,12 @@ export default function BestInfertilitySpecialistPage() {
                     </p>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {[
-                            { label: 'Lifestyle & Medication', href: '/conditions/pcos-treatment', desc: 'Weight management, ovulation induction medications for milder cases.' },
+                            { label: 'Lifestyle & Medication', href: '/conditions/pcos-and-infertility', desc: 'Weight management, ovulation induction medications for milder cases.' },
                             { label: 'IUI (Insemination)', href: '/services/iui-treatment', desc: 'Processed sperm placed in uterus. Effective for mild male factor, unexplained infertility.' },
-                            { label: 'IVF Treatment', href: '/services/ivf-treatment', desc: 'Lab fertilisation and embryo transfer. For complex or recurrent cases.' },
+                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment', desc: 'Lab fertilisation and embryo transfer. For complex or recurrent cases.' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment', desc: 'Single sperm injection. Essential for severe male factor.' },
                             { label: 'Laparoscopic Surgery', href: '/services/laparoscopic-surgery-infertility', desc: 'For endometriosis, fibroids, tubal repair, adhesions.' },
-                            { label: 'Male Infertility', href: '/services/male-infertility-treatment', desc: 'TESA/PESA, varicocele repair, hormonal therapy.' },
+                            { label: 'Male Infertility', href: '/conditions/male-infertility', desc: 'TESA/PESA, varicocele repair, hormonal therapy.' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="bg-white rounded-xl p-5 border border-gray-100 hover:border-rose-pale hover:shadow-md transition-all group">
                                 <h3 className="font-heading text-base font-bold text-navy group-hover:text-rose-deep transition-colors mb-1 flex items-center gap-2">
@@ -247,10 +247,10 @@ export default function BestInfertilitySpecialistPage() {
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all">
                             <Clock className="w-4 h-4" /> Book Appointment
                         </Link>
-                        <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
+                        <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
                             <Phone className="w-4 h-4" /> Call Now
                         </a>
-                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
+                        <a href="https://wa.me/918100343839" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
                             <MessageCircle className="w-4 h-4" /> WhatsApp
                         </a>
                     </div>

@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
             { question: 'How many embryos are transferred?', answer: 'At Maatritva IVF, we generally recommend <b>single embryo transfer (SET)</b> to avoid the risks of multiple pregnancies. Extra embryos are frozen for future use.' },
         ],
         relatedServices: [
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
             { slug: 'icsi-treatment', label: 'ICSI Treatment' },
             { slug: 'blastocyst-transfer', label: 'Blastocyst Transfer' },
         ],
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
             { question: 'Can I improve my IVF success rate?', answer: 'Yes. <b>Optimising weight, reducing stress, stopping smoking, and taking prescribed supplements</b> (like Coenzyme Q10 and Vitamin D) can improve egg quality and success rates.' },
         ],
         relatedServices: [
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
             { slug: 'egg-freezing', label: 'Egg Freezing' },
         ],
         relatedConditions: [
@@ -174,10 +174,10 @@ export const blogPosts: BlogPost[] = [
         ],
         relatedServices: [
             { slug: 'iui-treatment', label: 'IUI Treatment' },
-            { slug: 'ivf-treatment', label: 'IVF Treatment' },
+            { slug: 'best-ivf-treatment', label: 'IVF Treatment' },
         ],
         relatedConditions: [
-            { slug: 'pcos-treatment', label: 'PCOS Treatment' },
+            { slug: 'pcos-and-infertility', label: 'PCOS Treatment' },
             { slug: 'ovulation-disorders', label: 'Ovulation Disorders' },
         ],
         keywords: ['PCOS fertility', 'PCOS pregnancy', 'getting pregnant with PCOS', 'PCOS IVF', 'PCOS treatment for fertility'],

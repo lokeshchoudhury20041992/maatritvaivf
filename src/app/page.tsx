@@ -20,37 +20,37 @@ const services = [
   {
     title: 'IVF Treatment',
     description: 'Advanced In Vitro Fertilisation with personalised protocols and time-lapse embryo monitoring for optimal results.',
-    href: '/services/ivf-treatment',
+    href: '/services/best-ivf-treatment',
     icon: <Baby className="w-6 h-6" />,
-    image: '/images/img/service-1.jpg',
+    image: '/images/img/localized/In-Vitro-Fertilization-IVF.png',
   },
   {
     title: 'IUI Treatment',
     description: 'A gentle, less invasive first-line fertility treatment with precise ovulation tracking for best timing.',
     href: '/services/iui-treatment',
     icon: <Stethoscope className="w-6 h-6" />,
-    image: '/images/img/service-2.jpg',
+    image: '/images/img/localized/intrauterine-insemination-iui.png',
   },
   {
     title: 'ICSI Treatment',
     description: 'Precision-guided sperm injection for severe male factor infertility — maximising fertilisation rates.',
     href: '/services/icsi-treatment',
     icon: <Microscope className="w-6 h-6" />,
-    image: '/images/img/service-3.jpg',
+    image: '/images/img/localized/What-is-the-Success-rate-of-IVF-on-the-First-Try-1.png',
   },
   {
     title: 'Laparoscopic Surgery',
     description: 'Minimally invasive keyhole surgery to diagnose and treat tubal blockages, cysts, and endometriosis.',
     href: '/services/laparoscopic-surgery-infertility',
     icon: <Scissors className="w-6 h-6" />,
-    image: '/images/img/service-4.jpg',
+    image: '/images/img/localized/sharp_chula_latest.jpg',
   },
   {
     title: 'High-Risk Pregnancy',
     description: 'Expert round-the-clock management for IVF pregnancies, multiples, and complex maternal conditions.',
-    href: '/services/high-risk-pregnancy',
+    href: '/services/high-risk-pregnancy-management',
     icon: <HeartPulse className="w-6 h-6" />,
-    image: '/images/img/service-5.jpg',
+    image: '/images/img/localized/Managing-High-Risk-Pregnancy-with-Care.webp',
   },
 ];
 
@@ -94,35 +94,41 @@ export default function HomePage() {
       <TrustBar />
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-pale rounded-full mb-4">
+      <section className="py-20 lg:py-32 bg-cream/50 relative overflow-hidden">
+        {/* Decorative Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#e11d48 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }} />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-rose-pale/20 blur-[120px] rounded-full" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-gold-light/20 blur-[120px] rounded-full" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16 lg:mb-20">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-rose-pale/80 backdrop-blur-sm rounded-full mb-6 border border-rose-deep/10 shadow-sm animate-fade-in">
               <Stethoscope className="w-4 h-4 text-rose-deep" />
-              <span className="text-sm font-medium text-rose-deep">Our Services</span>
+              <span className="text-xs font-bold text-rose-deep uppercase tracking-widest">Our Medical Expertise</span>
             </div>
-            <h2 className="font-heading text-3xl lg:text-5xl font-bold text-navy mb-4">
-              Comprehensive Fertility Care
+            <h2 className="font-heading text-4xl lg:text-6xl font-black text-navy mb-6 tracking-tight">
+              Comprehensive <span className="text-rose-deep">Fertility</span> Care
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <div className="w-24 h-1.5 bg-gradient-to-r from-rose-deep to-gold mx-auto rounded-full mb-8" />
+            <p className="text-navy/70 max-w-2xl mx-auto text-lg lg:text-xl font-medium leading-relaxed">
               From initial consultation to successful pregnancy — every treatment under one roof,
-              guided by Dr. Ankita Mandal&apos;s expertise.
+              guided by Dr. Ankita Mandal&apos;s personal clinical expertise.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {services.map((service, index) => (
               <ServiceCard key={service.href} {...service} index={index} />
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-16">
             <Link
               href="/ivf-cost-kolkata"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-navy text-white font-semibold rounded-full hover:bg-navy-light transition-colors shadow-md"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-navy text-white font-bold rounded-full hover:bg-rose-deep transition-all duration-300 shadow-xl hover:shadow-rose-deep/30 hover:-translate-y-1"
             >
               View IVF Cost Breakdown
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1" />
             </Link>
           </div>
         </div>
@@ -224,18 +230,18 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4 pt-12">
                   <div className="relative h-64 rounded-3xl overflow-hidden shadow-2xl">
-                    <Image src="/images/img/about-1.jpg" alt="Our Facility" fill className="object-cover" />
+                    <Image src="/images/img/localized/snehivf_529964.jpeg" alt="Maatritva Fertility Clinic Entrance" fill className="object-cover" />
                   </div>
                   <div className="relative h-48 rounded-3xl overflow-hidden shadow-xl">
-                    <Image src="/images/img/service-6.jpg" alt="Lab tech" fill className="object-cover" />
+                    <Image src="/images/img/localized/AFC-TipsPCOS-9Sep23.png" alt="Advanced Embryo Lab and PCOS Tips" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="relative h-48 rounded-3xl overflow-hidden shadow-xl">
-                    <Image src="/images/img/about-2.jpg" alt="Consultation room" fill className="object-cover" />
+                    <Image src="/images/img/localized/consultation-room-indian.png" alt="Modern Consultation Room in Kolkata" fill className="object-cover" />
                   </div>
                   <div className="relative h-64 rounded-3xl overflow-hidden shadow-2xl">
-                    <Image src="/images/img/carousel-1.jpg" alt="IVF Lab" fill className="object-cover" />
+                    <Image src="/images/img/localized/ivf-lab-indian.png" alt="Advanced Embryology Lab in Kolkata" fill className="object-cover" />
                   </div>
                 </div>
               </div>
@@ -298,7 +304,7 @@ export default function HomePage() {
               {
                 title: 'PCOS Treatment',
                 desc: 'Affecting 1 in 5 women — highly treatable with the right approach.',
-                href: '/conditions/pcos-treatment',
+                href: '/conditions/pcos-and-infertility',
               },
               {
                 title: 'Low AMH',
