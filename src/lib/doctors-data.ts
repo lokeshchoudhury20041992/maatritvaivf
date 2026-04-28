@@ -98,31 +98,6 @@ export const coreDoctors: DoctorData[] = [
             'Mentored over 50 junior gynaecologists and fertility specialists',
         ],
     },
-    {
-        name: 'Dr. Khushboo Agarwal',
-        slug: 'dr-khushboo-agarwal',
-        title: 'Junior Fertility Specialist & Gynaecologist',
-        degrees: 'MBBS, MS (OBG), IRM (Institute of Reproductive Medicine)',
-        designation: 'Jr. Fertility Specialist & Gynaecologist, Maatritva Fertility IVF & Healthcare',
-        experience: '3+ years',
-        specialisations: [
-            'IVF & IUI Procedures',
-            'Ovulation Induction',
-            'Follicular Monitoring',
-            'Basic Gynaecology & Obstetrics',
-            'Fertility Workup & Counselling',
-            'Ultrasound-Guided Procedures',
-        ],
-        about:
-            'Dr. Khushboo Agarwal is a dynamic young fertility specialist trained at the prestigious Institute of Reproductive Medicine (IRM), Kolkata — one of India\'s foremost ART training centres. With her MS in Obstetrics & Gynaecology and specialised IRM training, Dr. Khushboo brings a fresh, research-driven perspective to the Maatritva team. She is particularly skilled in follicular monitoring, ovulation induction protocols, and IUI procedures. Her empathetic bedside manner and dedication to continued learning make her a valued member of the clinical team.',
-        achievements: [
-            'Trained at the Institute of Reproductive Medicine (IRM), Kolkata',
-            'Hands-on experience in over 500 IUI and fertility procedures',
-            'Active participant in national fertility conferences and CME programmes',
-            'Special interest in PCOS-related infertility management',
-            'Recognised for outstanding clinical performance during IRM training',
-        ],
-    },
 ];
 
 // ─── Embryologists ───────────────────────────────────────────────────────────

@@ -7,9 +7,9 @@ import Image from 'next/image';
 
 export const metadata: Metadata = generatePageMetadata({
     title: 'Our Doctors — Fertility Specialists at Maatritva IVF, Kolkata',
-    description: 'Meet our expert team at Maatritva IVF: Dr. Ankita Mandal, Dr. Chhabi Ghosh, Dr. Prattay Ghosh, and Dr. Khushboo Agarwal — Kolkata\'s leading fertility specialists.',
+    description: 'Meet our expert team at Maatritva IVF: Dr. Ankita Mandal, Dr. Chhabi Ghosh, and Dr. Prattay Ghosh — Kolkata\'s leading fertility specialists.',
     path: '/doctors',
-    keywords: ['Dr Ankita Mandal', 'Dr Chhabi Ghosh', 'Dr Prattay Ghosh', 'Dr Khushboo Agarwal', 'IVF specialist Kolkata', 'best gynecologist Kolkata', 'fertility doctors', 'Best IVF doctors in Newtown'],
+    keywords: ['Dr Ankita Mandal', 'Dr Chhabi Ghosh', 'Dr Prattay Ghosh', 'IVF specialist Kolkata', 'best gynecologist Kolkata', 'fertility doctors', 'Best IVF doctors in Newtown'],
 });
 
 export default function DoctorsPage() {
@@ -213,62 +213,6 @@ export default function DoctorsPage() {
                             </div>
                         </div>
                     </div>
-
-                    {/* Dr. Khushboo Agarwal */}
-                    <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-                        <div className="grid lg:grid-cols-12 gap-0">
-                             {/* Image Side */}
-                             <div className="lg:col-span-5 lg:order-2 bg-rose-pale/30 flex flex-col items-center justify-center p-8 lg:p-12 text-center border-b lg:border-b-0 lg:border-l border-gray-100">
-                                <div className="relative w-56 h-56 lg:w-72 lg:h-72 rounded-3xl border-4 border-white shadow-lg mb-6 overflow-hidden">
-                                    <Image 
-                                        src="/images/img/khushboo.jpg" 
-                                        alt="Dr. Khushboo Agarwal" 
-                                        fill
-                                        className="object-cover object-top"
-                                    />
-                                </div>
-                                <h2 className="font-heading text-3xl font-bold text-navy mb-2">Dr. Khushboo Agarwal</h2>
-                                <p className="text-rose-deep font-semibold text-lg mb-4">Consultant Fertility Specialist</p>
-                                <p className="text-sm text-gray-600 font-medium">MBBS, MS</p>
-                                <p className="text-xs text-gray-400 mt-2">(Gynae & Obs & Infertility and IVF specialist)</p>
-                            </div>
-
-                            {/* Content Side */}
-                            <div className="lg:col-span-7 lg:order-1 p-8 lg:p-12">
-                                <div className="flex items-center gap-3 mb-6">
-                                    <Award className="w-6 h-6 text-gold" />
-                                    <h3 className="font-heading text-xl font-bold text-navy">About Dr. Agarwal</h3>
-                                </div>
-                                <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Dr. Khushboo Agarwal is a dedicated Consultant Fertility Specialist with advanced training in Gynaecology and Obstetrics. She specializes in providing compassionate care for couples struggling with infertility, focusing on both diagnostic accuracy and empathetic clinical solutions.
-                                </p>
-                                
-                                <div className="grid sm:grid-cols-2 gap-6 mb-8">
-                                    <div className="space-y-3">
-                                        <h4 className="font-semibold text-navy flex items-center gap-2">
-                                            <HeartPulse className="w-4 h-4 text-rose-deep" />
-                                            Clinical Focus
-                                        </h4>
-                                        <ul className="space-y-2 text-sm text-gray-600">
-                                            <li><Link href="/services/iui-treatment" className="hover:text-rose-deep transition-colors">&rarr; Fertility Diagnostics</Link></li>
-                                            <li><Link href="/services/laparoscopic-surgery-infertility" className="hover:text-rose-deep transition-colors">&rarr; Gynaecological Care</Link></li>
-                                            <li><Link href="/conditions/unexplained-infertility" className="hover:text-rose-deep transition-colors">&rarr; Patient Counseling</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <a 
-                                    href="https://maatritvaivffertility.com/khushboo" 
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex flex-row items-center gap-2 bg-gradient-to-r from-navy to-navy-light text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
-                                >
-                                    Book Consultation <ArrowRight className="w-4 h-4"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
 
                 </div>
             </section>

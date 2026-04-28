@@ -37,7 +37,7 @@ function produceDummyPage(category, keyword, location) {
     slug: generateSlug(keyword),
     title: `${keyword.toUpperCase()} | Maatritva IVF ${location}`,
     primaryKeyword: keyword,
-    metaDescription: `Discover the best ${keyword} options in ${location} with leading specialists Dr. Ankita Mandal and Dr. Khooshboo Agarwal at Maatritva IVF.`,
+    metaDescription: `Discover the best ${keyword} options in ${location} with leading specialist Dr. Ankita Mandal at Maatritva IVF.`,
     author: "Dr. Ankita Mandal",
     cost: "₹50,000 - ₹2,00,000",
     successRate: "60-70%",
