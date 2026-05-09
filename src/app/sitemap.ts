@@ -6,6 +6,16 @@ import { getAllBlogSlugs } from '@/lib/blog-data';
 
 const BASE_URL = 'https://bestivfcentreinkolkata.com';
 
+// Priority locations targeted for top-rank: Newtown, Ballygunge, Dum Dum, Garia, Salt Lake.
+// Higher priority telegraphs to Google which neighbourhood landing pages matter most.
+const PRIORITY_LOCATION_SLUGS = new Set([
+    'new-town',
+    'ballygunge',
+    'dum-dum-airport',
+    'garia',
+    'salt-lake',
+]);
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const now = new Date();
 
@@ -21,13 +31,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${BASE_URL}/ivf-cost-kolkata`,
             lastModified: now,
             changeFrequency: 'monthly',
-            priority: 0.8,
+            priority: 0.9,
         },
         {
             url: `${BASE_URL}/doctors`,
             lastModified: now,
             changeFrequency: 'monthly',
             priority: 0.8,
+        },
+        {
+            url: `${BASE_URL}/contact`,
+            lastModified: now,
+            changeFrequency: 'monthly',
+            priority: 0.7,
         },
         {
             url: `${BASE_URL}/privacy-policy`,
@@ -71,12 +87,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }));
 
-    // Location pages
+    // Location pages — priority neighbourhoods get a higher weight
     const locationPages: MetadataRoute.Sitemap = getAllLocationSlugs().map((slug) => ({
         url: `${BASE_URL}/locations/${slug}`,
         lastModified: now,
         changeFrequency: 'monthly' as const,
-        priority: 0.8,
+        priority: PRIORITY_LOCATION_SLUGS.has(slug) ? 0.9 : 0.7,
     }));
 
     // Condition pages
@@ -84,7 +100,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${BASE_URL}/conditions/${slug}`,
         lastModified: now,
         changeFrequency: 'monthly' as const,
-        priority: 0.8,
+        priority: 0.7,
     }));
 
     // Blog pages
@@ -103,5 +119,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         })),
     ];
 
-    return [...staticPages, ...moneyPages, ...doctorPages, ...servicePages, ...locationPages, ...conditionPages, ...blogPages];
+    return [
+        ...staticPages,
+        ...moneyPages,
+        ...doctorPages,
+        ...servicePages,
+        ...locationPages,
+        ...conditionPages,
+        ...blogPages,
+    ];
 }

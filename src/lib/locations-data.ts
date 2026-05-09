@@ -113,6 +113,134 @@ export const locationsData: LocationData[] = [
         keywords: ['IVF New Town Kolkata', 'fertility clinic Rajarhat', 'gynecologist New Town'],
     },
     {
+        slug: 'ballygunge',
+        title: 'IVF Centre Near Ballygunge, Kolkata',
+        metaTitle: 'Best IVF Centre Near Ballygunge | Fertility Clinic Kolkata — Maatritva IVF',
+        metaDescription:
+            'Looking for the best IVF centre near Ballygunge? Maatritva IVF by Dr. Ankita Mandal — expert fertility care for families in Ballygunge, Gariahat, and Park Circus.',
+        heroHeadline: 'Trusted IVF & Fertility Care for Ballygunge Families',
+        heroSubtext:
+            'Families from Ballygunge, Gariahat, Park Circus, and Beck Bagan trust Dr. Ankita Mandal for compassionate, evidence-based fertility treatment.',
+        areaDescription:
+            'Ballygunge is one of the most prestigious residential neighbourhoods of South Kolkata, known for its elegant homes, leafy avenues, and proximity to Gariahat and Park Circus. Many Ballygunge families seek fertility care from a specialist they can trust — one with a top-tier IVF laboratory, transparent protocols, and a calm, private clinic environment. Maatritva IVF is easily reachable from Ballygunge via the EM Bypass and MAA Flyover, and is the preferred fertility centre for couples in this part of South Kolkata. Dr. Ankita Mandal personally manages every IVF cycle, with a track record of consistent clinical pregnancy rates among patients from Ballygunge, Gariahat, Beck Bagan, and Park Circus.',
+        landmarks: [
+            'Easy access from Ballygunge Phari & Ballygunge Circular Road',
+            'Connected via Gariahat Road & Park Circus 7-point crossing',
+            'Short drive via EM Bypass and MAA Flyover',
+            'Reachable from Ekdalia, Hindustan Park, and Kasba',
+        ],
+        directions: [
+            { mode: 'By Car', detail: 'Via EM Bypass and MAA Flyover to New Town — approximately 30-40 minutes from Ballygunge during off-peak hours.' },
+            { mode: 'By Metro', detail: 'Take the Blue Line from Rabindra Sarobar/Kalighat to Esplanade, change to Green Line for Karunamoyee, then auto to New Town.' },
+            { mode: 'By Bus', detail: 'AC bus services from Gariahat to New Town/Salt Lake run regularly. Alight at New Town bus terminus.' },
+        ],
+        whyVisitUs: [
+            'Personalised IVF protocols designed by Dr. Ankita Mandal',
+            'Advanced IVF lab with time-lapse embryo monitoring (rare in South Kolkata)',
+            'Calm, private clinic environment — not a high-volume corporate hospital',
+            'Transparent, honest pricing with no hidden charges',
+            'Bengali-speaking team — comfortable communication for local families',
+        ],
+        testimonial: {
+            text: 'We live near Gariahat and after two failed IUI cycles elsewhere, our gynaecologist referred us to Dr. Ankita. The difference was clear from the first consultation — she explained everything, ordered the right tests, and built a plan around us. We are now expecting our first child.',
+            name: 'Ananya & Sayan',
+            area: 'Ballygunge, South Kolkata',
+        },
+        faqs: [
+            {
+                question: 'How far is Maatritva IVF from Ballygunge?',
+                answer:
+                    'Maatritva IVF is approximately <b>30-40 minutes by car</b> from Ballygunge via the EM Bypass and MAA Flyover. Most of our Ballygunge patients find the route smooth and predictable, especially during off-peak hours.',
+            },
+            {
+                question: 'Why should I travel from Ballygunge when there are clinics in South Kolkata?',
+                answer:
+                    'There are general gynaecology clinics in Ballygunge and Gariahat, but <b>specialised IVF labs with time-lapse monitoring and vitrification systems are rare in South Kolkata</b>. The lab quality directly impacts your success rate, which is why patients from Ballygunge consistently choose Maatritva IVF.',
+            },
+            {
+                question: 'Do you offer evening consultations for working professionals from Ballygunge?',
+                answer:
+                    'Yes. We understand that many of our Ballygunge patients have demanding work schedules. <b>Evening and Saturday slots</b> are available on prior request — just mention your preference when booking.',
+            },
+        ],
+        mapEmbedPlaceholder: 'https://maps.google.com/?q=Maatritva+IVF+New+Town+Kolkata',
+        keywords: [
+            'IVF centre near Ballygunge',
+            'best IVF doctor Ballygunge',
+            'fertility clinic Ballygunge Kolkata',
+            'IVF specialist near Gariahat',
+            'IVF Park Circus Kolkata',
+            'best gynecologist near Ballygunge',
+        ],
+    },
+    {
+        slug: 'garia',
+        title: 'IVF Centre Near Garia, Kolkata',
+        metaTitle: 'Best IVF Centre Near Garia | Fertility Clinic Kolkata — Maatritva IVF',
+        metaDescription:
+            'Best IVF centre accessible from Garia. Dr. Ankita Mandal at Maatritva IVF offers expert fertility treatment for families in Garia, Sonarpur, Narendrapur, and Baghajatin.',
+        heroHeadline: 'Expert IVF & Fertility Care for Garia Families',
+        heroSubtext:
+            'From Garia and Sonarpur to Narendrapur and Baghajatin, families across the southern fringes of Kolkata choose Maatritva IVF for compassionate, world-class fertility care.',
+        areaDescription:
+            'Garia is one of the fastest-growing residential hubs of South Kolkata, well-connected by the Blue Line metro (terminating at Kavi Subhash) and the EM Bypass. The Garia–Sonarpur–Narendrapur belt is home to a large, growing community of young families, many of whom are actively planning their fertility journey. Until recently, families in Garia had to travel to central Kolkata for advanced IVF treatment. Maatritva IVF in New Town brings a world-class IVF laboratory and one of Kolkata\'s most respected fertility specialists — Dr. Ankita Mandal — within an easy commute via the metro and EM Bypass. Many of our most successful IVF cases come from the Garia, Sonarpur, and Baghajatin neighbourhoods.',
+        landmarks: [
+            'Garia is the southern terminus of the Blue Line metro (Kavi Subhash station)',
+            'Easy access via EM Bypass to MAA Flyover, then New Town',
+            'Connected from Sonarpur, Narendrapur, and Baghajatin',
+            'Short drive from Patuli, Jadavpur, and Tollygunge',
+        ],
+        directions: [
+            { mode: 'By Metro', detail: 'Take the Blue Line from Kavi Subhash (Garia) to Esplanade, change to Green Line for Karunamoyee, then auto to New Town. Total: approximately 50-60 minutes.' },
+            { mode: 'By Car', detail: 'Via EM Bypass and MAA Flyover to New Town — approximately 35-45 minutes from Garia depending on traffic.' },
+            { mode: 'By Bus', detail: 'Direct bus services from Garia bus stand to Salt Lake/New Town run frequently. Alight at New Town bus terminus.' },
+        ],
+        whyVisitUs: [
+            'Worth the journey — access Kolkata\'s best-equipped IVF lab',
+            'Direct metro connectivity from Garia (Blue Line terminus)',
+            'Many of our successful IVF cases come from Garia, Sonarpur, and Baghajatin',
+            'Personalised treatment by Dr. Ankita Mandal — no junior doctor handovers',
+            'Honest, transparent pricing with detailed treatment estimates upfront',
+        ],
+        testimonial: {
+            text: 'We live near Garia metro station and were initially worried about the distance. But the journey via EM Bypass is much smoother than going through central Kolkata. Dr. Ankita\'s thorough approach and the clinic\'s quiet, calm atmosphere made every visit comfortable. Our daughter arrived on the first IVF cycle.',
+            name: 'Sutapa & Indrajit',
+            area: 'Garia, South Kolkata',
+        },
+        faqs: [
+            {
+                question: 'How long does it take to reach Maatritva IVF from Garia?',
+                answer:
+                    'By car via EM Bypass and MAA Flyover, the journey takes <b>35-45 minutes</b> from Garia. By metro plus auto, it takes 50-60 minutes. Most patients find the EM Bypass route smooth and predictable.',
+            },
+            {
+                question: 'Is the EM Bypass route convenient from Garia?',
+                answer:
+                    'Yes. The <b>EM Bypass to MAA Flyover route</b> is the fastest and most predictable from Garia — you avoid central Kolkata traffic entirely. The road is well-maintained and the journey is comfortable.',
+            },
+            {
+                question: 'Do you treat patients from Sonarpur and Narendrapur?',
+                answer:
+                    'Absolutely. We regularly treat patients from <b>Sonarpur, Narendrapur, Baghajatin, and Patuli</b>. We cluster appointments to minimise travel days and offer teleconsultation for follow-ups whenever clinically appropriate.',
+            },
+            {
+                question: 'Why not just go to a hospital in South Kolkata?',
+                answer:
+                    'General gynaecology hospitals in South Kolkata are good for routine care, but <b>specialised IVF laboratories with time-lapse embryo monitoring and vitrification</b> are rare. Lab quality directly impacts implantation and pregnancy rates, which is why couples from Garia travel to Maatritva IVF.',
+            },
+        ],
+        mapEmbedPlaceholder: 'https://maps.google.com/?q=Maatritva+IVF+New+Town+Kolkata',
+        keywords: [
+            'IVF centre near Garia',
+            'best IVF doctor Garia',
+            'fertility clinic Garia Kolkata',
+            'IVF specialist Sonarpur',
+            'IVF near Narendrapur',
+            'best gynecologist near Garia',
+            'IVF Baghajatin Kolkata',
+        ],
+    },
+    {
         slug: 'south-kolkata',
         title: 'IVF Centre for South Kolkata',
         metaTitle: 'IVF Centre Near South Kolkata',

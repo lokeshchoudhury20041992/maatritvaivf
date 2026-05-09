@@ -1,6 +1,21 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Heart, Facebook, Instagram, Youtube, ShieldCheck, Microscope } from 'lucide-react';
+import { Phone, Mail, MapPin, Heart, Facebook, Instagram, Youtube, ShieldCheck, Microscope, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
+
+const sisterSites = [
+    {
+        href: 'https://www.maatritvaivffertility.com/',
+        label: 'Maatritva IVF Fertility',
+        sub: 'Sister Centre',
+        title: 'Maatritva IVF & Fertility — sister centre of Dr. Ankita Mandal',
+    },
+    {
+        href: 'https://drankitamandal.com/',
+        label: 'Dr. Ankita Mandal',
+        sub: 'Personal Site',
+        title: 'Dr. Ankita Mandal — official personal website',
+    },
+];
 
 const services = [
     { href: '/services/best-ivf-treatment', label: 'IVF Treatment' },
@@ -26,6 +41,17 @@ const quickLinks = [
     { href: '/privacy-policy', label: 'Privacy Policy' },
 ];
 
+const serviceAreas = [
+    { href: '/locations/new-town', label: 'IVF in Newtown' },
+    { href: '/locations/ballygunge', label: 'IVF in Ballygunge' },
+    { href: '/locations/dum-dum-airport', label: 'IVF in Dum Dum' },
+    { href: '/locations/garia', label: 'IVF in Garia' },
+    { href: '/locations/salt-lake', label: 'IVF in Salt Lake' },
+    { href: '/locations/south-kolkata', label: 'IVF in South Kolkata' },
+    { href: '/locations/north-kolkata', label: 'IVF in North Kolkata' },
+    { href: '/locations/howrah', label: 'IVF in Howrah' },
+];
+
 export default function Footer() {
     return (
         <footer className="bg-navy text-white overflow-hidden relative">
@@ -34,7 +60,7 @@ export default function Footer() {
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-rose-deep/5 blur-[120px] rounded-full translate-x-1/2 translate-y-1/2" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
                     {/* Brand & Contact */}
                     <div className="space-y-8">
                         <Link href="/" className="flex items-center gap-4 group">
@@ -119,6 +145,24 @@ export default function Footer() {
                         </ul>
                     </div>
 
+                    {/* Service Areas (local SEO) */}
+                    <div>
+                        <h4 className="font-heading font-bold text-lg mb-8 relative inline-block">
+                            Areas We Serve
+                            <span className="absolute -bottom-2 left-0 w-8 h-1 bg-gold rounded-full" />
+                        </h4>
+                        <ul className="grid grid-cols-1 gap-y-4">
+                            {serviceAreas.map((item) => (
+                                <li key={item.href}>
+                                    <Link href={item.href} className="text-sm text-white/50 hover:text-white transition-all flex items-center gap-2 group">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-gold/30 group-hover:bg-gold transition-colors" />
+                                        {item.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
                     {/* Why Us / Trust Column */}
                     <div className="space-y-10">
                         <div>
@@ -157,6 +201,35 @@ export default function Footer() {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* Sister sites — interlinking for entity association & link equity */}
+                <div className="mt-16 pt-10 border-t border-white/10">
+                    <h5 className="text-xs font-bold text-white/40 uppercase tracking-[0.2em] mb-6 text-center">
+                        Our Network
+                    </h5>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        {sisterSites.map((site) => (
+                            <a
+                                key={site.href}
+                                href={site.href}
+                                target="_blank"
+                                rel="noopener"
+                                title={site.title}
+                                className="group flex items-center gap-3 px-6 py-3 rounded-2xl bg-white/5 border border-white/10 hover:bg-gold/10 hover:border-gold/40 transition-all"
+                            >
+                                <div>
+                                    <p className="text-sm font-bold text-white/90 group-hover:text-gold transition-colors leading-tight">
+                                        {site.label}
+                                    </p>
+                                    <p className="text-[10px] text-white/40 uppercase tracking-widest">
+                                        {site.sub}
+                                    </p>
+                                </div>
+                                <ExternalLink className="w-4 h-4 text-white/30 group-hover:text-gold transition-colors" />
+                            </a>
+                        ))}
                     </div>
                 </div>
             </div>

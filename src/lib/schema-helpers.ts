@@ -114,7 +114,11 @@ export function getMedicalClinicSchema() {
     ],
     priceRange: '₹₹',
     sameAs: [
-      // Add social handles when available
+      'https://www.maatritvaivffertility.com/',
+      'https://drankitamandal.com/',
+      'https://www.facebook.com/p/Maatritva-Fertility-IVF-Healthcare-61577218150861/',
+      'https://www.instagram.com/maatritvafertilityivf/',
+      'https://www.youtube.com/@BestFertilityIVFclinicKolkata',
     ],
   };
 }
@@ -216,7 +220,10 @@ export function getPhysicianSchema() {
       'Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany)',
     ],
     url: `${SITE_URL}/doctors`,
-    sameAs: [],
+    sameAs: [
+      'https://drankitamandal.com/',
+      'https://www.maatritvaivffertility.com/',
+    ],
   };
 }
 
