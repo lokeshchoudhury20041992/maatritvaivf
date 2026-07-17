@@ -6,6 +6,7 @@ import { Calendar, X, Send, User, Phone, CalendarDays } from 'lucide-react';
 import Image from 'next/image';
 import { v4 as uuidv4 } from 'uuid';
 import { supabase } from '@/lib/supabase';
+import { trackConsultationFormConversion } from '@/lib/tracking';
 
 export default function LeadForm() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -40,6 +41,10 @@ export default function LeadForm() {
             }
 
             setSubmitted(true);
+            trackConsultationFormConversion({
+                action: 'book_appointment',
+                form_name: 'lead_form'
+            });
             setTimeout(() => {
                 setSubmitted(false);
                 setIsExpanded(false);
@@ -51,6 +56,10 @@ export default function LeadForm() {
             setLoading(false);
             // Show success anyway to not block user, but log error
             setSubmitted(true);
+            trackConsultationFormConversion({
+                action: 'book_appointment',
+                form_name: 'lead_form'
+            });
         }
     };
 

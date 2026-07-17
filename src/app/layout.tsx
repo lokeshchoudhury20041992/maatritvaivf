@@ -86,6 +86,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WTXNSDWJ');`}
         </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17172169546"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-17172169546');`}
+        </Script>
       </head>
       <body className="antialiased">
         <SchemaMarkup schema={getMedicalClinicSchema()} />

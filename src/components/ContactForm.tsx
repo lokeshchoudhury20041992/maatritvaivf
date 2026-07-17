@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { CalendarHeart, Send, Loader2 } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 import { supabase } from '@/lib/supabase';
+import { trackConsultationFormConversion } from '@/lib/tracking';
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -43,10 +44,18 @@ export default function ContactForm() {
             }
 
             setSubmitted(true);
+            trackConsultationFormConversion({
+                action: 'book_appointment',
+                form_name: 'contact_form'
+            });
             setFormData({ firstName: '', lastName: '', phone: '', date: '', message: '' });
         } catch (err) {
             console.error('Submission error:', err);
             setSubmitted(true); // Show success anyway
+            trackConsultationFormConversion({
+                action: 'book_appointment',
+                form_name: 'contact_form'
+            });
         } finally {
             setLoading(false);
         }
