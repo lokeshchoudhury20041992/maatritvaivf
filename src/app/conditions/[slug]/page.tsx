@@ -68,7 +68,7 @@ export default async function ConditionPage({ params }: { params: Promise<{ slug
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Symptoms & Diagnosis</h2>
           <p className="text-gray-700 mb-8">{condition.content.whoNeedsThis}</p>
 
-          <CTA title="Concerned About Your Fertility?" subtitle="Our experts are here to diagnose and guide you." />
+          <CTA title="Have Questions About Your Fertility?" subtitle="Our doctors can evaluate your history and discuss the options." />
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Treatment Options</h2>
           <ul className="space-y-4 mb-8">
@@ -81,7 +81,7 @@ export default async function ConditionPage({ params }: { params: Promise<{ slug
           </ul>
         </div>
 
-        <CTA title="Discuss Your Case With A Specialist" subtitle="Advanced diagnosis and treatment plans available." />
+        <CTA title="Discuss Your Case With A Specialist" subtitle="Contact the clinic to enquire about appointment availability." />
 
         <div className="mt-8 border-t border-gray-200">
            <FAQSection faqs={condition.content.faqs} title="Frequently Asked Questions" />

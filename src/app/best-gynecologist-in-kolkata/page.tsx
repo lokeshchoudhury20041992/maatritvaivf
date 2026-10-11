@@ -6,16 +6,16 @@ import { Award, CheckCircle, ArrowRight, Heart, ShieldCheck, Stethoscope, Clock,
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Best Gynaecologist in Kolkata — Dr. Ankita Mandal | Maatritva IVF',
-    description: 'Dr. Ankita Mandal is recognised as one of the best gynaecologists in Kolkata. Expert in gynaecology, obstetrics, infertility, laparoscopic surgery. 15,000+ patients. 15+ years experience.',
+    title: 'Gynaecologist in Kolkata — Dr. Ankita Mandal | Maatritva IVF',
+    description: 'Gynaecology consultation in Kolkata with Dr. Ankita Mandal — Consultant Gynaecologist, Obstetrician, Infertility Specialist and Gynaecological Laparoscopic Surgeon. MBBS, MS (OBG). 15+ years of clinical experience.',
     path: '/best-gynecologist-in-kolkata',
-    keywords: ['best gynaecologist in Kolkata', 'best gynecologist Kolkata', 'top gynaecologist Kolkata', 'lady gynecologist Kolkata', 'Dr Ankita Mandal gynaecologist'],
+    keywords: ['gynaecologist in Kolkata', 'gynecologist Kolkata', 'gynaecology consultation Kolkata', 'lady gynecologist Kolkata', 'Dr Ankita Mandal gynaecologist'],
 });
 
 const faqs = [
     {
-        question: 'Who is the best gynaecologist in Kolkata?',
-        answer: '<b>Dr. Ankita Mandal</b> is recognised as one of the best gynaecologists in Kolkata, acknowledged by over 15,000 satisfied patients. She is a Consultant Gynaecologist, Obstetrician, Infertility Specialist, and Gynaecological Laparoscopic Surgeon with 15+ years of experience.',
+        question: 'Who is the gynaecologist at Maatritva IVF, Kolkata?',
+        answer: '<b>Dr. Ankita Mandal</b> is a Consultant Gynaecologist, Obstetrician, Infertility Specialist and Gynaecological Laparoscopic Surgeon at Maatritva Fertility IVF & Healthcare, Kolkata, with 15+ years of clinical experience.',
     },
     {
         question: 'What does a gynaecologist do?',
@@ -27,15 +27,15 @@ const faqs = [
     },
     {
         question: 'Does Dr. Ankita Mandal do laparoscopic surgery?',
-        answer: 'Yes. Dr. Ankita is a <b>trained gynaecological laparoscopic surgeon</b>. She performs minimally invasive surgeries for ovarian cysts, fibroids, endometriosis, ectopic pregnancy, and tubal issues with shorter recovery times.',
+        answer: 'Yes. Dr. Ankita is a <b>trained gynaecological laparoscopic surgeon</b>. She performs minimally invasive surgeries for ovarian cysts, fibroids, endometriosis, ectopic pregnancy and tubal issues; recovery is often shorter than with open surgery, although every surgery carries some risk.',
     },
     {
         question: 'Can Dr. Ankita help with high-risk pregnancy?',
-        answer: 'Yes. Dr. Ankita provides <b>comprehensive high-risk pregnancy management</b> including gestational diabetes, pre-eclampsia, placenta previa, and Rh incompatibility. Her experience and personalised monitoring ensure the safest outcomes.',
+        answer: 'Yes. Dr. Ankita provides <b>comprehensive high-risk pregnancy management</b> including gestational diabetes, pre-eclampsia, placenta previa, and Rh incompatibility. Monitoring is planned according to each pregnancy\'s risk factors.',
     },
     {
         question: 'What is the difference between a gynaecologist and an infertility specialist?',
-        answer: 'A gynaecologist handles <b>general women\'s health — periods, PCOS, fibroids, pregnancy</b>. An infertility specialist has additional training in reproductive medicine and ART (IVF, IUI, ICSI). Dr. Ankita is both — she handles gynaecology AND advanced fertility treatment.',
+        answer: 'A gynaecologist handles <b>general women\'s health — periods, PCOS, fibroids, pregnancy</b>. An infertility specialist has additional training in reproductive medicine and ART (IVF, IUI, ICSI). Dr. Ankita practises in both gynaecology and fertility treatment.',
     },
     {
         question: 'Does Dr. Ankita Mandal offer online consultations?',
@@ -47,7 +47,7 @@ const faqs = [
     },
     {
         question: 'Is Dr. Ankita Mandal a lady gynaecologist?',
-        answer: 'Yes. Dr. Ankita Mandal is a <b>female gynaecologist</b> who understands women\'s health concerns with sensitivity, empathy, and clinical expertise.',
+        answer: 'Yes. Dr. Ankita Mandal is a <b>female gynaecologist</b> practising in Kolkata.',
     },
     {
         question: 'Where is Dr. Ankita Mandal\'s clinic?',
@@ -58,7 +58,7 @@ const faqs = [
 export default function BestGynaecologistPage() {
     const breadcrumbs = getBreadcrumbSchema([
         { name: 'Home', url: '/' },
-        { name: 'Best Gynaecologist in Kolkata', url: '/best-gynecologist-in-kolkata' },
+        { name: 'Gynaecologist in Kolkata', url: '/best-gynecologist-in-kolkata' },
     ]);
 
     return (
@@ -72,20 +72,20 @@ export default function BestGynaecologistPage() {
                     <div className="max-w-3xl">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
                             <Award className="w-4 h-4 text-gold" />
-                            <span className="text-sm text-white/90 font-medium">Top-Rated Gynaecologist in Kolkata</span>
+                            <span className="text-sm text-white/90 font-medium">Gynaecology Consultation in Kolkata</span>
                         </div>
                         <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
-                            Best Gynaecologist in Kolkata — Dr. Ankita Mandal
+                            Gynaecologist in Kolkata — Dr. Ankita Mandal
                         </h1>
                         <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                            Recognised among the Top 5 Gynaecologists in Kolkata by 15,000+ patients. Expert in
-                            gynaecology, obstetrics, infertility treatment, and laparoscopic surgery.
+                            Consultant Gynaecologist, Obstetrician, Infertility Specialist and Gynaecological
+                            Laparoscopic Surgeon. MBBS, MS (OBG), Fellowship in Infertility.
                         </p>
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
                             {[
-                                { value: '15K+', label: 'Patients' },
+                                { value: 'MS', label: 'OBG' },
                                 { value: '15+', label: 'Years' },
-                                { value: 'Top 5', label: 'in Kolkata' },
+                                { value: 'Online', label: 'Consultations' },
                                 { value: 'KIEL', label: 'Germany' },
                             ].map((stat) => (
                                 <div key={stat.label} className="bg-white/10 rounded-xl p-3 text-center border border-white/10">
@@ -110,14 +110,14 @@ export default function BestGynaecologistPage() {
             <section className="py-16 lg:py-20 bg-cream">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-6">
-                        Who Is the Best Gynaecologist in Kolkata?
+                        About Dr. Ankita Mandal, Gynaecologist in Kolkata
                     </h2>
                     <div className="bg-white rounded-2xl p-6 lg:p-8 border border-gray-100 shadow-sm mb-8">
                         <p className="text-gray-800 text-lg leading-relaxed">
-                            <strong>Dr. Ankita Mandal</strong> is one of the best gynaecologists in Kolkata — a Consultant
+                            <strong>Dr. Ankita Mandal</strong> is a Consultant
                             Gynaecologist, Obstetrician, Infertility Specialist, and Gynaecological Laparoscopic Surgeon with
                             over 15 years of clinical experience. She is the Founder Director of Maatritva Fertility IVF &
-                            Healthcare and has been acknowledged by 15,000+ satisfied patients for her expertise and compassion.
+                            Healthcare.
                         </p>
                     </div>
 
@@ -149,16 +149,15 @@ export default function BestGynaecologistPage() {
                         What Does Dr. Ankita Mandal Specialise In?
                     </h2>
                     <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                        Dr. Ankita is uniquely qualified as both a gynaecologist and an infertility specialist.
-                        This dual expertise means she can manage the full spectrum of women&apos;s health — from routine
-                        care to complex fertility treatment — under one roof.
+                        Dr. Ankita practises as both a gynaecologist and an infertility specialist, covering
+                        routine gynaecological care as well as fertility treatment.
                     </p>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
                             { icon: <Heart className="w-6 h-6 text-rose-deep" />, title: 'Gynaecology & Obstetrics', desc: 'Period disorders, PCOS management, fibroid treatment, HPV screening, pregnancy care, high-risk obstetrics, and postpartum support.' },
                             { icon: <Stethoscope className="w-6 h-6 text-navy" />, title: 'Infertility & IVF', desc: 'Complete infertility workup for both partners, IUI, IVF, ICSI, egg freezing, donor programmes, and recurrent failure management.' },
                             { icon: <ShieldCheck className="w-6 h-6 text-sage" />, title: 'Laparoscopic Surgery', desc: 'Minimally invasive surgery for ovarian cysts, fibroids, endometriosis, adhesions, tubal issues, and ectopic pregnancy.' },
-                            { icon: <Star className="w-6 h-6 text-gold" />, title: 'Advanced Diagnostics', desc: 'Colposcopy, hysteroscopy, gynaecological ultrasound, 3D/4D scan support, and all fertility-related imaging.' },
+                            { icon: <Star className="w-6 h-6 text-gold" />, title: 'Diagnostics', desc: 'Colposcopy, hysteroscopy, gynaecological ultrasound, 3D/4D scan support, and all fertility-related imaging.' },
                         ].map((item) => (
                             <div key={item.title} className="bg-cream rounded-2xl p-6 border border-gray-100">
                                 <div className="mb-3">{item.icon}</div>
@@ -198,13 +197,13 @@ export default function BestGynaecologistPage() {
                 </div>
             </section>
 
-            <FAQSection faqs={faqs} title="Frequently Asked Questions — Best Gynaecologist in Kolkata" />
+            <FAQSection faqs={faqs} title="Frequently Asked Questions — Gynaecologist in Kolkata" />
 
             {/* CTA */}
             <section className="py-16 lg:py-20 bg-gradient-to-r from-rose-deep to-rose-light" id="book">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">Consult Dr. Ankita Mandal</h2>
-                    <p className="text-white/90 mb-8 text-lg">15+ years of expertise in women&apos;s health. Your trusted gynaecologist in Kolkata.</p>
+                    <p className="text-white/90 mb-8 text-lg">Contact the clinic to enquire about appointment availability.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"><Clock className="w-4 h-4" /> Book Appointment</Link>
                         <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>

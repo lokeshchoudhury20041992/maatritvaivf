@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, Phone, Award, CheckCircle2, Star, ShieldCheck } from 'lucide-react';
+import { Calendar, Phone, Award, CheckCircle2, ShieldCheck, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -28,7 +28,7 @@ export default function HeroSection() {
                             className="inline-flex items-center gap-2 px-4 py-2 bg-rose-deep/5 rounded-full mb-8 border border-rose-deep/10 shadow-sm"
                         >
                             <Award className="w-5 h-5 text-rose-deep" />
-                            <span className="text-sm text-rose-deep font-bold tracking-wide uppercase">Kolkata&apos;s #1 Fertility Specialist</span>
+                            <span className="text-sm text-rose-deep font-bold tracking-wide uppercase">IVF &amp; Fertility Care in Kolkata</span>
                         </motion.div>
 
                         <h1 className="font-heading text-5xl sm:text-6xl lg:text-[72px] font-light text-navy leading-[1.05] mb-8">
@@ -40,14 +40,14 @@ export default function HeroSection() {
                         </h1>
 
                         <p className="text-xl lg:text-2xl text-gray-500 mb-10 leading-relaxed max-w-xl font-light">
-                            Experience the joy of holding your baby. Dr. Ankita Mandal combines 
-                            advanced fertility science with deeply personal care.
+                            Fertility evaluation and treatment, including IVF, IUI and ICSI, with
+                            Dr. Ankita Mandal. Treatment plans and outcomes depend on individual medical factors.
                         </p>
 
                         {/* CTAs */}
                         <div className="flex flex-col sm:flex-row gap-5 mb-12">
                             <Link
-                                href="#book"
+                                href="/contact"
                                 className="group flex items-center justify-center gap-3 px-10 py-5 bg-rose-deep text-white font-heading font-extrabold text-xl rounded-2xl shadow-[0_20px_40px_-10px_rgba(180,67,108,0.4)] hover:shadow-[0_25px_50px_-10px_rgba(180,67,108,0.5)] hover:-translate-y-1 transition-all duration-300"
                             >
                                 <Calendar className="w-6 h-6 group-hover:scale-110 transition-transform" />
@@ -66,11 +66,9 @@ export default function HeroSection() {
                         <div className="flex items-center gap-6 pt-4 border-t border-gray-100">
                             <div>
                                 <div className="flex items-center gap-1 mb-1">
-                                    {[1, 2, 3, 4, 5].map((i) => (
-                                        <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-                                    ))}
+                                    <MapPin className="w-4 h-4 text-gold" />
                                 </div>
-                                <p className="text-sm font-bold text-navy">2,000+ Success Stories</p>
+                                <p className="text-sm font-bold text-navy">New Town, Kolkata</p>
                             </div>
                             <div className="h-10 w-px bg-gray-200" />
                             <div>
@@ -119,11 +117,11 @@ export default function HeroSection() {
                             <div className="space-y-2">
                                 <div className="flex items-center gap-2 text-sm text-gray-600">
                                     <CheckCircle2 className="w-4 h-4 text-green-500" />
-                                    <span>High Success Rates</span>
+                                    <span>IVF, IUI &amp; ICSI</span>
                                 </div>
                                 <div className="flex items-center gap-2 text-sm text-gray-600">
                                     <ShieldCheck className="w-4 h-4 text-green-500" />
-                                    <span>Certified Fertility Care</span>
+                                    <span>Gynaecology &amp; Laparoscopy</span>
                                 </div>
                             </div>
                         </motion.div>
@@ -136,9 +134,9 @@ export default function HeroSection() {
                             className="absolute -top-10 -right-10 z-20 w-32 h-32 bg-gold rounded-full flex items-center justify-center p-4 shadow-xl border-4 border-white"
                         >
                             <div className="text-center text-navy">
-                                <p className="text-[10px] font-black uppercase leading-[1] mb-1">Clinic</p>
-                                <p className="text-lg font-black uppercase leading-[1]">Success</p>
-                                <p className="text-[10px] font-black uppercase leading-[1] mt-1">Guaranteed</p>
+                                <p className="text-[10px] font-black uppercase leading-[1] mb-1">Fertility</p>
+                                <p className="text-lg font-black uppercase leading-[1]">IVF</p>
+                                <p className="text-[10px] font-black uppercase leading-[1] mt-1">Clinic</p>
                             </div>
                         </motion.div>
 

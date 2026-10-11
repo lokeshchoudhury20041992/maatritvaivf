@@ -7,9 +7,9 @@ import Image from 'next/image';
 
 export const metadata: Metadata = generatePageMetadata({
     title: 'Our Doctors — Fertility Specialists at Maatritva IVF, Kolkata',
-    description: 'Meet our expert team at Maatritva IVF: Dr. Ankita Mandal, Dr. Chhabi Ghosh, and Dr. Prattay Ghosh — Kolkata\'s leading fertility specialists.',
+    description: 'Doctors at Maatritva IVF, Kolkata: Dr. Ankita Mandal, Dr. Chhabi Ghosh and Dr. Prattay Ghosh — qualifications, specialties and areas of practice.',
     path: '/doctors',
-    keywords: ['Dr Ankita Mandal', 'Dr Chhabi Ghosh', 'Dr Prattay Ghosh', 'IVF specialist Kolkata', 'best gynecologist Kolkata', 'fertility doctors', 'Best IVF doctors in Newtown'],
+    keywords: ['Dr Ankita Mandal', 'Dr Chhabi Ghosh', 'Dr Prattay Ghosh', 'IVF specialist Kolkata', 'gynecologist Kolkata', 'fertility doctors', 'IVF doctors in Newtown'],
 });
 
 export default function DoctorsPage() {
@@ -27,10 +27,10 @@ export default function DoctorsPage() {
                 <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-rose-deep/20 blur-3xl rounded-full pointer-events-none"></div>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-6">
-                        Meet Your Fertility Experts
+                        Meet Our Doctors
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                        At Maatritva IVF, our specialists combine decades of clinical excellence with deep compassion to help you bring your baby home.
+                        Qualifications, specialties and areas of practice of the doctors at Maatritva IVF.
                     </p>
                 </div>
             </section>
@@ -65,7 +65,7 @@ export default function DoctorsPage() {
                                     <h3 className="font-heading text-xl font-bold text-navy">About Dr. Mandal</h3>
                                 </div>
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Dr. Ankita Mandal is the visionary behind Maatritva IVF. With extensive expertise established from comprehensive training and years of successfully complicated clinical cases, she is known for her personalized, patient-first approach. She champions advanced, evidence-based reproductive techniques over one-size-fits-all treatments.
+                                    Dr. Ankita Mandal is the founder of Maatritva IVF. She is a gynaecologist and infertility specialist whose practice covers IVF, ICSI, IUI and gynaecological laparoscopy, with treatment plans individualised to each patient&apos;s medical history.
                                 </p>
                                 
                                 <div className="grid sm:grid-cols-2 gap-6 mb-8">
@@ -75,7 +75,7 @@ export default function DoctorsPage() {
                                             Clinical Focus
                                         </h4>
                                         <ul className="space-y-2 text-sm text-gray-600">
-                                            <li><Link href="/services/best-ivf-treatment" className="hover:text-rose-deep transition-colors">&rarr; Advanced IVF & ICSI</Link></li>
+                                            <li><Link href="/services/best-ivf-treatment" className="hover:text-rose-deep transition-colors">&rarr; IVF & ICSI</Link></li>
                                             <li><Link href="/conditions/pcos-and-infertility" className="hover:text-rose-deep transition-colors">&rarr; PCOS Management</Link></li>
                                             <li><Link href="/conditions/low-amh-treatment" className="hover:text-rose-deep transition-colors">&rarr; Low AMH / Poor Responders</Link></li>
                                             <li><Link href="/services/laparoscopic-surgery-infertility" className="hover:text-rose-deep transition-colors">&rarr; Fertility Enhancing Surgeries</Link></li>
@@ -131,7 +131,7 @@ export default function DoctorsPage() {
                                     <h3 className="font-heading text-xl font-bold text-navy">About Dr. Ghosh</h3>
                                 </div>
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Dr. Chhabi Ghosh is a veteran in the field of Assisted Reproductive Technology (ART). With over three and a half decades of experience, her clinical insights and expertise in complex fertility cases make her an invaluable pillar of the Maatritva team.
+                                    Dr. Chhabi Ghosh is a senior consultant in Assisted Reproductive Technology (ART) with over 35 years of clinical experience, including complex fertility cases.
                                 </p>
                                 
                                 <div className="grid sm:grid-cols-2 gap-6 mb-8">
@@ -185,7 +185,7 @@ export default function DoctorsPage() {
                                     <h3 className="font-heading text-xl font-bold text-navy">About Dr. Prattay Ghosh</h3>
                                 </div>
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Dr. Prattay Ghosh provides essential general medical support to our fertility patients, ensuring overall health optimization which is critical for successful reproductive outcomes. His 14 years of experience as a physician allow for a holistic approach to patient health at the clinic.
+                                    Dr. Prattay Ghosh provides essential general medical support to our fertility patients, including assessment and management of general health conditions that can affect fertility treatment and pregnancy. He has 14 years of experience as a physician.
                                 </p>
                                 
                                 <div className="grid sm:grid-cols-2 gap-6 mb-8">

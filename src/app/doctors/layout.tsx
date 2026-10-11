@@ -8,13 +8,13 @@ import {
 import { coreDoctors } from '@/lib/doctors-data';
 
 export const metadata: Metadata = {
-    title: 'Best IVF IUI and Fertility Specialists of Kolkata | Dr. Ankita Mandal - Best IVF Centre',
+    title: 'IVF, IUI and Fertility Specialists in Kolkata | Dr. Ankita Mandal - Maatritva IVF',
     description:
-        'Meet the expert team at Maatritva Fertility IVF & Healthcare — Dr. Ankita Mandal and Kolkata\'s top fertility specialists, embryologists, counsellors, and empanelled sonologists. 15+ years of IVF, IUI, ICSI, and infertility treatment experience.',
+        'Doctors and clinical team at Maatritva Fertility IVF & Healthcare, Kolkata — Dr. Ankita Mandal and the clinic\'s fertility specialists, embryologists, counsellors and empanelled sonologists, with qualifications and specialties.',
     keywords: [
         'IVF doctor Kolkata',
         'fertility specialist Kolkata',
-        'best gynaecologist Kolkata',
+        'gynaecologist Kolkata',
         'IVF specialist near me',
         'infertility doctor Kolkata',
         'IUI specialist Kolkata',

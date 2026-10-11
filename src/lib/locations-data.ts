@@ -21,10 +21,10 @@ export const locationsData: LocationData[] = [
         title: 'IVF Centre in Salt Lake, Kolkata',
         metaTitle: 'IVF Centre Near Salt Lake Kolkata',
         metaDescription:
-            'Looking for the best IVF centre near Salt Lake? Maatritva IVF by Dr. Ankita Mandal offers expert fertility care. Easy access from Sector V and City Centre.',
-        heroHeadline: 'Expert IVF Care Near Salt Lake, Sector V',
+            'IVF and fertility care near Salt Lake, Kolkata. Maatritva IVF in New Town, with consultations by Dr. Ankita Mandal. Accessible from Sector V and City Centre.',
+        heroHeadline: 'IVF & Fertility Care Near Salt Lake, Sector V',
         heroSubtext:
-            'Conveniently located for families in Salt Lake, Sector V, and the IT corridor. Compassionate fertility care by Dr. Ankita Mandal.',
+            'Conveniently located for families in Salt Lake, Sector V, and the IT corridor. Fertility consultations with Dr. Ankita Mandal.',
         areaDescription:
             'Salt Lake City (Bidhannagar) is one of Kolkata\'s most planned residential and commercial areas, home to the thriving IT hub in Sector V. Many young professionals and families in Salt Lake seek fertility care that fits their busy schedules. Maatritva IVF is easily accessible from Salt Lake, offering flexible appointment timings and a comfortable, private clinic environment.',
         landmarks: [
@@ -40,7 +40,7 @@ export const locationsData: LocationData[] = [
         ],
         whyVisitUs: [
             'Personalised treatment plans by Dr. Ankita Mandal',
-            'State-of-the-art IVF lab with time-lapse embryo monitoring',
+            'In-house IVF laboratory with time-lapse embryo monitoring',
             'Flexible appointment slots for working professionals',
             'Complete privacy and confidentiality',
         ],
@@ -69,12 +69,12 @@ export const locationsData: LocationData[] = [
         title: 'IVF Centre in New Town, Rajarhat',
         metaTitle: 'IVF Centre in New Town Rajarhat Kolkata',
         metaDescription:
-            'Expert IVF and gynaecology care in New Town, Rajarhat. Dr. Ankita Mandal at Maatritva IVF — near Biswa Bangla Gate. Book your consultation today.',
-        heroHeadline: 'Expert IVF & Gynae Care in New Town, Rajarhat',
+            'IVF and gynaecology care in New Town, Rajarhat. Dr. Ankita Mandal at Maatritva IVF — near Biswa Bangla Gate. Contact the clinic to enquire about appointments.',
+        heroHeadline: 'IVF & Gynae Care in New Town, Rajarhat',
         heroSubtext:
-            'Located in the heart of New Town, Maatritva IVF provides world-class fertility treatment right in your neighbourhood.',
+            'Located in New Town, Maatritva IVF provides IVF and fertility treatment close to your neighbourhood.',
         areaDescription:
-            'New Town (Rajarhat) has rapidly emerged as Kolkata\'s modern township hub, blending residential comfort with commercial growth. Home to landmarks like Biswa Bangla Gate and Eco Park, New Town attracts young families who value both convenience and quality healthcare. Maatritva IVF is situated in New Town, making it the most accessible fertility centre for residents of this area.',
+            'New Town (Rajarhat) has rapidly emerged as Kolkata\'s modern township hub, blending residential comfort with commercial growth. Home to landmarks like Biswa Bangla Gate and Eco Park, New Town attracts young families who value both convenience and quality healthcare. Maatritva IVF is situated in New Town, within easy reach for residents of this area.',
         landmarks: [
             'Near Biswa Bangla Gate',
             'Close to Eco Park, New Town',
@@ -88,9 +88,9 @@ export const locationsData: LocationData[] = [
         ],
         whyVisitUs: [
             'Walk-in proximity for New Town residents',
-            'Advanced IVF laboratory on premises',
-            'Warm, empathetic environment — not a corporate hospital feel',
-            'Dr. Ankita personally oversees every patient\'s treatment',
+            'IVF laboratory on premises',
+            'Calm, private clinic environment',
+            'Treatment plans overseen by Dr. Ankita Mandal',
         ],
         testimonial: {
             text: 'Living in New Town, finding a trusted fertility specialist close to home was a blessing. Dr. Ankita is patient, thorough, and genuinely caring. We\'re expecting twins, and we couldn\'t be happier.',
@@ -115,14 +115,14 @@ export const locationsData: LocationData[] = [
     {
         slug: 'ballygunge',
         title: 'IVF Centre Near Ballygunge, Kolkata',
-        metaTitle: 'Best IVF Centre Near Ballygunge | Fertility Clinic Kolkata — Maatritva IVF',
+        metaTitle: 'IVF Centre Near Ballygunge | Fertility Clinic Kolkata — Maatritva IVF',
         metaDescription:
-            'Looking for the best IVF centre near Ballygunge? Maatritva IVF by Dr. Ankita Mandal — expert fertility care for families in Ballygunge, Gariahat, and Park Circus.',
-        heroHeadline: 'Trusted IVF & Fertility Care for Ballygunge Families',
+            'IVF centre accessible from Ballygunge. Maatritva IVF, with consultations by Dr. Ankita Mandal — fertility care for families in Ballygunge, Gariahat, and Park Circus.',
+        heroHeadline: 'IVF & Fertility Care for Ballygunge Families',
         heroSubtext:
-            'Families from Ballygunge, Gariahat, Park Circus, and Beck Bagan trust Dr. Ankita Mandal for compassionate, evidence-based fertility treatment.',
+            'Evidence-based fertility treatment with Dr. Ankita Mandal, accessible for families from Ballygunge, Gariahat, Park Circus, and Beck Bagan.',
         areaDescription:
-            'Ballygunge is one of the most prestigious residential neighbourhoods of South Kolkata, known for its elegant homes, leafy avenues, and proximity to Gariahat and Park Circus. Many Ballygunge families seek fertility care from a specialist they can trust — one with a top-tier IVF laboratory, transparent protocols, and a calm, private clinic environment. Maatritva IVF is easily reachable from Ballygunge via the EM Bypass and MAA Flyover, and is the preferred fertility centre for couples in this part of South Kolkata. Dr. Ankita Mandal personally manages every IVF cycle, with a track record of consistent clinical pregnancy rates among patients from Ballygunge, Gariahat, Beck Bagan, and Park Circus.',
+            'Ballygunge is one of the most prestigious residential neighbourhoods of South Kolkata, known for its elegant homes, leafy avenues, and proximity to Gariahat and Park Circus. Maatritva IVF, with an in-house IVF laboratory and a calm, private clinic environment, is reachable from Ballygunge via the EM Bypass and MAA Flyover. IVF cycles at the clinic are managed by Dr. Ankita Mandal. Treatment outcomes vary from person to person and depend on factors such as age, diagnosis and treatment history.',
         landmarks: [
             'Easy access from Ballygunge Phari & Ballygunge Circular Road',
             'Connected via Gariahat Road & Park Circus 7-point crossing',
@@ -136,9 +136,9 @@ export const locationsData: LocationData[] = [
         ],
         whyVisitUs: [
             'Personalised IVF protocols designed by Dr. Ankita Mandal',
-            'Advanced IVF lab with time-lapse embryo monitoring (rare in South Kolkata)',
-            'Calm, private clinic environment — not a high-volume corporate hospital',
-            'Transparent, honest pricing with no hidden charges',
+            'IVF laboratory with time-lapse embryo monitoring',
+            'Calm, private clinic environment',
+            'Treatment cost estimates shared before treatment begins',
             'Bengali-speaking team — comfortable communication for local families',
         ],
         testimonial: {
@@ -150,12 +150,12 @@ export const locationsData: LocationData[] = [
             {
                 question: 'How far is Maatritva IVF from Ballygunge?',
                 answer:
-                    'Maatritva IVF is approximately <b>30-40 minutes by car</b> from Ballygunge via the EM Bypass and MAA Flyover. Most of our Ballygunge patients find the route smooth and predictable, especially during off-peak hours.',
+                    'Maatritva IVF is approximately <b>30-40 minutes by car</b> from Ballygunge via the EM Bypass and MAA Flyover. Travel time is usually shorter during off-peak hours.',
             },
             {
-                question: 'Why should I travel from Ballygunge when there are clinics in South Kolkata?',
+                question: 'What IVF laboratory facilities does the clinic have?',
                 answer:
-                    'There are general gynaecology clinics in Ballygunge and Gariahat, but <b>specialised IVF labs with time-lapse monitoring and vitrification systems are rare in South Kolkata</b>. The lab quality directly impacts your success rate, which is why patients from Ballygunge consistently choose Maatritva IVF.',
+                    'Maatritva IVF has an in-house IVF laboratory with <b>time-lapse embryo monitoring and vitrification (freezing) systems</b>. Laboratory conditions are one of several factors that can influence IVF outcomes; others include age, diagnosis and embryo quality. Your doctor can discuss what is relevant to your situation.',
             },
             {
                 question: 'Do you offer evening consultations for working professionals from Ballygunge?',
@@ -166,24 +166,24 @@ export const locationsData: LocationData[] = [
         mapEmbedPlaceholder: 'https://maps.google.com/?q=Maatritva+IVF+New+Town+Kolkata',
         keywords: [
             'IVF centre near Ballygunge',
-            'best IVF doctor Ballygunge',
+            'IVF doctor Ballygunge',
             'fertility clinic Ballygunge Kolkata',
             'IVF specialist near Gariahat',
             'IVF Park Circus Kolkata',
-            'best gynecologist near Ballygunge',
+            'gynecologist near Ballygunge',
         ],
     },
     {
         slug: 'garia',
         title: 'IVF Centre Near Garia, Kolkata',
-        metaTitle: 'Best IVF Centre Near Garia | Fertility Clinic Kolkata — Maatritva IVF',
+        metaTitle: 'IVF Centre Near Garia | Fertility Clinic Kolkata — Maatritva IVF',
         metaDescription:
-            'Best IVF centre accessible from Garia. Dr. Ankita Mandal at Maatritva IVF offers expert fertility treatment for families in Garia, Sonarpur, Narendrapur, and Baghajatin.',
-        heroHeadline: 'Expert IVF & Fertility Care for Garia Families',
+            'IVF centre accessible from Garia. Dr. Ankita Mandal at Maatritva IVF offers fertility treatment for families in Garia, Sonarpur, Narendrapur, and Baghajatin.',
+        heroHeadline: 'IVF & Fertility Care for Garia Families',
         heroSubtext:
-            'From Garia and Sonarpur to Narendrapur and Baghajatin, families across the southern fringes of Kolkata choose Maatritva IVF for compassionate, world-class fertility care.',
+            'From Garia and Sonarpur to Narendrapur and Baghajatin, Maatritva IVF in New Town is within reach for families across the southern fringes of Kolkata.',
         areaDescription:
-            'Garia is one of the fastest-growing residential hubs of South Kolkata, well-connected by the Blue Line metro (terminating at Kavi Subhash) and the EM Bypass. The Garia–Sonarpur–Narendrapur belt is home to a large, growing community of young families, many of whom are actively planning their fertility journey. Until recently, families in Garia had to travel to central Kolkata for advanced IVF treatment. Maatritva IVF in New Town brings a world-class IVF laboratory and one of Kolkata\'s most respected fertility specialists — Dr. Ankita Mandal — within an easy commute via the metro and EM Bypass. Many of our most successful IVF cases come from the Garia, Sonarpur, and Baghajatin neighbourhoods.',
+            'Garia is one of the fastest-growing residential hubs of South Kolkata, well-connected by the Blue Line metro (terminating at Kavi Subhash) and the EM Bypass. The Garia–Sonarpur–Narendrapur belt is home to a large, growing community of young families, many of whom are actively planning their fertility journey. Maatritva IVF in New Town, with an in-house IVF laboratory and consultations by Dr. Ankita Mandal, is reachable from Garia via the metro and EM Bypass.',
         landmarks: [
             'Garia is the southern terminus of the Blue Line metro (Kavi Subhash station)',
             'Easy access via EM Bypass to MAA Flyover, then New Town',
@@ -196,11 +196,10 @@ export const locationsData: LocationData[] = [
             { mode: 'By Bus', detail: 'Direct bus services from Garia bus stand to Salt Lake/New Town run frequently. Alight at New Town bus terminus.' },
         ],
         whyVisitUs: [
-            'Worth the journey — access Kolkata\'s best-equipped IVF lab',
+            'In-house IVF laboratory',
             'Direct metro connectivity from Garia (Blue Line terminus)',
-            'Many of our successful IVF cases come from Garia, Sonarpur, and Baghajatin',
-            'Personalised treatment by Dr. Ankita Mandal — no junior doctor handovers',
-            'Honest, transparent pricing with detailed treatment estimates upfront',
+            'Personalised treatment plans by Dr. Ankita Mandal',
+            'Detailed treatment cost estimates shared upfront',
         ],
         testimonial: {
             text: 'We live near Garia metro station and were initially worried about the distance. But the journey via EM Bypass is much smoother than going through central Kolkata. Dr. Ankita\'s thorough approach and the clinic\'s quiet, calm atmosphere made every visit comfortable. Our daughter arrived on the first IVF cycle.',
@@ -224,19 +223,19 @@ export const locationsData: LocationData[] = [
                     'Absolutely. We regularly treat patients from <b>Sonarpur, Narendrapur, Baghajatin, and Patuli</b>. We cluster appointments to minimise travel days and offer teleconsultation for follow-ups whenever clinically appropriate.',
             },
             {
-                question: 'Why not just go to a hospital in South Kolkata?',
+                question: 'What laboratory facilities are available at the clinic?',
                 answer:
-                    'General gynaecology hospitals in South Kolkata are good for routine care, but <b>specialised IVF laboratories with time-lapse embryo monitoring and vitrification</b> are rare. Lab quality directly impacts implantation and pregnancy rates, which is why couples from Garia travel to Maatritva IVF.',
+                    'The clinic has an IVF laboratory with <b>time-lapse embryo monitoring and vitrification</b>. Laboratory conditions are one of several factors that can affect implantation and pregnancy; age, diagnosis and embryo quality also play a major role, and outcomes vary between individuals.',
             },
         ],
         mapEmbedPlaceholder: 'https://maps.google.com/?q=Maatritva+IVF+New+Town+Kolkata',
         keywords: [
             'IVF centre near Garia',
-            'best IVF doctor Garia',
+            'IVF doctor Garia',
             'fertility clinic Garia Kolkata',
             'IVF specialist Sonarpur',
             'IVF near Narendrapur',
-            'best gynecologist near Garia',
+            'gynecologist near Garia',
             'IVF Baghajatin Kolkata',
         ],
     },
@@ -245,17 +244,17 @@ export const locationsData: LocationData[] = [
         title: 'IVF Centre for South Kolkata',
         metaTitle: 'IVF Centre Near South Kolkata',
         metaDescription:
-            'Best IVF centre accessible from South Kolkata. Dr. Ankita Mandal at Maatritva IVF. Expert fertility care near Gariahat, Dhakuria, and Jadavpur.',
-        heroHeadline: 'Trusted Fertility Clinic for South Kolkata Families',
+            'IVF centre accessible from South Kolkata. Dr. Ankita Mandal at Maatritva IVF. Fertility care for patients from Gariahat, Dhakuria, and Jadavpur.',
+        heroHeadline: 'Fertility Clinic for South Kolkata Families',
         heroSubtext:
-            'Families from Gariahat, Dhakuria, Jadavpur, and beyond trust Dr. Ankita Mandal for compassionate, expert fertility care.',
+            'Fertility consultations with Dr. Ankita Mandal, accessible for families from Gariahat, Dhakuria, Jadavpur, and beyond.',
         areaDescription:
-            'South Kolkata — encompassing Gariahat, Dhakuria, Jadavpur, Garia, Tollygunge, and Behala — is the cultural and residential heartland of the city. Many families here seek fertility treatment but prefer a specialist they can trust, with manageable travel distances. Maatritva IVF provides an easy commute from South Kolkata via the EM Bypass and upcoming metro connections.',
+            'South Kolkata — encompassing Gariahat, Dhakuria, Jadavpur, Garia, Tollygunge, and Behala — is the cultural and residential heartland of the city. Maatritva IVF provides an easy commute from South Kolkata via the EM Bypass and upcoming metro connections.',
         landmarks: [
             'Well-connected from Gariahat and Dhakuria',
             'Easy access via EM Bypass from Jadavpur',
             'Reachable from Tollygunge and Garia',
-            'South Kolkata\'s trusted IVF referral centre',
+            'Accessible from Behala via Diamond Harbour Road and EM Bypass',
         ],
         directions: [
             { mode: 'By Metro', detail: 'Take the Blue Line to Kavi Subhash, then an auto to New Town (approx. 30 minutes total).' },
@@ -263,9 +262,8 @@ export const locationsData: LocationData[] = [
             { mode: 'By Bus', detail: 'Buses from Garia and Jadavpur run direct services to New Town.' },
         ],
         whyVisitUs: [
-            'Worth the journey — access Kolkata\'s best-equipped IVF lab',
-            'Personal care by Dr. Ankita Mandal, one of Kolkata\'s most respected fertility specialists',
-            'Patients from South Kolkata constitute a large part of our happy family',
+            'In-house IVF laboratory',
+            'Consultations with Dr. Ankita Mandal',
             'Flexible scheduling to reduce your number of visits',
         ],
         testimonial: {
@@ -275,9 +273,9 @@ export const locationsData: LocationData[] = [
         },
         faqs: [
             {
-                question: 'Is it worth travelling from South Kolkata for IVF?',
+                question: 'How can I reduce travel from South Kolkata during treatment?',
                 answer:
-                    'Many of our <b>most successful cases are families from South Kolkata</b>. The quality of the IVF lab, the expertise of Dr. Ankita, and consistent results make the 35-45 minute journey worthwhile. We also minimise your travel with clustered appointments.',
+                    'The clinic is about <b>35-45 minutes by car</b> from South Kolkata. Where clinically appropriate, appointments, tests and scans can be clustered on the same day, and some follow-ups can be done by teleconsultation.',
             },
             {
                 question: 'How do I reach the clinic from Jadavpur?',
@@ -293,10 +291,10 @@ export const locationsData: LocationData[] = [
         title: 'IVF Centre for Howrah Patients',
         metaTitle: 'IVF Centre Near Howrah | Fertility Clinic — Maatritva IVF',
         metaDescription:
-            'Best IVF centre accessible from Howrah. Dr. Ankita Mandal at Maatritva IVF offers expert fertility treatment. Easy access via Nivedita Setu & Vidyasagar Setu.',
-        heroHeadline: 'Expert IVF Care for Howrah Families',
+            'IVF centre accessible from Howrah. Dr. Ankita Mandal at Maatritva IVF offers fertility treatment. Access via Nivedita Setu & Vidyasagar Setu.',
+        heroHeadline: 'IVF & Fertility Care for Howrah Families',
         heroSubtext:
-            'Cross the bridge to world-class fertility care. Maatritva IVF is easily accessible from Howrah, Shibpur, Liluah, and Belur.',
+            'Maatritva IVF in New Town is accessible from Howrah, Shibpur, Liluah, and Belur.',
         areaDescription:
             'Howrah is Kolkata\'s twin city across the Hooghly river, with a large population that often seeks quality healthcare in Kolkata. Many families from Howrah, Shibpur, Liluah, Belur, and Santragachi travel to Kolkata for specialised medical treatment. Maatritva IVF is well-connected from Howrah via the Nivedita Setu (Second Hooghly Bridge) and EM Bypass, making the journey convenient and quick.',
         landmarks: [
@@ -311,9 +309,8 @@ export const locationsData: LocationData[] = [
             { mode: 'By Bus', detail: 'Direct bus services from Howrah bus stand to New Town/Salt Lake area.' },
         ],
         whyVisitUs: [
-            'Many patients from Howrah are part of our successful IVF family',
-            'Dr. Ankita Mandal — one of the most trusted fertility specialists in the region',
-            'State-of-the-art laboratory not available at most Howrah clinics',
+            'Consultations with Dr. Ankita Mandal',
+            'In-house IVF laboratory',
             'We cluster your appointments to minimise travel frequency',
         ],
         testimonial: {
@@ -334,19 +331,19 @@ export const locationsData: LocationData[] = [
             },
         ],
         mapEmbedPlaceholder: 'https://maps.google.com/?q=Maatritva+IVF+New+Town+Kolkata',
-        keywords: ['IVF near Howrah', 'fertility clinic Howrah', 'IVF centre for Howrah patients', 'best IVF doctor near Howrah'],
+        keywords: ['IVF near Howrah', 'fertility clinic Howrah', 'IVF centre for Howrah patients', 'IVF doctor near Howrah'],
     },
     {
         slug: 'north-kolkata',
         title: 'IVF Centre for North Kolkata',
-        metaTitle: 'IVF Centre Near North Kolkata | Expert Fertility Care — Maatritva IVF',
+        metaTitle: 'IVF Centre Near North Kolkata | Fertility Care — Maatritva IVF',
         metaDescription:
-            'Best IVF centre accessible from North Kolkata. Dr. Ankita Mandal at Maatritva IVF. Expert fertility care near Shyambazar, Ultadanga, and Baranagar.',
+            'IVF centre accessible from North Kolkata. Dr. Ankita Mandal at Maatritva IVF. Fertility care for patients from Shyambazar, Ultadanga, and Baranagar.',
         heroHeadline: 'Fertility Clinic for North Kolkata Families',
         heroSubtext:
-            'From Shyambazar to Baranagar, families across North Kolkata trust Maatritva IVF for compassionate and effective fertility treatment.',
+            'Maatritva IVF in New Town offers fertility treatment for families from Shyambazar to Baranagar and across North Kolkata.',
         areaDescription:
-            'North Kolkata — home to historic neighbourhoods like Shyambazar, Bagbazar, Ultadanga, Baranagar, and Belgharia — has a vibrant community that increasingly seeks modern fertility care. While many hospitals in North Kolkata offer general gynaecology services, specialised IVF treatment with advanced laboratory facilities is limited. Maatritva IVF fills this gap, providing world-class fertility care just a comfortable drive away.',
+            'North Kolkata — home to historic neighbourhoods like Shyambazar, Bagbazar, Ultadanga, Baranagar, and Belgharia — has a vibrant community that increasingly seeks modern fertility care. Maatritva IVF, with an in-house IVF laboratory, is a comfortable drive away via VIP Road or the Green Line metro.',
         landmarks: [
             'Easy access from Shyambazar and Bagbazar',
             'Connected from Ultadanga and Belgachia',
@@ -359,9 +356,8 @@ export const locationsData: LocationData[] = [
             { mode: 'By Bus', detail: 'Buses from Baranagar and Ultadanga run to Salt Lake/New Town. Alight at New Town bus stand.' },
         ],
         whyVisitUs: [
-            'Advanced IVF laboratory with latest technology',
-            'Personalised treatment — Dr. Ankita treats every patient individually',
-            'Growing community of successful parents from North Kolkata',
+            'In-house IVF laboratory',
+            'Personalised treatment plans by Dr. Ankita Mandal',
             'Flexible scheduling to work around your convenience',
         ],
         testimonial: {
@@ -376,23 +372,23 @@ export const locationsData: LocationData[] = [
                     'Yes. With the <b>Green Line metro and VIP Road connection</b>, reaching New Town from North Kolkata takes 30-50 minutes. Many of our patients come from Shyambazar, Baranagar, and Ultadanga regularly.',
             },
             {
-                question: 'Why should I travel to New Town when there are hospitals in North Kolkata?',
+                question: 'What laboratory equipment does the clinic have?',
                 answer:
-                    'While there are good hospitals in North Kolkata, <b>specialised IVF laboratories with advanced equipment</b> (time-lapse monitoring, vitrification systems) are rare. The quality of the lab directly impacts your success rates.',
+                    'The clinic\'s IVF laboratory includes <b>time-lapse embryo monitoring and vitrification systems</b>. Laboratory conditions are one of several factors that can influence IVF outcomes, alongside age, diagnosis and embryo quality.',
             },
         ],
         mapEmbedPlaceholder: 'https://maps.google.com/?q=Maatritva+IVF+New+Town+Kolkata',
-        keywords: ['IVF near North Kolkata', 'fertility clinic Shyambazar', 'IVF centre Baranagar', 'best IVF doctor North Kolkata'],
+        keywords: ['IVF near North Kolkata', 'fertility clinic Shyambazar', 'IVF centre Baranagar', 'IVF doctor North Kolkata'],
     },
     {
         slug: 'dum-dum-airport',
         title: 'IVF Centre Near Dum Dum & Airport',
         metaTitle: 'IVF Centre Near Dum Dum & Kolkata Airport — Maatritva IVF',
         metaDescription:
-            'Best IVF centre near Dum Dum and Kolkata Airport. Dr. Ankita Mandal at Maatritva IVF. Convenient for local families and outstation patients flying in.',
+            'IVF centre near Dum Dum and Kolkata Airport. Dr. Ankita Mandal at Maatritva IVF. Convenient for local families and outstation patients flying in.',
         heroHeadline: 'IVF Centre Near Dum Dum & Kolkata Airport',
         heroSubtext:
-            'Convenient for Dum Dum residents and patients flying into Kolkata for fertility treatment. World-class IVF care minutes from the airport.',
+            'Convenient for Dum Dum residents and patients flying into Kolkata for fertility treatment. IVF care a short drive from the airport.',
         areaDescription:
             'The Dum Dum and Kolkata Airport area is a major transit hub and residential zone. Maatritva IVF\'s location in New Town is just 15-20 minutes from Netaji Subhas Chandra Bose International Airport, making it incredibly convenient for outstation patients and medical tourists — including patients from Bangladesh, Northeast India, and other cities who fly in for treatment. For local residents of Dum Dum, Madhyamgram, and Barasat, it is equally accessible.',
         landmarks: [
@@ -402,12 +398,12 @@ export const locationsData: LocationData[] = [
             'Easy access from Madhyamgram and Birati',
         ],
         directions: [
-            { mode: 'By Car', detail: 'Via VIP Road/Airport connector direct to New Town — just 15-20 minutes. The fastest route to Maatritva IVF.' },
+            { mode: 'By Car', detail: 'Via VIP Road/Airport connector direct to New Town — just 15-20 minutes. Usually the quickest route to Maatritva IVF.' },
             { mode: 'By Metro', detail: 'Dum Dum metro station is on the Blue/Green Line interchange. Reach Karunamoyee in 20 minutes, then auto to New Town.' },
             { mode: 'From Airport', detail: 'Airport to New Town via VIP Road — 15 minutes by taxi or cab. We can arrange airport pickup for outstation patients.' },
         ],
         whyVisitUs: [
-            'Closest premier IVF centre to Kolkata Airport',
+            '15-20 minutes by car from Kolkata Airport',
             'Ideal for outstation patients flying in for treatment cycles',
             'Airport pickup and nearby hotel coordination available',
             'Quick commute for Dum Dum and Madhyamgram residents',
@@ -421,7 +417,7 @@ export const locationsData: LocationData[] = [
             {
                 question: 'How far is the clinic from Kolkata Airport?',
                 answer:
-                    'Maatritva IVF is just <b>15-20 minutes by car</b> from Netaji Subhas Chandra Bose International Airport via VIP Road connector. This makes us the most convenient IVF centre for patients flying into Kolkata.',
+                    'Maatritva IVF is just <b>15-20 minutes by car</b> from Netaji Subhas Chandra Bose International Airport via VIP Road connector. This is convenient for patients flying into Kolkata.',
             },
             {
                 question: 'Do you help outstation patients with accommodation?',
@@ -437,12 +433,12 @@ export const locationsData: LocationData[] = [
         title: 'IVF Centre for Barasat & North 24 Parganas',
         metaTitle: 'IVF Centre Near Barasat | North 24 Parganas — Maatritva IVF',
         metaDescription:
-            'Best IVF centre for Barasat and North 24 Parganas patients. Dr. Ankita Mandal at Maatritva IVF, New Town. Expert fertility care close to your area.',
-        heroHeadline: 'Trusted IVF Centre for Barasat & North 24 Parganas',
+            'IVF centre for Barasat and North 24 Parganas patients. Dr. Ankita Mandal at Maatritva IVF, New Town. Fertility care close to your area.',
+        heroHeadline: 'IVF Centre for Barasat & North 24 Parganas',
         heroSubtext:
-            'Families from Barasat, Basirhat, Habra, and across North 24 Parganas choose Maatritva IVF for expert, accessible fertility care.',
+            'Maatritva IVF in New Town offers fertility care accessible from Barasat, Basirhat, Habra, and across North 24 Parganas.',
         areaDescription:
-            'Barasat and the wider North 24 Parganas district is home to a large population that previously had to travel to central Kolkata for specialised fertility treatment. Maatritva IVF\'s New Town location brings world-class IVF care much closer — just 20-30 minutes from Barasat via the Barasat-New Town connector road. Patients from Habra, Basirhat, Bongaon, and surrounding areas also benefit from this proximity.',
+            'Barasat and the wider North 24 Parganas district is home to a large population that previously had to travel to central Kolkata for specialised fertility treatment. Maatritva IVF\'s New Town location brings IVF care much closer — just 20-30 minutes from Barasat via the Barasat-New Town connector road. Patients from Habra, Basirhat, Bongaon, and surrounding areas also benefit from this proximity.',
         landmarks: [
             'Connected via Barasat-New Town road (20-30 minutes)',
             'Near Rajarhat Gopalpur',
@@ -455,10 +451,10 @@ export const locationsData: LocationData[] = [
             { mode: 'From Habra/Basirhat', detail: 'Drive or bus to Barasat, then onward to New Town. Total journey: 45-60 minutes.' },
         ],
         whyVisitUs: [
-            'Nearest advanced IVF centre for North 24 Parganas residents',
+            'IVF centre in New Town, close to North 24 Parganas',
             'No need to navigate Kolkata city traffic',
             'Direct route from Barasat without entering the city centre',
-            'Same world-class treatment as city-centre IVF hospitals',
+            'In-house IVF laboratory',
         ],
         testimonial: {
             text: 'We live in Barasat and initially thought we would have to go to a big hospital in central Kolkata. Maatritva IVF in New Town was so close and so much better than we expected. Dr. Ankita treats you like family.',
@@ -467,9 +463,9 @@ export const locationsData: LocationData[] = [
         },
         faqs: [
             {
-                question: 'Is Maatritva IVF a good option for Barasat patients?',
+                question: 'How far is Maatritva IVF from Barasat?',
                 answer:
-                    'Absolutely. We are just <b>20-30 minutes from Barasat</b> via direct road — closer than most Kolkata city-centre hospitals. You avoid city traffic entirely. Many of our patients come from Barasat and the surrounding areas.',
+                    'The clinic is about <b>20-30 minutes from Barasat</b> via the direct road, without passing through central Kolkata traffic.',
             },
             {
                 question: 'Do patients from smaller towns in North 24 Parganas visit your centre?',
@@ -485,12 +481,12 @@ export const locationsData: LocationData[] = [
         title: 'IVF Support for Bangladesh Patients',
         metaTitle: 'IVF for Bangladesh Patients in Kolkata | Medical Tourism — Maatritva IVF',
         metaDescription:
-            'Affordable, world-class IVF treatment in Kolkata for Bangladesh patients. Dr. Ankita Mandal at Maatritva IVF offers visa guidance, travel support, and compassionate fertility care.',
-        heroHeadline: 'IVF in Kolkata for Bangladesh Patients — World-Class Care, Affordable Cost',
+            'IVF treatment in Kolkata for patients from Bangladesh. Dr. Ankita Mandal at Maatritva IVF, with medical visa guidance and travel support.',
+        heroHeadline: 'IVF in Kolkata for Patients from Bangladesh',
         heroSubtext:
-            'Kolkata is the closest Indian metro to Bangladesh. Many Bangladeshi couples choose Maatritva IVF for its proximity, affordability, and expert medical care.',
+            'Kolkata is the closest Indian metro to Bangladesh. Maatritva IVF offers fertility treatment, with travel and visa guidance for couples from Bangladesh.',
         areaDescription:
-            'Kolkata has long been a preferred healthcare destination for patients from Bangladesh due to its geographical proximity, cultural affinity, shared language (Bengali), and significantly lower treatment costs compared to Dhaka\'s private hospitals. Maatritva IVF, located in New Town just 15-20 minutes from Kolkata Airport, is ideally positioned to serve Bangladeshi couples seeking IVF treatment. We provide end-to-end support — from medical visa guidance to airport pickup, accommodation referrals, and treatment coordination — ensuring a smooth, stress-free experience.',
+            'Many patients from Bangladesh travel to Kolkata for healthcare because of its geographical proximity and shared language (Bengali). Maatritva IVF is located in New Town, 15-20 minutes from Kolkata Airport. The team can help with medical visa documentation, airport pickup on request, accommodation suggestions and treatment scheduling.',
         landmarks: [
             '15-20 minutes from NSCBI Airport (Kolkata)',
             'Direct flights from Dhaka & Chittagong to Kolkata',
@@ -499,16 +495,15 @@ export const locationsData: LocationData[] = [
         ],
         directions: [
             { mode: 'By Air', detail: 'Direct flights from Dhaka (Hazrat Shahjalal Airport) to Kolkata — just 1 hour flight time. Airport to clinic: 15-20 minutes.' },
-            { mode: 'By Road', detail: 'Via Petrapole-Benapole border — approximately 3-4 hours from Dhaka by road. Our team can arrange border pickup.' },
-            { mode: 'From Airport', detail: 'We arrange complimentary airport pickup for all Bangladesh patients. Hotel/serviced apartment recommendations provided in advance.' },
+            { mode: 'By Road', detail: 'Via Petrapole-Benapole border — approximately 3-4 hours from Dhaka by road. Border pickup can be discussed with the clinic in advance.' },
+            { mode: 'From Airport', detail: 'Airport pickup can be arranged on request. Hotel/serviced apartment suggestions are provided in advance.' },
         ],
         whyVisitUs: [
-            'Cost-effective: IVF in Kolkata is 30-50% less expensive than premium Dhaka centres',
-            'Bengali-speaking doctors and staff — no language barrier',
-            'Cultural familiarity — food, language, and environment feel like home',
-            'Medical visa assistance and complete travel support',
-            'Dr. Ankita Mandal — trusted by Bangladeshi patients for her expertise and compassion',
-            'World-class IVF laboratory with international-standard equipment',
+            'Detailed treatment cost estimates shared before you travel',
+            'Bengali-speaking doctors and staff',
+            'Medical visa documentation and travel guidance',
+            'Consultations with Dr. Ankita Mandal',
+            'In-house IVF laboratory',
         ],
         testimonial: {
             text: 'We travelled from Dhaka after researching IVF options extensively. Dr. Ankita at Maatritva IVF was recommended by a friend. The entire experience — from visa help to treatment to our pregnancy news — was wonderful. We felt at home in Kolkata.',
@@ -522,14 +517,14 @@ export const locationsData: LocationData[] = [
                     'We provide a <b>medical visa invitation letter</b> from our clinic, which is required for your visa application. Indian medical visas for Bangladeshi patients are typically processed within 5-7 working days. Our team guides you through the entire process.',
             },
             {
-                question: 'How much does IVF cost in Kolkata compared to Dhaka?',
+                question: 'How much does IVF cost at Maatritva IVF?',
                 answer:
-                    'IVF treatment at Maatritva IVF typically costs <b>30-50% less</b> than premium IVF centres in Dhaka, with comparable or better success rates and laboratory standards. We provide transparent, fixed pricing with no hidden charges.',
+                    'IVF cost depends on the treatment protocol, medicines and any additional procedures needed. The clinic provides a <b>written, itemised cost estimate</b> after your initial consultation so you can plan before you travel.',
             },
             {
                 question: 'How long do I need to stay in Kolkata for an IVF cycle?',
                 answer:
-                    'A typical IVF cycle requires <b>approximately 15-20 days</b> in Kolkata — from initial consultation through egg retrieval and embryo transfer. We can arrange comfortable accommodation near the clinic for the duration.',
+                    'A typical IVF cycle requires <b>approximately 15-20 days</b> in Kolkata — from initial consultation through egg retrieval and embryo transfer. The team can suggest accommodation near the clinic for the duration. The exact length of stay varies with your treatment plan.',
             },
             {
                 question: 'Do you have Bengali-speaking staff?',

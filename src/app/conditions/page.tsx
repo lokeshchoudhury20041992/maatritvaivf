@@ -36,7 +36,7 @@ export default function ConditionsIndexPage() {
                         Understanding Fertility Conditions
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                        Knowledge is the first step towards treatment. Explore comprehensive information on reproductive disorders and how Dr. Ankita Mandal successfully manages them.
+                        Knowledge is the first step towards treatment. Explore comprehensive information on reproductive disorders and the treatment options available.
                     </p>
                 </div>
             </section>

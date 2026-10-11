@@ -5,8 +5,8 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Contact Maatritva IVF | Best Fertility Clinic in Kolkata',
-    description: 'Book your fertility consultation at Maatritva IVF, Newtown Kolkata. Contact Dr. Ankita Mandal for personalized IVF, IUI, and fertility treatments.',
+    title: 'Contact Maatritva IVF | Fertility Clinic in Kolkata',
+    description: 'Contact Maatritva IVF, Newtown Kolkata, to enquire about a fertility consultation. Contact Dr. Ankita Mandal for personalized IVF, IUI, and fertility treatments.',
     path: '/contact',
     keywords: ['contact maatritva ivf', 'book appointment ivf kolkata', 'fertility clinic newtown', 'dr ankita mandal contact'],
 });
@@ -29,7 +29,7 @@ export default function ContactPage() {
                         Book Your Consultation
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                        Take the first step towards your parenthood journey. Reach out to schedule an appointment with Kolkata&apos;s leading fertility specialists.
+                        Contact the clinic to enquire about appointment availability with our doctors.
                     </p>
                 </div>
             </section>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                                         <Phone className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-navy mb-1 uppercase tracking-wider text-xs">Call Us (24/7 Helpline)</h4>
+                                        <h4 className="font-bold text-navy mb-1 uppercase tracking-wider text-xs">Call Us</h4>
                                         <a href="tel:+918100343839" className="text-gray-600 hover:text-rose-deep transition-colors text-xl font-bold">+91 8100343839 / +91 8100353839</a>
                                     </div>
                                 </div>

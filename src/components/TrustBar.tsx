@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Heart, Users, Trophy, Clock } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 interface StatItem {
     icon: React.ReactNode;
@@ -43,16 +43,15 @@ export default function TrustBar() {
     const isInView = useInView(ref, { once: true, margin: '-100px' });
 
     const stats: StatItem[] = [
-        { icon: <Users className="w-6 h-6" />, end: 15000, suffix: '+', label: 'Happy Families' },
-        { icon: <Clock className="w-6 h-6" />, end: 15, suffix: '+', label: 'Years Experience' },
-        { icon: <Trophy className="w-6 h-6" />, end: 95, suffix: '%', label: 'Patient Satisfaction' },
-        { icon: <Heart className="w-6 h-6" />, end: 5000, suffix: '+', label: 'IVF Cycles Completed' },
+        // Patient counts, cycle counts and satisfaction percentages removed (NMC 2026 guidelines, para 8.1(iii)).
+        { icon: <Clock className="w-6 h-6" />, end: 15, suffix: '+', label: 'Years of Clinical Experience — Dr. Ankita Mandal' },
+        { icon: <Clock className="w-6 h-6" />, end: 35, suffix: '+', label: 'Years of Clinical Experience — Dr. Chhabi Ghosh' },
     ];
 
     return (
         <section ref={ref} className="py-16 bg-cream/50 relative z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
                     {stats.map((stat, index) => (
                         <motion.div
                             key={stat.label}

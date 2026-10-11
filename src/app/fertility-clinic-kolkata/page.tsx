@@ -6,10 +6,10 @@ import { Award, ArrowRight, Heart, ShieldCheck, Microscope, Clock, Phone, Messag
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Top Fertility Clinic in Kolkata — Maatritva IVF | Dr. Ankita Mandal',
-    description: 'Looking for a trusted fertility clinic in Kolkata? Maatritva IVF offers IVF, IUI, ICSI, egg freezing, and complete fertility care. Led by Dr. Ankita Mandal. Transparent pricing.',
+    title: 'Fertility Clinic in Kolkata — Maatritva IVF | Dr. Ankita Mandal',
+    description: 'Fertility clinic in New Town, Kolkata. Maatritva IVF offers IVF, IUI, ICSI, egg freezing and other fertility treatments with Dr. Ankita Mandal. Written cost estimates before treatment.',
     path: '/fertility-clinic-kolkata',
-    keywords: ['fertility clinic Kolkata', 'fertility centre Kolkata', 'fertility hospital Kolkata', 'fertility treatment Kolkata', 'best fertility clinic'],
+    keywords: ['fertility clinic Kolkata', 'fertility centre Kolkata', 'fertility hospital Kolkata', 'fertility treatment Kolkata', 'fertility clinic New Town'],
 });
 
 const faqs = [
@@ -18,8 +18,8 @@ const faqs = [
         answer: 'A fertility clinic is a <b>specialised medical centre</b> that diagnoses and treats couples struggling to conceive. It offers services ranging from basic ovulation induction to advanced treatments like IVF, ICSI, egg freezing, and surgical procedures for both male and female infertility.',
     },
     {
-        question: 'Which is the best fertility clinic in Kolkata?',
-        answer: '<b>Maatritva Fertility IVF & Healthcare</b> led by Dr. Ankita Mandal is one of Kolkata\'s most trusted fertility clinics. It combines experienced specialists, a modern laboratory, transparent pricing, and genuine patient care.',
+        question: 'What does Maatritva Fertility IVF & Healthcare offer?',
+        answer: '<b>Maatritva Fertility IVF & Healthcare</b>, New Town, Kolkata, is a fertility clinic with Dr. Ankita Mandal, an in-house IVF laboratory, fertility counselling, and written cost estimates before treatment.',
     },
     {
         question: 'What treatments does a fertility clinic offer?',
@@ -31,19 +31,19 @@ const faqs = [
     },
     {
         question: 'Do I need IVF, or are there simpler treatments?',
-        answer: 'Not every couple needs IVF. <b>Many fertility issues can be treated with medication, lifestyle changes, or IUI</b>. Dr. Ankita always starts with the simplest effective treatment and escalates only when necessary.',
+        answer: 'Not every couple needs IVF. <b>Many fertility issues can be treated with medication, lifestyle changes, or IUI</b>. Treatment usually starts with the simplest appropriate option, and more complex treatment is considered when clinically indicated.',
     },
     {
         question: 'How do I choose between fertility clinics?',
-        answer: 'Look for <b>doctor expertise, lab quality (in-house lab is crucial), success rates (age-specific), patient reviews, cost transparency, and the clinic\'s approach to personalised care</b>. Avoid clinics that push IVF for every patient.',
+        answer: 'Look for <b>registered, appropriately qualified doctors, laboratory facilities, clear information on risks and realistic outcomes, written cost estimates, and the clinic\'s approach to personalised care</b>. Ask why a particular treatment is being recommended for you.',
     },
     {
         question: 'Is fertility treatment expensive?',
-        answer: 'Costs vary by treatment. <b>Ovulation induction is affordable, IUI is moderate, and IVF is the most comprehensive option</b>. Maatritva IVF provides written cost estimates upfront with no hidden charges.',
+        answer: 'Costs vary by treatment. <b>Ovulation induction generally costs less, IUI more, and IVF the most</b>. Maatritva IVF provides written cost estimates before treatment begins.',
     },
     {
         question: 'Can fertility clinics help with male infertility?',
-        answer: 'Yes. Good fertility clinics evaluate <b>both partners from the first visit</b>. Male infertility treatments include lifestyle modifications, medication, IUI with processed sperm, ICSI, and surgical sperm retrieval (TESA/PESA).',
+        answer: 'Yes. Fertility evaluation usually involves <b>both partners from the first visit</b>. Male infertility treatments include lifestyle modifications, medication, IUI with processed sperm, ICSI, and surgical sperm retrieval (TESA/PESA).',
     },
     {
         question: 'Does Maatritva IVF offer counselling?',
@@ -51,7 +51,7 @@ const faqs = [
     },
     {
         question: 'Can I get a second opinion at Maatritva IVF?',
-        answer: 'Absolutely. Dr. Ankita welcomes patients seeking <b>second opinions</b>. She reviews your previous reports, provides an honest assessment, and suggests the best path forward — even if it means a different approach.',
+        answer: 'Yes. Dr. Ankita sees patients seeking <b>second opinions</b>. She reviews your previous reports and discusses the options suitable for your situation.',
     },
 ];
 
@@ -72,25 +72,25 @@ export default function FertilityClinicPage() {
                     <div className="max-w-3xl">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
                             <Heart className="w-4 h-4 text-gold" />
-                            <span className="text-sm text-white/90 font-medium">Trusted Fertility Clinic</span>
+                            <span className="text-sm text-white/90 font-medium">Fertility Clinic</span>
                         </div>
                         <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
-                            Top Fertility Clinic in Kolkata — Maatritva IVF
+                            Fertility Clinic in Kolkata — Maatritva IVF
                         </h1>
                         <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                            Complete fertility care under one roof — from diagnosis to conception. Led by Dr. Ankita Mandal
-                            with 15+ years of reproductive medicine expertise.
+                            Fertility evaluation and treatment, from diagnosis to treatment and follow-up, with Dr. Ankita Mandal
+                            (15+ years of clinical experience). Outcomes vary with individual medical factors.
                         </p>
                         <div className="flex flex-wrap gap-3 mb-8">
                             <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">Complete Fertility Services</span>
                             <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">In-House IVF Lab</span>
-                            <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">Transparent Pricing</span>
+                            <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">Written Cost Estimates</span>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-rose-deep to-rose-light text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
                                 Book Consultation <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <a href="tel:+91XXXXXXXXXX" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
+                            <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all">
                                 <Phone className="w-4 h-4" /> Call Now
                             </a>
                         </div>
@@ -122,7 +122,7 @@ export default function FertilityClinicPage() {
                         {[
                             { step: '1', title: 'Comprehensive Evaluation', desc: 'Both partners evaluated from Day 1. Blood tests, ultrasound, semen analysis, and tubal assessment as needed.' },
                             { step: '2', title: 'Root-Cause Diagnosis', desc: 'We identify the specific cause — PCOS, tubal block, male factor, unexplained — before recommending any treatment.' },
-                            { step: '3', title: 'Simplest Treatment First', desc: 'Ovulation induction, timed intercourse, or IUI may solve the problem. IVF is recommended only when simpler options are inadequate.' },
+                            { step: '3', title: 'Simplest Treatment First', desc: 'Ovulation induction, timed intercourse or IUI may be appropriate for some couples. IVF is considered when simpler options are unsuitable or have not worked.' },
                             { step: '4', title: 'Advanced Treatment When Needed', desc: 'IVF, ICSI, donor programmes, PGD/PGS, and surgical interventions — all available under one roof with personalised protocols.' },
                         ].map((item) => (
                             <div key={item.step} className="flex gap-5 items-start">
@@ -146,8 +146,8 @@ export default function FertilityClinicPage() {
                         What Services Does Our Fertility Clinic Offer?
                     </h2>
                     <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
-                        From basic fertility workup to the most advanced assisted reproductive technologies —
-                        everything under one roof at Maatritva IVF.
+                        From a basic fertility workup to assisted reproductive technologies such as IVF and ICSI,
+                        available at Maatritva IVF.
                     </p>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {[
@@ -155,7 +155,7 @@ export default function FertilityClinicPage() {
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment', desc: 'Single sperm injection per egg' },
                             { label: 'IUI Treatment', href: '/services/iui-treatment', desc: 'Simpler insemination procedure' },
                             { label: 'Egg Freezing', href: '/services/egg-freezing', desc: 'Preserve fertility for the future' },
-                            { label: 'Male Infertility', href: '/conditions/male-infertility', desc: 'Complete male factor solutions' },
+                            { label: 'Male Infertility', href: '/conditions/male-infertility', desc: 'Evaluation and treatment of male factor' },
                             { label: 'Laparoscopy', href: '/services/laparoscopic-surgery-infertility', desc: 'Minimally invasive gynaecological surgery' },
                             { label: 'Donor Egg IVF', href: '/services/donor-egg-ivf', desc: 'For diminished ovarian reserve' },
                             { label: 'PGD/PGS Testing', href: '/services/best-ivf-treatment', desc: 'Genetic screening of embryos' },
@@ -176,13 +176,13 @@ export default function FertilityClinicPage() {
             <section className="py-16 lg:py-20 bg-cream">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-8">
-                        Why Choose Maatritva IVF as Your Fertility Clinic?
+                        About Maatritva IVF
                     </h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { icon: <Award className="w-6 h-6 text-gold" />, title: 'Dr. Ankita Mandal\'s Expertise', desc: '15+ years of dedicated reproductive medicine experience. Every patient treated personally from consultation to pregnancy confirmation.' },
-                            { icon: <Microscope className="w-6 h-6 text-navy" />, title: 'World-Class Laboratory', desc: 'In-house lab with time-lapse monitoring, ICSI workstations, and vitrification. Among the best-equipped labs in Eastern India.' },
-                            { icon: <ShieldCheck className="w-6 h-6 text-sage" />, title: 'No Unnecessary Treatments', desc: 'We never recommend IVF when simpler treatments will work. Our philosophy: simplest effective treatment first.' },
+                            { icon: <Award className="w-6 h-6 text-gold" />, title: 'Dr. Ankita Mandal', desc: 'MBBS, MS (OBG), Fellowship in Infertility, Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany); 15+ years of clinical experience.' },
+                            { icon: <Microscope className="w-6 h-6 text-navy" />, title: 'In-House Laboratory', desc: 'In-house lab with time-lapse monitoring, ICSI workstations and vitrification.' },
+                            { icon: <ShieldCheck className="w-6 h-6 text-sage" />, title: 'Step-Wise Approach', desc: 'Simpler treatments are considered first where clinically appropriate.' },
                             { icon: <Users className="w-6 h-6 text-rose-deep" />, title: 'Holistic Patient Care', desc: 'Dedicated fertility counsellors, online consultations, and support for outstation and international patients.' },
                         ].map((item) => (
                             <div key={item.title} className="bg-white rounded-2xl p-6 border border-gray-100">
@@ -200,8 +200,8 @@ export default function FertilityClinicPage() {
             {/* CTA */}
             <section className="py-16 lg:py-20 bg-gradient-to-r from-rose-deep to-rose-light" id="book">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">Begin Your Journey to Parenthood</h2>
-                    <p className="text-white/90 mb-8 text-lg">Expert fertility care with honesty, compassion, and transparency.</p>
+                    <h2 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">Contact the Clinic</h2>
+                    <p className="text-white/90 mb-8 text-lg">Contact the clinic to enquire about appointment availability.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"><Clock className="w-4 h-4" /> Book Appointment</Link>
                         <a href="tel:+918100343839" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"><Phone className="w-4 h-4" /> Call Now</a>

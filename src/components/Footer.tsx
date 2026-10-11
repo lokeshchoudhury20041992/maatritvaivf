@@ -32,7 +32,7 @@ const services = [
 
 const quickLinks = [
     { href: '/ivf-cost-kolkata', label: 'IVF Cost' },
-    { href: '/best-ivf-specialist-in-kolkata', label: 'Best IVF Specialist' },
+    { href: '/best-ivf-specialist-in-kolkata', label: 'IVF Specialist' },
     { href: '/doctors/dr-ankita-mandal', label: 'Dr. Ankita Mandal' },
     { href: '/conditions/pcos-and-infertility', label: 'PCOS Treatment' },
     { href: '/conditions/low-amh-treatment', label: 'Low AMH Treatment' },
@@ -79,8 +79,8 @@ export default function Footer() {
                         </Link>
                         
                         <p className="text-sm text-white/60 leading-relaxed max-w-xs">
-                            Kolkata&apos;s leading fertility clinic, combining advanced ART technology with 
-                            deeply personalized care for every family.
+                            Fertility clinic in New Town, Kolkata, offering assisted reproductive
+                            treatment (ART) and gynaecology care.
                         </p>
 
                         <div className="space-y-4">
@@ -175,13 +175,13 @@ export default function Footer() {
                                     <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
                                         <ShieldCheck className="w-6 h-6 text-gold" />
                                     </div>
-                                    <p className="text-xs font-bold text-white/80 uppercase tracking-widest leading-none">NMC Certified Specialists</p>
+                                    <p className="text-xs font-bold text-white/80 uppercase tracking-widest leading-none">Registered Medical Practitioners</p>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
                                         <Microscope className="w-6 h-6 text-gold" />
                                     </div>
-                                    <p className="text-xs font-bold text-white/80 uppercase tracking-widest leading-none">Advanced Embryo Lab</p>
+                                    <p className="text-xs font-bold text-white/80 uppercase tracking-widest leading-none">In-house Embryology Lab</p>
                                 </div>
                             </div>
                         </div>
@@ -240,10 +240,10 @@ export default function Footer() {
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
                         <div className="flex flex-col gap-2 items-center lg:items-start text-center lg:text-left">
                             <p className="text-xs text-white/40 leading-relaxed font-medium">
-                                © {new Date().getFullYear()} Best IVF Centre in Kolkata — Maatritva IVF. All Rights Reserved.
+                                © {new Date().getFullYear()} Maatritva Fertility IVF &amp; Healthcare. All Rights Reserved.
                             </p>
                             <p className="text-[10px] text-white/20 uppercase tracking-widest">
-                                Kolkata&apos;s Leading Clinic for IVF, ICSI, & IUI Excellence
+                                IVF, ICSI &amp; IUI Care in Kolkata
                             </p>
                         </div>
                         
@@ -253,9 +253,9 @@ export default function Footer() {
                              <Heart className="w-3 h-3 text-rose-deep animate-pulse" />
                         </a>
 
-                        <div className="text-center lg:text-right max-w-md hidden md:block">
+                        <div className="text-center lg:text-right max-w-md">
                             <p className="text-[10px] text-white/30 italic leading-relaxed">
-                                Disclaimer: Results vary based on individual conditions. Always consult a certified fertility specialist before starting ART treatments.
+                                Disclaimer: Information on this website is for general awareness and is not a substitute for medical advice. Treatment outcomes vary with individual medical factors and no result is guaranteed. Please consult a registered medical practitioner before starting any treatment.
                             </p>
                         </div>
                     </div>

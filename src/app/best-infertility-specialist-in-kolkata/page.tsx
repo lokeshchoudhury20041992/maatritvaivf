@@ -6,16 +6,16 @@ import { Award, CheckCircle, ArrowRight, Stethoscope, Heart, ShieldCheck, Micros
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Best Infertility Specialist in Kolkata — Dr. Ankita Mandal | Maatritva IVF',
-    description: 'Consult the best infertility specialist in Kolkata. Dr. Ankita Mandal at Maatritva IVF provides comprehensive diagnosis and treatment for male and female infertility with high success rates.',
+    title: 'Infertility Specialist in Kolkata — Dr. Ankita Mandal | Maatritva IVF',
+    description: 'Infertility specialist consultation in Kolkata. Dr. Ankita Mandal at Maatritva IVF provides diagnosis and treatment for male and female infertility. Outcomes vary with individual medical factors.',
     path: '/best-infertility-specialist-in-kolkata',
-    keywords: ['best infertility specialist Kolkata', 'infertility doctor Kolkata', 'infertility treatment Kolkata', 'female infertility specialist', 'male infertility doctor Kolkata'],
+    keywords: ['infertility specialist Kolkata', 'infertility doctor Kolkata', 'infertility treatment Kolkata', 'female infertility specialist', 'male infertility doctor Kolkata'],
 });
 
 const faqs = [
     {
-        question: 'Who is the best infertility specialist in Kolkata?',
-        answer: '<b>Dr. Ankita Mandal</b> at Maatritva IVF is one of the most trusted infertility specialists in Kolkata. With 15+ years of experience, advanced training from Germany, and expertise in both male and female infertility, she provides thorough diagnostic evaluation and personalised treatment plans.',
+        question: 'Who is the infertility specialist at Maatritva IVF, Kolkata?',
+        answer: '<b>Dr. Ankita Mandal</b> (MBBS, MS — OBG, Fellowship in Infertility, Advanced Diploma in Reproductive Medicine & ART, KIEL, Germany) is the infertility specialist at Maatritva IVF, with 15+ years of clinical experience. She evaluates both male and female factors and plans treatment based on individual test results.',
     },
     {
         question: 'What causes infertility in women?',
@@ -34,20 +34,20 @@ const faqs = [
         answer: 'Infertility workup includes <b>blood tests (AMH, FSH, LH, thyroid, prolactin), pelvic ultrasound, HSG (tubal patency test), semen analysis</b>, and sometimes advanced tests like DNA fragmentation, karyotyping, or diagnostic laparoscopy.',
     },
     {
-        question: 'Can infertility be cured?',
-        answer: 'Most causes of infertility are <b>treatable or can be overcome</b> with appropriate medical or surgical treatment, or assisted reproductive technologies like IUI and IVF. The right diagnosis is the first step towards the right solution.',
+        question: 'Can infertility be treated?',
+        answer: 'Many causes of infertility can be <b>treated or managed</b> with medical or surgical treatment, or with assisted reproductive technologies like IUI and IVF. Treatment does not guarantee pregnancy, and outcomes depend on age, diagnosis and other individual factors. An accurate diagnosis helps decide the appropriate option.',
     },
     {
         question: 'What is the difference between IUI and IVF?',
-        answer: '<b>IUI (Intrauterine Insemination)</b> involves placing processed sperm into the uterus during ovulation — it is simpler and less expensive. <b>IVF</b> involves retrieving eggs, fertilising them in a lab, and transferring embryos. IVF has higher success rates for complex cases.',
+        answer: '<b>IUI (Intrauterine Insemination)</b> involves placing processed sperm into the uterus during ovulation — it is simpler and less expensive. <b>IVF</b> involves retrieving eggs, fertilising them in a lab, and transferring embryos. IVF is generally considered for more complex cases; suitability depends on the diagnosis.',
     },
     {
         question: 'Is infertility treatment painful?',
-        answer: 'Most infertility treatments are <b>well-tolerated and not painful</b>. Blood tests and ultrasound are routine. IUI is a simple, painless office procedure. IVF egg retrieval is done under mild sedation. Embryo transfer is entirely painless.',
+        answer: 'Most infertility treatments are <b>generally well tolerated</b>, although experiences vary. Blood tests and ultrasound are routine. IUI is a short outpatient procedure that may cause mild cramping. IVF egg retrieval is usually done under sedation, and some discomfort afterwards is common. Embryo transfer usually causes little discomfort. Your doctor will explain what to expect and the possible risks.',
     },
     {
         question: 'How much does infertility treatment cost in Kolkata?',
-        answer: 'Costs vary by treatment. <b>Ovulation induction is the most affordable, IUI is moderate, and IVF is the most comprehensive (and expensive)</b>. Maatritva IVF provides transparent pricing with a complete written estimate before treatment begins.',
+        answer: 'Costs vary by treatment. <b>Ovulation induction generally costs less, IUI more, and IVF the most</b>. Maatritva IVF provides a written cost estimate before treatment begins.',
     },
     {
         question: 'Can stress cause infertility?',
@@ -58,7 +58,7 @@ const faqs = [
 export default function BestInfertilitySpecialistPage() {
     const breadcrumbs = getBreadcrumbSchema([
         { name: 'Home', url: '/' },
-        { name: 'Best Infertility Specialist in Kolkata', url: '/best-infertility-specialist-in-kolkata' },
+        { name: 'Infertility Specialist in Kolkata', url: '/best-infertility-specialist-in-kolkata' },
     ]);
 
     return (
@@ -72,14 +72,14 @@ export default function BestInfertilitySpecialistPage() {
                     <div className="max-w-3xl">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
                             <Award className="w-4 h-4 text-gold" />
-                            <span className="text-sm text-white/90 font-medium">Top-Rated Infertility Specialist</span>
+                            <span className="text-sm text-white/90 font-medium">Infertility Specialist</span>
                         </div>
                         <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
-                            Best Infertility Specialist in Kolkata — Dr. Ankita Mandal
+                            Infertility Specialist in Kolkata — Dr. Ankita Mandal
                         </h1>
                         <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                            Comprehensive diagnosis and personalised treatment for both male and female infertility.
-                            Evidence-based care backed by 15+ years of clinical experience.
+                            Diagnosis and personalised treatment for both male and female infertility.
+                            Treatment outcomes vary with age, diagnosis and individual medical factors.
                         </p>
                         <div className="flex flex-wrap gap-3 mb-8">
                             <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">15+ Years Experience</span>
@@ -150,7 +150,7 @@ export default function BestInfertilitySpecialistPage() {
                         How Does Dr. Ankita Mandal Diagnose Infertility?
                     </h2>
                     <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                        A thorough diagnosis is the foundation of successful treatment. Dr. Ankita evaluates <strong>both
+                        A thorough diagnosis helps guide treatment decisions. Dr. Ankita evaluates <strong>both
                             partners simultaneously</strong> during the first visit — because infertility is a couple&apos;s condition,
                         not an individual&apos;s.
                     </p>
@@ -211,14 +211,14 @@ export default function BestInfertilitySpecialistPage() {
             <section className="py-16 lg:py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-8">
-                        Why Choose Dr. Ankita Mandal for Infertility Treatment?
+                        How Infertility Care Is Organised at Maatritva IVF
                     </h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
                             { icon: <ShieldCheck className="w-6 h-6 text-sage" />, title: 'Both Partners Evaluated Together', desc: 'From the very first visit, both male and female factors are assessed simultaneously. This saves time and ensures nothing is missed.' },
-                            { icon: <Microscope className="w-6 h-6 text-navy" />, title: 'Root-Cause Diagnosis', desc: 'Dr. Ankita doesn\'t just treat symptoms. She identifies the precise cause of infertility through thorough investigation before recommending treatment.' },
+                            { icon: <Microscope className="w-6 h-6 text-navy" />, title: 'Root-Cause Diagnosis', desc: 'Investigations are carried out to identify, where possible, the cause of infertility before treatment is recommended.' },
                             { icon: <Star className="w-6 h-6 text-gold" />, title: 'Step-Wise Treatment Approach', desc: 'Simple treatments are tried first. IVF is recommended only when simpler options have been adequately tried or when the diagnosis warrants it.' },
-                            { icon: <Heart className="w-6 h-6 text-rose-deep" />, title: 'Emotional Support & Counselling', desc: 'Our dedicated counselling team supports you throughout the journey. Infertility is emotionally challenging — you\'re never alone at Maatritva.' },
+                            { icon: <Heart className="w-6 h-6 text-rose-deep" />, title: 'Emotional Support & Counselling', desc: 'Our dedicated counselling team supports you throughout the journey. Infertility can be emotionally challenging, and counselling is available at the clinic.' },
                         ].map((item) => (
                             <div key={item.title} className="bg-cream rounded-2xl p-6 border border-gray-100">
                                 <div className="mb-3">{item.icon}</div>
@@ -237,11 +237,11 @@ export default function BestInfertilitySpecialistPage() {
             <section className="py-16 lg:py-20 bg-gradient-to-r from-rose-deep to-rose-light" id="book">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">
-                        Start Your Fertility Journey Today
+                        Contact the Clinic
                     </h2>
                     <p className="text-white/90 mb-8 text-lg">
-                        Don&apos;t let infertility define your story. Book a consultation with Dr. Ankita Mandal
-                        and take the first step towards parenthood.
+                        Contact the clinic to enquire about appointment availability with Dr. Ankita Mandal
+                        and discuss your evaluation and options.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="#book" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all">

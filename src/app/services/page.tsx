@@ -6,10 +6,10 @@ import Link from 'next/link';
 import { ArrowRight, Stethoscope, Microscope, Activity, ShieldCheck, Asterisk } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Fertility Services & Treatments | Best IVF Centre in Kolkata',
-    description: 'Explore world-class fertility treatments including IVF, ICSI, IUI, and advanced laparoscopic surgeries at Kolkata\'s premier fertility clinic.',
+    title: 'Fertility Services & Treatments | Maatritva IVF Kolkata',
+    description: 'Fertility treatments available at Maatritva IVF, Kolkata, including IVF, ICSI, IUI, egg freezing and laparoscopic surgery.',
     path: '/services',
-    keywords: ['fertility services kolkata', 'ivf treatments', 'icsi treatment', 'egg freezing', 'best ivf centre in kolkata'],
+    keywords: ['fertility services kolkata', 'ivf treatments', 'icsi treatment', 'egg freezing', 'ivf centre in kolkata'],
 });
 
 export default function ServicesIndexPage() {
@@ -35,10 +35,10 @@ export default function ServicesIndexPage() {
                 
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-6">
-                        Advanced Fertility Services
+                        Fertility Services
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                        From basic interventions like IUI to advanced genetic testing and intricate laparoscopic surgeries, we provide a complete spectrum of reproductive healthcare.
+                        Treatments range from IUI to IVF, genetic testing and laparoscopic surgery. Read about each service below.
                     </p>
                 </div>
             </section>

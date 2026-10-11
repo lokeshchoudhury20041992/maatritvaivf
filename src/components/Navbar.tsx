@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 const serviceDropdown = [
-    { href: '/services/best-ivf-treatment', label: 'Best IVF Treatment' },
+    { href: '/services/best-ivf-treatment', label: 'IVF Treatment' },
     { href: '/services/iui-treatment', label: 'IUI Treatment' },
     { href: '/services/icsi-treatment', label: 'ICSI Treatment' },
     { href: '/services/donor-egg-ivf', label: 'Donor Egg IVF' },

@@ -17,7 +17,7 @@
 // ─── Constants ───────────────────────────────────────────────────────────────
 
 export const SITE_URL = 'https://bestivfcentreinkolkata.com';
-export const SITE_NAME = 'Best IVF Centre in Kolkata';
+export const SITE_NAME = 'Maatritva Fertility IVF & Healthcare';
 export const CLINIC_NAME = 'Maatritva Fertility IVF & Healthcare';
 export const DOCTOR_NAME = 'Dr. Ankita Mandal';
 
@@ -34,7 +34,7 @@ export function getMedicalClinicSchema() {
     logo: `${SITE_URL}/images/logo.png`,
     image: `${SITE_URL}/images/clinic.jpg`,
     description:
-      'Maatritva Fertility IVF & Healthcare is Kolkata\'s most trusted IVF, IUI, and fertility treatment centre. Led by Dr. Ankita Mandal, the clinic provides advanced assisted reproductive technology (ART), laparoscopic surgery, and high-risk pregnancy care with consistently high clinical success rates.',
+      'Maatritva Fertility IVF & Healthcare is an IVF, IUI and fertility treatment clinic in New Town, Kolkata. The clinic provides assisted reproductive technology (ART), laparoscopic surgery and high-risk pregnancy care. Treatment outcomes vary with individual medical factors.',
     medicalSpecialty: [
       'Obstetrics',
       'Gynecology',
@@ -75,11 +75,6 @@ export function getMedicalClinicSchema() {
     ],
     // ── hasCredential: accreditation / registration signals ──
     hasCredential: [
-      {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'Registration',
-        name: 'NMC Registered Medical Establishment',
-      },
       {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'Accreditation',
@@ -133,7 +128,7 @@ export function getPhysicianSchema() {
     name: DOCTOR_NAME,
     image: `${SITE_URL}/images/dr-ankita.jpg`,
     description:
-      'Dr. Ankita Mandal is the best gynecologist in Kolkata, recognised among the top 5 gynecologists in Kolkata by 15,000+ satisfied patients. She is a Consultant Gynaecologist, Obstetrician, Infertility Specialist, and Gynaecological Laparoscopic Surgeon. A graduate of SCB Medical College Cuttack and RIMS Ranchi, she holds a Fellowship in Infertility and an Advanced Diploma in Reproductive Medicine & ART from KIEL, Germany. Best IVF specialist and best fertility doctor in Kolkata.',
+      'Dr. Ankita Mandal is a Consultant Gynaecologist, Obstetrician, Infertility Specialist and Gynaecological Laparoscopic Surgeon in Kolkata. A graduate of SCB Medical College Cuttack and RIMS Ranchi, she holds a Fellowship in Infertility and an Advanced Diploma in Reproductive Medicine & ART from KIEL, Germany.',
     medicalSpecialty: [
       'Obstetrics',
       'Gynecology',
@@ -142,7 +137,6 @@ export function getPhysicianSchema() {
     knowsAbout: [
       'In Vitro Fertilisation',
       'IVF Treatment',
-      'Best IVF Specialist',
       'Intrauterine Insemination',
       'IUI Treatment',
       'ICSI Treatment',
@@ -162,8 +156,6 @@ export function getPhysicianSchema() {
       'Egg Freezing',
       'Embryo Transfer',
       'Ovulation Induction',
-      'Best Fertility Doctor in Kolkata',
-      'Best Gynecologist Kolkata',
     ],
     alumniOf: [
       {
@@ -212,13 +204,7 @@ export function getPhysicianSchema() {
       '@id': `${SITE_URL}/#clinic`,
       name: CLINIC_NAME,
     },
-    jobTitle: 'Founder Director & Best IVF Specialist in Kolkata',
-    award: [
-      'Best Gynecologist in Kolkata — acknowledged by 15,000+ patients',
-      'Recognised among Top 5 Gynecologists in Kolkata',
-      'Fellowship in Infertility',
-      'Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany)',
-    ],
+    jobTitle: 'Founder Director & Infertility Specialist',
     url: `${SITE_URL}/doctors`,
     sameAs: [
       'https://drankitamandal.com/',
@@ -384,14 +370,14 @@ export function generatePageMetadata({
 }) {
   const url = `${SITE_URL}${path}`;
   return {
-    title: `${title} | ${DOCTOR_NAME} - Best IVF Centre`,
+    title: `${title} | ${DOCTOR_NAME} - Maatritva IVF`,
     description,
     keywords: keywords || [],
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: `${title} | ${DOCTOR_NAME} - Best IVF Centre`,
+      title: `${title} | ${DOCTOR_NAME} - Maatritva IVF`,
       description,
       url,
       siteName: CLINIC_NAME,

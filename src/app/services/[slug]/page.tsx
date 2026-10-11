@@ -66,9 +66,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <p className="text-xl font-bold text-rose-600">{service.cost}</p>
             </div>
             <div className="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex-1 min-w-[200px]">
-              <p className="text-sm text-gray-500 font-medium mb-1">Success Rate*</p>
-              <p className="text-xl font-bold text-green-600">{service.successRate}</p>
-              <p className="text-[10px] text-gray-400 mt-1 italic leading-tight">*Varies by age & medical history</p>
+              {/* Clinic success-rate figure removed (NMC 2026 guidelines, para 8.1(iii)). */}
+              <p className="text-sm text-gray-500 font-medium mb-1">Treatment Outcomes</p>
+              <p className="text-xl font-bold text-gray-800">Vary by individual</p>
+              <p className="text-[10px] text-gray-400 mt-1 italic leading-tight">Depend on age, diagnosis and treatment history. No outcome is guaranteed.</p>
             </div>
           </div>
         </header>
@@ -80,7 +81,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who Needs This?</h2>
           <p className="text-gray-700 mb-8">{service.content.whoNeedsThis}</p>
 
-          <CTA title="Ready to Start Your Journey?" subtitle="Consult with Kolkata's top fertility experts today." />
+          <CTA title="Have Questions About This Treatment?" subtitle="Contact the clinic to enquire about appointment availability." />
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The Process</h2>
           <ul className="space-y-4 mb-8">
@@ -93,7 +94,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </ul>
         </div>
 
-        <CTA title="Need More Information on Cost & Success?" subtitle="Speak directly with our clinical coordinators." />
+        <CTA title="Need More Information on Cost?" subtitle="Speak directly with our clinical coordinators." />
 
         <div className="mt-8 border-t border-gray-200">
            <FAQSection faqs={service.content.faqs} title="Frequently Asked Questions" />

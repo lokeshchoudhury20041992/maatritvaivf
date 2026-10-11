@@ -6,32 +6,32 @@ import { Award, CheckCircle, ArrowRight, Star, Users, Heart, ShieldCheck, Micros
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Best IVF Specialist in Kolkata — Dr. Ankita Mandal | Maatritva IVF',
-    description: 'Looking for the best IVF specialist in Kolkata? Dr. Ankita Mandal at Maatritva IVF offers personalised, evidence-based fertility care with consistently high success rates. 15+ years experience. 15,000+ patients. Book a consultation today.',
+    title: 'IVF Specialist in Kolkata — Dr. Ankita Mandal | Maatritva IVF',
+    description: 'IVF specialist in Kolkata: Dr. Ankita Mandal (MBBS, MS OBG, Fellowship in Infertility) at Maatritva IVF, New Town. Information on IVF treatment, process, costs and risks. Outcomes vary with individual medical factors.',
     path: '/best-ivf-specialist-in-kolkata',
-    keywords: ['best IVF specialist in Kolkata', 'best IVF doctor Kolkata', 'top IVF specialist Kolkata', 'IVF expert Kolkata', 'Dr Ankita Mandal IVF', 'best fertility doctor Kolkata'],
+    keywords: ['IVF specialist in Kolkata', 'IVF doctor Kolkata', 'IVF specialist Kolkata', 'Dr Ankita Mandal IVF', 'fertility doctor Kolkata'],
 });
 
 const faqs = [
     {
-        question: 'Who is the best IVF specialist in Kolkata?',
+        question: 'Who is the IVF specialist at Maatritva IVF, Kolkata?',
         answer:
-            '<b>Dr. Ankita Mandal</b> at Maatritva IVF is widely regarded as one of the best IVF specialists in Kolkata. With over 15 years of clinical experience, advanced training from KIEL Germany, thousands of successful IVF cycles, and a personalised approach to each patient, she has built a reputation for excellence and compassion in fertility care.',
+            '<b>Dr. Ankita Mandal</b> is the Founder Director of Maatritva IVF. She holds an MBBS, an MS in Obstetrics & Gynaecology, a Fellowship in Infertility and an Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany), and has over 15 years of clinical experience.',
     },
     {
-        question: 'What is the IVF success rate at Maatritva IVF?',
+        question: 'What are the chances of success with IVF?',
         answer:
-            'At Maatritva IVF, clinical pregnancy rates are <b>consistently strong across all age groups</b>. Women under 35 typically achieve success rates of 45-55% per cycle. Rates for 35-40 are 35-45%, and for 40+ they are 20-30%. Dr. Ankita provides individualised success estimates based on your specific diagnosis, age, and ovarian reserve.',
+            'IVF outcomes <b>vary widely between individuals</b> and depend mainly on the woman\'s age, ovarian reserve, sperm quality, embryo quality and the underlying diagnosis. Chances generally decline with age, particularly after 35. No outcome can be guaranteed. Your doctor can discuss what is realistic for you after reviewing your test results.',
     },
     {
         question: 'How much does IVF cost in Kolkata?',
         answer:
-            'IVF costs at Maatritva IVF are <b>transparent and competitive</b>. A basic IVF cycle starts from a consultation-based estimate, while advanced IVF with ICSI is higher. The final cost depends on your protocol, medications needed, and additional procedures like ICSI, blastocyst culture, or PGT. We provide a complete written breakdown before treatment begins — no hidden charges.',
+            'IVF costs at Maatritva IVF are <b>explained in writing before treatment</b>. A basic IVF cycle starts from a consultation-based estimate, while advanced IVF with ICSI is higher. The final cost depends on your protocol, medications needed, and additional procedures like ICSI, blastocyst culture, or PGT. We provide a complete written breakdown before treatment begins.',
     },
     {
         question: 'Is IVF treatment painful?',
         answer:
-            'IVF is <b>not painful</b>. The hormone injections are subcutaneous (under the skin) and well-tolerated. Egg retrieval is performed under mild sedation — most patients feel no pain. Embryo transfer is completely painless and takes just 5-10 minutes. Most women continue normal activities throughout the cycle.',
+            'Experiences vary. The hormone injections are subcutaneous (under the skin) and are <b>usually well tolerated</b>, though some bruising or soreness is common. Egg retrieval is performed under sedation, so most women feel little discomfort during the procedure; mild cramping or bloating afterwards is common. Embryo transfer usually takes 5-10 minutes and feels similar to a pelvic examination for most women.',
     },
     {
         question: 'How long does one IVF cycle take?',
@@ -39,29 +39,29 @@ const faqs = [
             'A typical IVF cycle takes <b>approximately 4-6 weeks</b> from the start of ovarian stimulation to the pregnancy blood test. This includes 10-12 days of stimulation, egg retrieval, 3-5 days of embryo culture, embryo transfer, and a 14-day wait before the pregnancy test.',
     },
     {
-        question: 'What is the best age for IVF treatment?',
+        question: 'How does age affect IVF treatment?',
         answer:
-            'IVF success rates are highest for <b>women under 35</b>. Between 35-37, rates remain good. After 38, there is a gradual decline, and after 42-43, donor eggs are often recommended for the best outcomes. However, Dr. Ankita has helped women of all ages — the right protocol makes a significant difference.',
+            'In general, IVF success rates are highest for <b>women under 35</b> and decline gradually with age, more noticeably after 38. After 42-43, donor eggs are often discussed as an option. Your doctor will advise on options based on your age, ovarian reserve and medical history.',
     },
     {
         question: 'Does Dr. Ankita Mandal personally handle every IVF case?',
         answer:
-            'Yes. Dr. Ankita <b>personally oversees every patient\'s treatment</b> from initial consultation through stimulation monitoring, egg retrieval decisions, embryo transfer, and pregnancy confirmation. You will not be handed off to a junior doctor at any stage.',
+            'Dr. Ankita <b>oversees treatment planning</b> from initial consultation through stimulation monitoring, egg retrieval decisions, embryo transfer and pregnancy confirmation, working with the clinic\'s embryologists and clinical team.',
     },
     {
         question: 'What are the risks of IVF?',
         answer:
-            'IVF is a <b>safe, well-established procedure</b> performed for over 45 years worldwide. Minor risks include bloating, mild cramping, and very rarely ovarian hyperstimulation syndrome (OHSS). Dr. Ankita uses careful monitoring and modern protocols to minimise all risks. The vast majority of patients have no complications.',
+            'IVF is a <b>well-established procedure</b> performed for over 45 years worldwide, but like any medical treatment it carries risks. These include bloating and cramping, ovarian hyperstimulation syndrome (OHSS), multiple pregnancy, ectopic pregnancy, and the risks of egg retrieval such as bleeding or infection (uncommon). Monitoring and protocol choice aim to reduce these risks; your doctor will discuss them before treatment.',
     },
     {
         question: 'Can male infertility be treated with IVF?',
         answer:
-            'Absolutely. <b>ICSI (Intracytoplasmic Sperm Injection)</b> allows us to achieve fertilisation even with very low sperm count or poor motility. For men with azoospermia (no sperm in ejaculate), surgical sperm retrieval (TESA/PESA) combined with ICSI offers excellent results.',
+            'Often, yes. <b>ICSI (Intracytoplasmic Sperm Injection)</b> can allow fertilisation even with very low sperm count or poor motility. For men with azoospermia (no sperm in ejaculate), surgical sperm retrieval (TESA/PESA) combined with ICSI may be an option, although sperm cannot be retrieved in every case.',
     },
     {
         question: 'Does Maatritva IVF offer egg freezing?',
         answer:
-            'Yes. We offer <b>oocyte cryopreservation (egg freezing)</b> for women who wish to preserve their fertility. This is ideal for women planning to delay motherhood, facing medical treatments like chemotherapy, or wanting fertility insurance. Eggs frozen before age 35 yield the best future results.',
+            'Yes. We offer <b>oocyte cryopreservation (egg freezing)</b> for women who wish to preserve their fertility. This may be considered by women planning to delay motherhood or facing medical treatments like chemotherapy. Eggs frozen at a younger age, generally before 35, tend to have better chances of later use, but egg freezing does not guarantee a future pregnancy.',
     },
     {
         question: 'Can I book an online consultation with Dr. Ankita Mandal?',
@@ -69,16 +69,16 @@ const faqs = [
             'Yes. Dr. Ankita offers <b>online video consultations</b> for initial evaluations, follow-ups, and second opinions. This is especially useful for outstation patients and international patients from Bangladesh and Northeast India.',
     },
     {
-        question: 'How is Maatritva IVF different from other IVF centres in Kolkata?',
+        question: 'What facilities does Maatritva IVF have?',
         answer:
-            'Maatritva IVF stands out because of <b>Dr. Ankita\'s personal involvement in every case, our state-of-the-art laboratory with time-lapse monitoring, transparent pricing, and our genuine patient-first philosophy</b>. We never recommend unnecessary treatments and always provide honest success rate expectations.',
+            'Maatritva IVF has <b>an in-house IVF laboratory with time-lapse embryo monitoring</b>, ultrasonography and embryo freezing facilities. A written cost estimate is provided before treatment begins.',
     },
 ];
 
 export default function BestIVFSpecialistPage() {
     const breadcrumbs = getBreadcrumbSchema([
         { name: 'Home', url: '/' },
-        { name: 'Best IVF Specialist in Kolkata', url: '/best-ivf-specialist-in-kolkata' },
+        { name: 'IVF Specialist in Kolkata', url: '/best-ivf-specialist-in-kolkata' },
     ]);
 
     return (
@@ -95,10 +95,10 @@ export default function BestIVFSpecialistPage() {
                         <div className="lg:col-span-3">
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
                                 <Award className="w-4 h-4 text-gold" />
-                                <span className="text-sm text-white/90 font-medium">Top-Rated IVF Specialist in Kolkata</span>
+                                <span className="text-sm text-white/90 font-medium">IVF Specialist in Kolkata</span>
                             </div>
                             <h1 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
-                                Best IVF Specialist in Kolkata — Advanced Fertility Care by Dr. Ankita Mandal
+                                IVF Specialist in Kolkata — Fertility Care with Dr. Ankita Mandal
                             </h1>
                             <p className="text-rose-pale font-medium text-lg mb-3">
                                 Founder Director, Maatritva Fertility IVF & Healthcare
@@ -108,11 +108,12 @@ export default function BestIVFSpecialistPage() {
                             </p>
 
                             {/* Quick credibility highlights */}
+                            {/* Patient counts and "Top 5" ranking removed (NMC 2026 guidelines, para 8.1(iii), 8.1(ix)). */}
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
                                 {[
                                     { value: '15+', label: 'Years Experience' },
-                                    { value: '15K+', label: 'Patients Treated' },
-                                    { value: 'Top 5', label: 'Gynaecologist' },
+                                    { value: 'MS', label: 'Obstetrics & Gynaecology' },
+                                    { value: 'IVF', label: 'IUI · ICSI' },
                                     { value: 'KIEL', label: 'Germany Trained' },
                                 ].map((stat) => (
                                     <div key={stat.label} className="bg-white/10 rounded-xl p-3 text-center border border-white/10">
@@ -131,7 +132,7 @@ export default function BestIVFSpecialistPage() {
                                     <ArrowRight className="w-4 h-4" />
                                 </Link>
                                 <Link
-                                    href="tel:+91XXXXXXXXXX"
+                                    href="tel:+918100343839"
                                     className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"
                                 >
                                     <Phone className="w-4 h-4" />
@@ -158,26 +159,24 @@ export default function BestIVFSpecialistPage() {
             <section className="py-16 lg:py-20 bg-cream">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-6">
-                        Who Is the Best IVF Specialist in Kolkata?
+                        Who Is the IVF Specialist at Maatritva IVF?
                     </h2>
                     <div className="bg-white rounded-2xl p-6 lg:p-8 border border-gray-100 shadow-sm mb-8">
                         <p className="text-gray-800 text-lg leading-relaxed">
-                            <strong>Dr. Ankita Mandal</strong> is widely recognised as one of the best IVF specialists in Kolkata.
-                            She is the Founder Director of Maatritva Fertility IVF & Healthcare, with over 15 years of experience
-                            in reproductive medicine, an Advanced Diploma in ART from KIEL, Germany, and a Fellowship in Infertility.
-                            She has treated over 15,000 patients with a personalised, evidence-based approach to fertility care.
+                            <strong>Dr. Ankita Mandal</strong> is the Founder Director of Maatritva Fertility IVF &amp; Healthcare,
+                            Kolkata, with over 15 years of experience in reproductive medicine, an Advanced Diploma in ART from
+                            KIEL, Germany, and a Fellowship in Infertility.
                         </p>
                     </div>
 
-                    <h3 className="font-heading text-xl font-bold text-navy mb-4">What Makes a Great IVF Specialist?</h3>
+                    <h3 className="font-heading text-xl font-bold text-navy mb-4">What to Consider When Choosing an IVF Specialist</h3>
                     <p className="text-gray-700 mb-4 leading-relaxed">
-                        Choosing the right IVF specialist is the most important decision in your fertility journey.
-                        The doctor&apos;s expertise directly impacts your success rate. Here are the key qualities to look for:
+                        When choosing an IVF specialist, patients commonly consider the following:
                     </p>
                     <ul className="space-y-3 mb-6">
                         {[
                             'Specialised training in reproductive medicine (not just general gynaecology)',
-                            'Thousands of completed IVF cycles with verifiable outcomes',
+                            'Registration with the State or National Medical Register',
                             'A well-equipped, independently managed IVF laboratory',
                             'Personalised protocols — not one-size-fits-all stimulation',
                             'Transparent communication about success rates, costs, and realistic expectations',
@@ -190,9 +189,7 @@ export default function BestIVFSpecialistPage() {
                         ))}
                     </ul>
                     <p className="text-gray-700 leading-relaxed">
-                        Dr. Ankita Mandal meets every one of these criteria.
-                        Her approach combines clinical rigour with genuine empathy — she treats every patient as an individual,
-                        not a number.
+                        You are welcome to ask any clinic, including ours, about these points before starting treatment.
                     </p>
                 </div>
             </section>
@@ -203,25 +200,22 @@ export default function BestIVFSpecialistPage() {
             <section className="py-16 lg:py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-6">
-                        About Dr. Ankita Mandal — Kolkata&apos;s Trusted IVF Expert
+                        About Dr. Ankita Mandal
                     </h2>
                     <div className="prose prose-gray max-w-none space-y-4 text-gray-700 text-lg leading-relaxed">
                         <p>
                             Dr. Ankita Mandal is a <strong>Consultant Gynaecologist, Obstetrician, Infertility Specialist,
                                 and Gynaecological Laparoscopic Surgeon</strong>. She graduated from SCB Medical College, Cuttack
-                            and completed her MS in Obstetrics & Gynaecology from RIMS, Ranchi. She then earned a prestigious
+                            and completed her MS in Obstetrics & Gynaecology from RIMS, Ranchi. She then earned a
                             Fellowship in Infertility and an Advanced Diploma in Reproductive Medicine & ART from KIEL, Germany.
                         </p>
                         <p>
-                            With <strong>over 15 years of hands-on clinical experience</strong> and thousands of completed IVF,
-                            ICSI, and IUI cycles, Dr. Ankita has developed deep expertise in managing even the most complex
-                            fertility cases — including recurrent IVF failures, low AMH/diminished ovarian reserve, severe male
-                            factor infertility, and unexplained infertility.
+                            She has <strong>over 15 years of clinical experience</strong>. Her areas of clinical focus include
+                            recurrent IVF failure, low AMH/diminished ovarian reserve, male factor infertility and unexplained
+                            infertility.
                         </p>
                         <p>
-                            She is a proud member of <strong>ISOG, FOGSI, ACOG</strong>, and a Fellow of <strong>FIAOG</strong>.
-                            She is also a pioneer in adopting time-lapse embryo monitoring technology in Eastern India and regularly
-                            speaks at national and international fertility conferences.
+                            She is a member of <strong>ISOG, FOGSI, ACOG</strong>, and a Fellow of <strong>FIAOG</strong>.
                         </p>
                     </div>
 
@@ -250,30 +244,30 @@ export default function BestIVFSpecialistPage() {
                         Why Choosing the Right IVF Specialist Matters
                     </h2>
                     <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                        IVF is not a one-size-fits-all treatment. The specialist you choose directly determines your stimulation
-                        protocol, embryo selection strategy, and ultimately your success rate. Here is why your choice matters:
+                        IVF is not a one-size-fits-all treatment. Several clinical and laboratory factors shape how treatment
+                        is planned:
                     </p>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
                             {
                                 icon: <Star className="w-6 h-6 text-gold" />,
-                                title: 'Impact on Success Rates',
-                                desc: 'An experienced specialist tailors your stimulation protocol to your unique biology — your AMH, FSH, body weight, and previous response. This personalisation is what separates a 30% success rate from a 50% success rate.',
+                                title: 'Individual Factors',
+                                desc: 'Stimulation protocols are usually tailored to individual factors such as AMH, FSH, body weight and previous response. Outcomes still vary and cannot be guaranteed.',
                             },
                             {
                                 icon: <Microscope className="w-6 h-6 text-navy" />,
                                 title: 'Laboratory Quality',
-                                desc: 'The IVF lab is where fertilisation, embryo culture, and selection happen. A specialist who controls their own lab ensures optimal conditions. Maatritva\'s lab features time-lapse monitoring, HEPA-filtered air, and dedicated embryologists.',
+                                desc: 'The IVF lab is where fertilisation, embryo culture, and selection happen. Laboratory conditions are one of the factors that can affect embryo development. Maatritva\'s lab has time-lapse monitoring, HEPA-filtered air and in-house embryologists.',
                             },
                             {
                                 icon: <Heart className="w-6 h-6 text-rose-deep" />,
                                 title: 'Personalised Protocols',
-                                desc: 'Cookie-cutter protocols waste your time and money. Dr. Ankita designs individualised stimulation protocols — from mild stimulation for low-reserve patients to antagonist protocols for PCOS patients at risk of hyperstimulation.',
+                                desc: 'Stimulation protocols can be individualised — for example, mild stimulation for some low-reserve patients or antagonist protocols for PCOS patients at risk of hyperstimulation.',
                             },
                             {
                                 icon: <ShieldCheck className="w-6 h-6 text-sage" />,
-                                title: 'Complex Case Expertise',
-                                desc: 'Recurrent IVF failures, poor embryo quality, thin endometrium — these complex cases require a specialist who has seen and solved them before. Dr. Ankita\'s 15+ years of experience makes this difference.',
+                                title: 'Complex Cases',
+                                desc: 'Recurrent IVF failure, poor embryo quality and thin endometrium usually need further evaluation before another cycle is planned. Some of these problems may not be fully correctable.',
                             },
                         ].map((item) => (
                             <div key={item.title} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
@@ -304,10 +298,10 @@ export default function BestIVFSpecialistPage() {
                             { step: '1', title: 'Initial Consultation & Diagnosis', desc: 'Dr. Ankita reviews your complete medical history, performs a baseline ultrasound, and orders blood tests (AMH, FSH, LH, thyroid) and semen analysis. This identifies the root cause and informs protocol design.' },
                             { step: '2', title: 'Personalised Protocol Design', desc: 'Based on your diagnosis, age, and ovarian reserve, a customised stimulation protocol is designed. This may range from a mild protocol for low AMH to an antagonist protocol for PCOS patients.' },
                             { step: '3', title: 'Ovarian Stimulation (10-12 Days)', desc: 'Daily hormone injections stimulate your ovaries to produce multiple mature eggs. Regular ultrasound scans and blood tests monitor follicle growth. Dosage is adjusted based on your response.' },
-                            { step: '4', title: 'Trigger Injection & Egg Retrieval', desc: 'When follicles reach optimal size, a trigger injection finalises maturation. 34-36 hours later, eggs are retrieved under mild sedation — a painless 15-20 minute procedure.' },
-                            { step: '5', title: 'Fertilisation & Embryo Culture', desc: 'Eggs are fertilised using ICSI (single sperm injection). Embryos are cultured for 3-5 days in our time-lapse incubator, allowing continuous monitoring without disturbance.' },
-                            { step: '6', title: 'Embryo Selection & Transfer', desc: 'The best-quality embryo is selected and gently placed into the uterus. This is a painless 5-10 minute procedure. We typically recommend single embryo transfer (SET) to avoid multiple pregnancy risks.' },
-                            { step: '7', title: 'Pregnancy Test (14 Days Later)', desc: 'A blood test (beta-hCG) confirms pregnancy approximately 14 days after transfer. If positive, regular monitoring begins. Our counselling team provides emotional support throughout the wait.' },
+                            { step: '4', title: 'Trigger Injection & Egg Retrieval', desc: 'When follicles reach a suitable size, a trigger injection finalises maturation. 34-36 hours later, eggs are retrieved under sedation in a procedure that usually takes 15-20 minutes; mild cramping afterwards is common.' },
+                            { step: '5', title: 'Fertilisation & Embryo Culture', desc: 'Eggs are fertilised by conventional IVF or ICSI (single sperm injection), as clinically indicated. Embryos are cultured for 3-5 days in our time-lapse incubator, allowing continuous monitoring without disturbance.' },
+                            { step: '6', title: 'Embryo Selection & Transfer', desc: 'An embryo is selected based on its development and gently placed into the uterus. This usually takes 5-10 minutes and most women feel only mild discomfort. We typically recommend single embryo transfer (SET) to avoid multiple pregnancy risks.' },
+                            { step: '7', title: 'Pregnancy Test (14 Days Later)', desc: 'A blood test (beta-hCG) approximately 14 days after transfer shows whether pregnancy has occurred. If positive, regular monitoring begins. Our counselling team provides emotional support throughout the wait.' },
                         ].map((item) => (
                             <div key={item.step} className="flex gap-6 items-start">
                                 <div className="shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-rose-deep to-rose-light flex items-center justify-center">
@@ -324,29 +318,30 @@ export default function BestIVFSpecialistPage() {
             </section>
 
             {/* ═══════════════════════════════════════════════════════════════
-                SECTION 6 — IVF SUCCESS RATE IN KOLKATA
+                SECTION 6 — FACTORS AFFECTING IVF SUCCESS
             ═══════════════════════════════════════════════════════════════ */}
             <section className="py-16 lg:py-20 bg-cream">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-4">
-                        What Is the IVF Success Rate in Kolkata?
+                        What Affects IVF Success Rates?
                     </h2>
                     <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                        IVF success rates vary by age, diagnosis, and laboratory quality. At Maatritva IVF, our clinical
-                        pregnancy rates are consistently strong. Here is an honest, age-based breakdown:
+                        IVF success rates vary by age, diagnosis and laboratory factors. The table below shows how chances
+                        generally change with age. It is not a statement of this clinic&apos;s results and no outcome is guaranteed.
                     </p>
                     <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm mb-8">
                         <div className="grid grid-cols-3 bg-navy text-white text-center py-3 text-sm font-semibold">
                             <div>Age Group</div>
-                            <div>Success Rate (per cycle)</div>
+                            <div>General Trend</div>
                             <div>Key Factor</div>
                         </div>
                         {[
-                            { age: 'Under 35', rate: '45-55%', factor: 'Optimal egg quality & quantity' },
-                            { age: '35-37', rate: '38-48%', factor: 'Good reserves, slightly lower quality' },
-                            { age: '38-40', rate: '28-38%', factor: 'Protocol customisation critical' },
-                            { age: '40-42', rate: '15-25%', factor: 'Consider PGT for embryo selection' },
-                            { age: '43+', rate: '5-15%', factor: 'Donor eggs often recommended' },
+                            // Percentage success rates removed (NMC 2026 guidelines, para 8.1(iii), 8.1(vi)); general trend shown instead.
+                            { age: 'Under 35', rate: 'Highest', factor: 'Egg quality & quantity usually better' },
+                            { age: '35-37', rate: 'Gradually lower', factor: 'Egg quality begins to decline' },
+                            { age: '38-40', rate: 'Lower', factor: 'Protocol choice becomes more important' },
+                            { age: '40-42', rate: 'Considerably lower', factor: 'PGT may be discussed' },
+                            { age: '43+', rate: 'Low with own eggs', factor: 'Donor eggs often discussed' },
                         ].map((row, i) => (
                             <div key={row.age} className={`grid grid-cols-3 text-center py-3 text-sm ${i % 2 === 0 ? 'bg-cream/50' : 'bg-white'}`}>
                                 <div className="font-semibold text-navy">{row.age}</div>
@@ -372,8 +367,8 @@ export default function BestIVFSpecialistPage() {
                         ))}
                     </ul>
                     <p className="text-gray-700 leading-relaxed">
-                        Dr. Ankita provides <strong>honest, individualised success estimates</strong> during your first
-                        consultation — never inflated numbers, always realistic expectations.
+                        Your doctor can discuss <strong>individual chances and risks</strong> at consultation, based on your
+                        test results and history.
                     </p>
                 </div>
             </section >
@@ -388,7 +383,7 @@ export default function BestIVFSpecialistPage() {
                     </h2>
                     <p className="text-gray-700 text-lg leading-relaxed mb-6">
                         IVF cost in Kolkata varies based on the type of treatment, medications required, and additional
-                        procedures. At Maatritva IVF, we believe in <strong>complete cost transparency</strong> — you will
+                        procedures. At Maatritva IVF, we provide a <strong>written cost estimate</strong> — you will
                         receive a detailed written breakdown before any treatment begins.
                     </p>
                     <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -409,10 +404,10 @@ export default function BestIVFSpecialistPage() {
                         <div className="bg-cream rounded-2xl p-6 border border-gray-100">
                             <div className="flex items-center gap-2 mb-3">
                                 <ShieldCheck className="w-5 h-5 text-sage" />
-                                <h3 className="font-heading text-lg font-bold text-navy">Our Transparency Promise</h3>
+                                <h3 className="font-heading text-lg font-bold text-navy">Cost Information</h3>
                             </div>
                             <ul className="space-y-2">
-                                {['Complete written cost estimate before treatment', 'No hidden charges or surprise bills', 'Medication costs listed separately', 'Multi-cycle packages at reduced rates', 'Flexible payment options available'].map((item) => (
+                                {['Complete written cost estimate before treatment', 'Medication costs listed separately', 'Payment options can be discussed with the clinic'].map((item) => (
                                     <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
                                         <CheckCircle className="w-3 h-3 text-sage shrink-0 mt-1" />
                                         {item}
@@ -430,27 +425,27 @@ export default function BestIVFSpecialistPage() {
             </section >
 
             {/* ═══════════════════════════════════════════════════════════════
-                SECTION 8 — ADVANCED FERTILITY SERVICES OFFERED
+                SECTION 8 — FERTILITY SERVICES OFFERED
             ═══════════════════════════════════════════════════════════════ */}
             < section className="py-16 lg:py-20 bg-cream" >
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-4 text-center">
-                        Advanced Fertility Services at Maatritva IVF
+                        Fertility Services at Maatritva IVF
                     </h2>
                     <p className="text-gray-700 text-center max-w-3xl mx-auto mb-10">
-                        Beyond IVF, we offer a complete range of fertility services. Dr. Ankita recommends the simplest
-                        effective treatment first — IVF is one option, not the only option.
+                        Beyond IVF, we offer a complete range of fertility services. Where clinically appropriate, simpler
+                        treatments are considered first — IVF is one option, not the only option.
                     </p>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {[
-                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment', desc: 'Complete IVF cycle with personalised stimulation. Our flagship treatment.' },
+                            { label: 'IVF Treatment', href: '/services/best-ivf-treatment', desc: 'Complete IVF cycle with individualised stimulation.' },
                             { label: 'ICSI Treatment', href: '/services/icsi-treatment', desc: 'Single sperm injection per egg. Essential for male factor infertility.' },
                             { label: 'IUI Treatment', href: '/services/iui-treatment', desc: 'Simpler, less invasive option for mild fertility issues.' },
-                            { label: 'Egg Freezing', href: '/services/egg-freezing', desc: 'Preserve your fertility for the future. Ideal for women under 35.' },
+                            { label: 'Egg Freezing', href: '/services/egg-freezing', desc: 'Freezing eggs for possible future use. Does not guarantee future pregnancy.' },
                             { label: 'Male Infertility', href: '/services/male-infertility-treatment', desc: 'Comprehensive diagnosis and treatment for male factor.' },
                             { label: 'Donor Egg IVF', href: '/services/donor-egg-ivf', desc: 'For women with diminished ovarian reserve or advanced age.' },
                             { label: 'TESA / PESA', href: '/services/testicular-sperm-extraction', desc: 'Surgical sperm retrieval for azoospermia cases.' },
-                            { label: 'Blastocyst Transfer', href: '/services/blastocyst-transfer', desc: 'Day 5 embryo transfer for higher implantation rates.' },
+                            { label: 'Blastocyst Transfer', href: '/services/blastocyst-transfer', desc: 'Day 5 embryo culture and transfer, where suitable.' },
                             { label: 'PGD / PGS Testing', href: '/services/ivf-with-pgd-pgs', desc: 'Genetic screening of embryos before transfer.' },
                         ].map((item) => (
                             <Link
@@ -470,34 +465,34 @@ export default function BestIVFSpecialistPage() {
             </section >
 
             {/* ═══════════════════════════════════════════════════════════════
-                SECTION 9 — WHY MAATRITVA IVF STANDS OUT
+                SECTION 9 — ABOUT MAATRITVA IVF
             ═══════════════════════════════════════════════════════════════ */}
             < section className="py-16 lg:py-20 bg-white" >
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-8">
-                        Why Maatritva IVF Is Kolkata&apos;s Most Trusted Fertility Centre
+                        About Maatritva IVF
                     </h2>
                     <div className="space-y-6">
                         {[
                             {
                                 icon: <Microscope className="w-6 h-6 text-navy" />,
-                                title: 'State-of-the-Art IVF Laboratory',
-                                desc: 'Our laboratory features HEPA-filtered clean rooms, time-lapse embryo monitoring (EmbryoScope), dedicated ICSI workstations, and advanced vitrification equipment. Lab quality is the single biggest factor in IVF success — ours is among the best in Eastern India.',
+                                title: 'IVF Laboratory',
+                                desc: 'The laboratory has HEPA-filtered clean rooms, time-lapse embryo monitoring (EmbryoScope), ICSI workstations and vitrification equipment.',
                             },
                             {
                                 icon: <MapPin className="w-6 h-6 text-rose-deep" />,
                                 title: 'Information Centres Across Region',
-                                desc: 'We have expanded our reach with information and consultation centres to serve patients from Salt Lake, New Town, South Kolkata, Howrah, North Kolkata, Barasat, and even Bangladesh. No matter where you are, expert fertility care is accessible.',
+                                desc: 'We have expanded our reach with information and consultation centres to serve patients from Salt Lake, New Town, South Kolkata, Howrah, North Kolkata, Barasat and Bangladesh.',
                             },
                             {
                                 icon: <Users className="w-6 h-6 text-sage" />,
                                 title: 'Bangladesh & International Patient Support',
-                                desc: 'Kolkata is the closest Indian metro to Bangladesh. We provide medical visa assistance, airport pickup, accommodation coordination, and Bengali-speaking staff for a seamless experience. IVF in Kolkata costs 30-50% less than premium Dhaka centres.',
+                                desc: 'Kolkata is the closest Indian metro to Bangladesh. We provide medical visa assistance, airport pickup, accommodation coordination, and Bengali-speaking staff on request.',
                             },
                             {
                                 icon: <Heart className="w-6 h-6 text-rose-deep" />,
-                                title: 'Genuinely Personalised Care',
-                                desc: 'Dr. Ankita personally handles every case from start to finish. You will never be handed off to a junior doctor. Treatment plans are designed for your biology, not a generic protocol. We treat patients, not numbers.',
+                                title: 'Personalised Care',
+                                desc: 'Dr. Ankita Mandal oversees treatment planning, and protocols are individualised to each patient\'s medical history and test results.',
                             },
                         ].map((item) => (
                             <div key={item.title} className="flex gap-5 items-start">
@@ -513,51 +508,20 @@ export default function BestIVFSpecialistPage() {
             </section >
 
             {/* ═══════════════════════════════════════════════════════════════
-                SECTION 10 — TESTIMONIALS & PATIENT EXPERIENCE
+                SECTION 10 — TREATMENT OUTCOMES NOTE
+                Patient testimonials and star ratings removed (NMC 2026 guidelines, para 3.2 Expl. V, 6.2, 8.1(v), 8.1(xi)).
             ═══════════════════════════════════════════════════════════════ */}
             < section className="py-16 lg:py-20 bg-cream" >
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="font-heading text-2xl lg:text-3xl font-bold text-navy mb-8 text-center">
-                        What Our Patients Say
+                        Before You Start Treatment
                     </h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {[
-                            {
-                                text: 'After 3 failed IVF cycles at another centre, we almost gave up. Dr. Ankita reviewed everything, changed the protocol completely, and we conceived on the very first attempt with her. She is truly the best.',
-                                name: 'Rina & Sourav',
-                                area: 'Salt Lake, Kolkata',
-                            },
-                            {
-                                text: 'We travelled from Dhaka for IVF. The visa help, airport pickup, and Bengali-speaking staff made everything so easy. Dr. Ankita treated us like family. We now have twin girls.',
-                                name: 'Fatima & Rashed',
-                                area: 'Dhaka, Bangladesh',
-                            },
-                            {
-                                text: 'At 39, I was told my chances were very low. Dr. Ankita was honest but optimistic. She designed a special protocol for my low AMH. I am now 4 months pregnant. Forever grateful.',
-                                name: 'Priya',
-                                area: 'New Town, Kolkata',
-                            },
-                            {
-                                text: 'The transparency at Maatritva is refreshing. We knew every cost upfront. Dr. Ankita personally monitored every scan. No other clinic gave us this level of attention.',
-                                name: 'Ananya & Debashish',
-                                area: 'Howrah',
-                            },
-                        ].map((item) => (
-                            <div key={item.name} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-                                <div className="flex gap-1 mb-3">
-                                    {[1, 2, 3, 4, 5].map((s) => (
-                                        <Star key={s} className="w-4 h-4 text-gold fill-gold" />
-                                    ))}
-                                </div>
-                                <p className="text-gray-700 text-sm leading-relaxed mb-4 italic">
-                                    &ldquo;{item.text}&rdquo;
-                                </p>
-                                <div>
-                                    <p className="font-heading font-bold text-navy text-sm">{item.name}</p>
-                                    <p className="text-xs text-gray-500">{item.area}</p>
-                                </div>
-                            </div>
-                        ))}
+                    <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                            Fertility treatment outcomes vary with age, diagnosis and treatment history, and no outcome can
+                            be guaranteed. Before any treatment begins, your doctor will explain the options available to you,
+                            their risks, the likely number of cycles and the expected costs, so that you can make an informed decision.
+                        </p>
                     </div>
                 </div>
             </section >
@@ -565,19 +529,18 @@ export default function BestIVFSpecialistPage() {
             {/* ═══════════════════════════════════════════════════════════════
                 SECTION 11 — FAQs (12 OPTIMISED QUESTIONS)
             ═══════════════════════════════════════════════════════════════ */}
-            < FAQSection faqs={faqs} title="Frequently Asked Questions — Best IVF Specialist in Kolkata" />
+            < FAQSection faqs={faqs} title="Frequently Asked Questions — IVF Specialist in Kolkata" />
 
             {/* ═══════════════════════════════════════════════════════════════
-                SECTION 12 — STRONG CONVERSION CTA
+                SECTION 12 — CONTACT
             ═══════════════════════════════════════════════════════════════ */}
             < section className="py-16 lg:py-20 bg-gradient-to-r from-rose-deep to-rose-light" id="book" >
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="font-heading text-3xl lg:text-4xl font-bold text-white mb-4">
-                        Ready to Start Your Fertility Journey?
+                        Have Questions About IVF?
                     </h2>
                     <p className="text-white/90 mb-8 text-lg">
-                        Book a consultation with Dr. Ankita Mandal — Kolkata&apos;s most trusted IVF specialist.
-                        Your first step towards parenthood starts here.
+                        Contact the clinic to enquire about appointment availability with Dr. Ankita Mandal.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
@@ -588,14 +551,14 @@ export default function BestIVFSpecialistPage() {
                             Book Appointment
                         </Link>
                         <a
-                            href="tel:+91XXXXXXXXXX"
+                            href="tel:+918100343839"
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"
                         >
                             <Phone className="w-4 h-4" />
                             Call Now
                         </a>
                         <a
-                            href="https://wa.me/91XXXXXXXXXX"
+                            href="https://wa.me/918100343839"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all"

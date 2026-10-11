@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Phone } from 'lucide-react';
 
-export default function CTA({ title = "Book Your Free Consultation Today", subtitle = "Take the first step towards your dream of parenthood with Maatritva IVF's leading fertility experts." }: { title?: string; subtitle?: string }) {
+export default function CTA({ title = "Contact the Clinic", subtitle = "Call or message Maatritva IVF to enquire about appointment availability." }: { title?: string; subtitle?: string }) {
   return (
     <div className="relative overflow-hidden bg-gradient-to-br from-white to-rose-pale/30 rounded-[40px] p-12 lg:p-20 text-center my-20 border border-rose-pale shadow-2xl">
       <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-rose-deep/5 rounded-full blur-2xl" />

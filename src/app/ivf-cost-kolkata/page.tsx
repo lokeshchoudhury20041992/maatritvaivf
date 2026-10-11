@@ -28,7 +28,7 @@ export default function IVFCostPage() {
                         Transparent IVF Cost in Kolkata
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                        At Maatritva IVF, we believe in 100% financial transparency. No hidden fees, no surprise bills—just honest pricing for world-class fertility care.
+                        At Maatritva IVF, we share a written cost estimate before treatment begins, explaining what is included and what may be charged separately.
                     </p>
                 </div>
             </section>

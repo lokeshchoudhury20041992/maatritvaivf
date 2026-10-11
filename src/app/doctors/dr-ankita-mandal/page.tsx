@@ -2,15 +2,15 @@ import { Metadata } from 'next';
 import FAQSection from '@/components/FAQSection';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { getFAQSchema, generatePageMetadata, getBreadcrumbSchema } from '@/lib/schema-helpers';
-import { Award, CheckCircle, ArrowRight, Star, GraduationCap, Users, Heart, MapPin, Stethoscope } from 'lucide-react';
+import { Award, CheckCircle, ArrowRight, GraduationCap, Users, Stethoscope } from 'lucide-react';
 import Link from 'next/link';
 import { SITE_URL } from '@/lib/schema-helpers';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Dr. Ankita Mandal — Best IVF Specialist & Gynaecologist in Kolkata',
-    description: 'Dr. Ankita Mandal is the founder of Maatritva IVF and one of Kolkata\'s most trusted IVF specialists. MBBS, MS (OBG), Fellowship in Infertility, Advanced Diploma ART (Germany). 15+ years experience.',
+    title: 'Dr. Ankita Mandal — IVF Specialist & Gynaecologist in Kolkata',
+    description: 'Dr. Ankita Mandal, Founder Director of Maatritva IVF, Kolkata. MBBS, MS (OBG), Fellowship in Infertility, Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany).',
     path: '/doctors/dr-ankita-mandal',
-    keywords: ['Dr Ankita Mandal', 'best IVF doctor Kolkata', 'best gynecologist Kolkata', 'IVF specialist Kolkata', 'Dr Ankita Mandal Maatritva'],
+    keywords: ['Dr Ankita Mandal', 'IVF doctor Kolkata', 'gynecologist Kolkata', 'IVF specialist Kolkata', 'Dr Ankita Mandal Maatritva'],
 });
 
 const faqs = [
@@ -22,22 +22,22 @@ const faqs = [
     {
         question: 'How many years of experience does Dr. Ankita Mandal have?',
         answer:
-            'Dr. Ankita Mandal has <b>over 15 years of clinical experience</b> in gynaecology, obstetrics, and reproductive medicine, with thousands of successful IVF and ICSI cycles.',
+            'Dr. Ankita Mandal has <b>over 15 years of clinical experience</b> in gynaecology, obstetrics, and reproductive medicine.',
     },
     {
         question: 'Does Dr. Ankita Mandal personally handle IVF procedures?',
         answer:
-            'Yes. Dr. Ankita <b>personally oversees every patient\'s treatment</b> — from initial consultation through stimulation monitoring, egg retrieval, embryo transfer decisions, and pregnancy confirmation. You will not be handed off to another doctor.',
+            'Dr. Ankita <b>oversees her patients\' treatment</b> — from initial consultation through stimulation monitoring, egg retrieval, embryo transfer decisions, and pregnancy confirmation — working with the clinic\'s embryology and nursing team.',
     },
     {
         question: 'Where does Dr. Ankita Mandal practise?',
         answer:
-            'Dr. Ankita Mandal is the <b>Founder Director of Maatritva Fertility IVF & Healthcare</b>, located in New Town, Kolkata. The clinic is just 15 minutes from Kolkata Airport and easily accessible from across the city.',
+            'Dr. Ankita Mandal is the <b>Founder Director of Maatritva Fertility IVF & Healthcare</b>, located in New Town, Kolkata. The clinic is in New Town, near Kolkata Airport.',
     },
     {
         question: 'Can I book an online consultation with Dr. Ankita Mandal?',
         answer:
-            'Yes. Dr. Ankita offers <b>online video consultations</b> for initial evaluations, follow-ups, and second opinions. This is especially useful for outstation patients and patients from Bangladesh.',
+            'Yes. Dr. Ankita offers <b>online video consultations</b> for initial evaluations, follow-ups, and second opinions. This can be useful for patients who live outside Kolkata.',
     },
 ];
 
@@ -48,7 +48,7 @@ function getPersonSchema() {
         name: 'Dr. Ankita Mandal',
         url: `${SITE_URL}/doctors/dr-ankita-mandal`,
         image: `${SITE_URL}/images/dr-ankita-mandal.jpg`,
-        description: 'Dr. Ankita Mandal is the Founder Director of Maatritva Fertility IVF & Healthcare, Kolkata. She is one of the best IVF specialists and gynaecologists in Kolkata with over 15 years of experience.',
+        description: 'Dr. Ankita Mandal is the Founder Director of Maatritva Fertility IVF & Healthcare, Kolkata. She is a Consultant Gynaecologist, Obstetrician and Infertility Specialist.',
         medicalSpecialty: 'Reproductive Medicine',
         jobTitle: 'Founder Director & IVF Specialist',
         worksFor: {
@@ -127,7 +127,7 @@ export default function DrAnkitaMandal() {
                                 Dr. Ankita Mandal
                             </h1>
                             <p className="text-rose-pale font-medium text-lg mb-4">
-                                Best IVF Specialist & Gynaecologist in Kolkata
+                                IVF Specialist & Gynaecologist in Kolkata
                             </p>
                             <p className="text-white/70 text-sm mb-6">
                                 MBBS (SCB Medical College, Cuttack) · MS — OBG (RIMS, Ranchi) · Fellowship in Infertility ·
@@ -135,7 +135,6 @@ export default function DrAnkitaMandal() {
                             </p>
                             <div className="flex flex-wrap gap-3 mb-8">
                                 <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">15+ Years Experience</span>
-                                <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">15,000+ Patients</span>
                                 <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">ISOG · FOGSI · ACOG</span>
                             </div>
                             <Link
@@ -161,24 +160,20 @@ export default function DrAnkitaMandal() {
                     <h2 className="font-heading text-3xl font-bold text-navy mb-6">About Dr. Ankita Mandal</h2>
                     <div className="prose prose-gray max-w-none space-y-4 text-gray-700">
                         <p>
-                            Dr. Ankita Mandal is the <strong>Founder Director of Maatritva Fertility IVF & Healthcare</strong>, Kolkata&apos;s most trusted fertility centre.
-                            Recognised among the top 5 gynaecologists in Kolkata by over 15,000 satisfied patients, she is a Consultant Gynaecologist, Obstetrician,
-                            Infertility Specialist, and Gynaecological Laparoscopic Surgeon.
+                            Dr. Ankita Mandal is the <strong>Founder Director of Maatritva Fertility IVF & Healthcare</strong>, New Town, Kolkata.
+                            She is a Consultant Gynaecologist, Obstetrician, Infertility Specialist, and Gynaecological Laparoscopic Surgeon.
                         </p>
                         <p>
-                            A graduate of <strong>SCB Medical College, Cuttack</strong> and <strong>RIMS, Ranchi</strong>, Dr. Ankita holds a prestigious
+                            A graduate of <strong>SCB Medical College, Cuttack</strong> and <strong>RIMS, Ranchi</strong>, Dr. Ankita holds a
                             Fellowship in Infertility and an Advanced Diploma in Reproductive Medicine & ART from <strong>KIEL, Germany</strong>.
                             She specialises in colposcopy, hysteroscopy, and gynaecological ultrasound.
                         </p>
                         <p>
-                            Dr. Ankita&apos;s personalised approach empowers patients to make informed decisions about their fertility and reproductive health.
-                            She is a proud member of <strong>ISOG, FOGSI, ACOG</strong>, and a Fellow of <strong>FIAOG</strong> — reflecting her commitment
-                            to the highest standards of medical practice.
+                            She discusses treatment options, risks and costs with patients so that they can make informed decisions.
+                            She is a member of <strong>ISOG, FOGSI, ACOG</strong>, and a Fellow of <strong>FIAOG</strong>.
                         </p>
                         <p>
-                            Whether you need routine check-ups, advanced fertility treatments, or expert advice, Dr. Ankita Mandal is your partner
-                            for top-notch gynaecological care in Kolkata. She is a pioneer in adopting time-lapse embryo monitoring in Eastern India
-                            and a regular speaker at national and international fertility conferences.
+                            She sees patients for routine gynaecological check-ups as well as fertility evaluation and treatment.
                         </p>
                     </div>
                 </div>
@@ -212,17 +207,14 @@ export default function DrAnkitaMandal() {
             {/* Achievements */}
             <section className="py-16 lg:py-24 bg-cream">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="font-heading text-3xl font-bold text-navy mb-8 text-center">Achievements & Recognition</h2>
+                    <h2 className="font-heading text-3xl font-bold text-navy mb-8 text-center">Qualifications & Memberships</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { icon: <Star className="w-5 h-5 text-gold" />, text: 'Best Gynecologist in Kolkata — acknowledged by 15,000+ satisfied patients' },
-                            { icon: <Award className="w-5 h-5 text-rose-deep" />, text: 'Recognised among the Top 5 Gynecologists in Kolkata' },
+                            // Unverifiable rankings and achievement claims removed (NMC 2026 guidelines, para 8.1(iii), 8.1(ix)).
                             { icon: <GraduationCap className="w-5 h-5 text-navy" />, text: 'Fellowship in Infertility & Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany)' },
                             { icon: <GraduationCap className="w-5 h-5 text-navy" />, text: 'Graduate of SCB Medical College, Cuttack & RIMS, Ranchi' },
                             { icon: <Users className="w-5 h-5 text-sage" />, text: 'Member of ISOG, FOGSI, ACOG | Fellow of FIAOG' },
-                            { icon: <Heart className="w-5 h-5 text-rose-deep" />, text: 'Pioneer of time-lapse embryo monitoring adoption in Eastern India' },
-                            { icon: <MapPin className="w-5 h-5 text-gold" />, text: 'Regular speaker at national and international fertility conferences' },
-                            { icon: <CheckCircle className="w-5 h-5 text-sage" />, text: 'Specialist in Colposcopy, Hysteroscopy & Gynaecological Ultrasound' },
+                            { icon: <CheckCircle className="w-5 h-5 text-sage" />, text: 'Clinical interests: Colposcopy, Hysteroscopy & Gynaecological Ultrasound' },
                         ].map((item) => (
                             <div key={item.text} className="flex items-start gap-4 bg-white p-5 rounded-xl border border-gray-100">
                                 <div className="shrink-0 mt-0.5">{item.icon}</div>
@@ -272,13 +264,13 @@ export default function DrAnkitaMandal() {
                         Consult Dr. Ankita Mandal
                     </h2>
                     <p className="text-white/90 mb-8 text-lg">
-                        15+ years of expertise, thousands of happy families. Start your fertility journey with confidence.
+                        Contact the clinic to enquire about appointment availability, in person or online.
                     </p>
                     <Link
                         href="#book"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"
                     >
-                        Book Your Consultation
+                        Enquire About an Appointment
                         <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>

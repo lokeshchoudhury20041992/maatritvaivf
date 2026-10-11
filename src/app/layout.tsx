@@ -23,16 +23,15 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Best IVF Centre in Kolkata | Maatritva Fertility IVF and Health care',
+  title: 'IVF and Fertility Care in Kolkata | Maatritva Fertility IVF and Health care',
   description:
-    'Maatritva Fertility IVF and Health care by Dr. Ankita Mandal — Kolkata\'s most trusted IVF, IUI, ICSI, and fertility treatment centre. Advanced assisted reproductive technology, laparoscopic surgery, and high-risk pregnancy care with transparent pricing and consistently high clinical success rates.',
+    'Maatritva Fertility IVF and Health care, New Town, Kolkata — IVF, IUI, ICSI and fertility treatment with Dr. Ankita Mandal. Assisted reproductive technology, laparoscopic surgery and high-risk pregnancy care. Outcomes vary with individual medical factors.',
   keywords: [
-    'best IVF specialist',
-    'best fertility doctor in Kolkata',
-    'best IVF specialist in Kolkata',
-    'best gynecologist in Kolkata',
+    'IVF specialist Kolkata',
+    'fertility doctor in Kolkata',
+    'gynecologist in Kolkata',
     'IVF centre Kolkata',
-    'best IVF doctor Kolkata',
+    'IVF doctor Kolkata',
     'fertility clinic Kolkata',
     'Dr Ankita Mandal',
     'IVF treatment Kolkata',
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     'infertility specialist Kolkata',
     'fertility specialist Kolkata',
     'IVF cost Kolkata',
-    'best gynaecologist Kolkata',
+    'gynaecologist Kolkata',
     'test tube baby Kolkata',
     'IVF hospital Kolkata',
     'infertility treatment Kolkata',
@@ -49,9 +48,8 @@ export const metadata: Metadata = {
     'low AMH treatment Kolkata',
     'blocked fallopian tubes treatment',
     'laparoscopic surgery Kolkata',
-    'best fertility clinic in West Bengal',
+    'fertility clinic in West Bengal',
     'assisted reproductive technology Kolkata',
-    'top 5 gynecologists Kolkata',
   ],
   metadataBase: new URL('https://bestivfcentreinkolkata.com'),
   alternates: {
@@ -62,8 +60,8 @@ export const metadata: Metadata = {
     apple: '/images/img/logo.png',
   },
   openGraph: {
-    title: 'Best IVF Centre in Kolkata | Maatritva Fertility IVF and Health care',
-    description: 'Kolkata\'s most trusted IVF, IUI, ICSI, and fertility treatment centre. 15,000+ happy families. Advanced ART, laparoscopic surgery, and high-risk pregnancy care.',
+    title: 'IVF and Fertility Care in Kolkata | Maatritva Fertility IVF and Health care',
+    description: 'IVF, IUI, ICSI and fertility treatment in New Town, Kolkata. Assisted reproductive technology, laparoscopic surgery and high-risk pregnancy care.',
     url: 'https://bestivfcentreinkolkata.com',
     siteName: 'Maatritva Fertility IVF and Health care',
     locale: 'en_IN',

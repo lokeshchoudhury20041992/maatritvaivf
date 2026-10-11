@@ -4,6 +4,7 @@ import blogs from '@/data/blogs.json';
 import CTA from '@/components/CTA';
 import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import { coreDoctors } from '@/lib/doctors-data';
 
 export async function generateStaticParams() {
   return blogs.map((blog) => ({
@@ -69,7 +70,10 @@ export default async function BlogPage({ params }: { params: Promise<{ slug: str
             </div>
             <div>
               <p className="font-bold text-gray-900">{blog.author || "Dr. Ankita Mandal"}</p>
-              <p className="text-sm text-gray-500">Fertility Specialist</p>
+              {/* Author qualifications shown per NMC 2026 guidelines, para 3.2 Expl. III/IV. Registration numbers still to be added. */}
+              <p className="text-sm text-gray-500">
+                {coreDoctors.find((d) => d.name === (blog.author || 'Dr. Ankita Mandal'))?.degrees ?? 'Fertility Specialist'}
+              </p>
             </div>
           </div>
         </header>
@@ -77,7 +81,7 @@ export default async function BlogPage({ params }: { params: Promise<{ slug: str
         <div className="prose prose-lg prose-rose max-w-none mb-12">
           <div className="text-gray-700 whitespace-pre-wrap leading-relaxed">{blog.content.body}</div>
           
-          <CTA title="Want to Discuss This With An Expert?" subtitle="Schedule your confidential consultation today." />
+          <CTA title="Want to Discuss This With A Doctor?" subtitle="Contact the clinic to enquire about a confidential consultation." />
           
           {blog.content.conclusion && (
             <div className="mt-8 p-6 bg-gray-50 border-l-4 border-gray-400 rounded-r-lg">

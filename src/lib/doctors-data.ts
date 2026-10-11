@@ -44,7 +44,7 @@ export const coreDoctors: DoctorData[] = [
         slug: 'dr-ankita-mandal',
         title: 'Founder & Director',
         degrees: 'MBBS (SCB Medical College, Cuttack), MS — OBG (RIMS, Ranchi), Fellowship in Infertility, Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany)',
-        designation: 'Founder Director & Best IVF Specialist, Maatritva Fertility IVF & Healthcare',
+        designation: 'Founder Director & Infertility Specialist, Maatritva Fertility IVF & Healthcare',
         experience: '15+ years',
         specialisations: [
             'In Vitro Fertilisation (IVF)',
@@ -58,18 +58,14 @@ export const coreDoctors: DoctorData[] = [
             'Gynaecological Laparoscopic Surgery',
         ],
         about:
-            'Dr. Ankita Mandal is the best gynecologist in Kolkata, recognised among the top 5 gynecologists in Kolkata today — as acknowledged by her 15,000+ satisfied patients. She is a Consultant Gynaecologist, Obstetrician, Infertility Specialist, and Gynaecological Laparoscopic Surgeon practising in Kolkata. Experience exceptional care from one of the city\'s finest women\'s health experts.',
+            'Dr. Ankita Mandal is a Consultant Gynaecologist, Obstetrician, Infertility Specialist, and Gynaecological Laparoscopic Surgeon practising in Kolkata.',
         aboutExtended:
-            'A graduate of SCB Medical College, Cuttack and RIMS, Ranchi, Dr. Ankita Mandal holds a prestigious Fellowship in Infertility and an Advanced Diploma in Reproductive Medicine & ART from KIEL, Germany. She specialises in colposcopy, hysteroscopy, and gynaecological ultrasound.\n\nDr. Ankita Mandal\'s personalised approach empowers patients to make informed decisions about their fertility and reproductive health. She is a proud member of ISOG, FOGSI, ACOG, and a Fellow of FIAOG — reflecting her commitment to the highest standards of medical practice.\n\nWith affiliations to renowned hospitals and online consultations available, Dr. Mandal ensures accessible care for every patient. Whether you need routine check-ups, advanced fertility treatments, or expert advice, Dr. Ankita Mandal is your partner for top-notch gynecological care in Kolkata.',
+            'A graduate of SCB Medical College, Cuttack and RIMS, Ranchi, Dr. Ankita Mandal holds a Fellowship in Infertility and an Advanced Diploma in Reproductive Medicine & ART from KIEL, Germany. She specialises in colposcopy, hysteroscopy, and gynaecological ultrasound.\n\nDr. Ankita Mandal\'s personalised approach empowers patients to make informed decisions about their fertility and reproductive health. She is a member of ISOG, FOGSI and ACOG, and a Fellow of FIAOG.\n\nOnline consultations are available. She sees patients for routine gynaecological check-ups as well as fertility evaluation and treatment.',
         achievements: [
-            'Best Gynecologist in Kolkata — acknowledged by 15,000+ satisfied patients',
-            'Recognised among the Top 5 Gynecologists in Kolkata',
             'Fellowship in Infertility & Advanced Diploma in Reproductive Medicine & ART (KIEL, Germany)',
             'Graduate of SCB Medical College, Cuttack & RIMS, Ranchi',
             'Member of ISOG, FOGSI, ACOG | Fellow of FIAOG',
             'Specialist in Colposcopy, Hysteroscopy & Gynaecological Ultrasound',
-            'Pioneer of time-lapse embryo monitoring adoption in Eastern India',
-            'Regular speaker at national and international fertility conferences',
         ],
     },
     {
@@ -88,14 +84,11 @@ export const coreDoctors: DoctorData[] = [
             'Complex IVF Case Management',
         ],
         about:
-            'Dr. Chhabi Ghosh brings over 35 years of distinguished experience in infertility treatment and reproductive medicine. With national and international training, including an FRCOG from the Royal College of Obstetricians and Gynaecologists (UK) and a Fellowship in Reproductive Endocrinology, she is one of the most decorated fertility consultants in Eastern India. Her vast experience spans complex IVF cases, recurrent pregnancy loss, and reproductive endocrinology. Dr. Ghosh\'s calm, reassuring demeanour and evidence-based approach make her a pillar of the Maatritva clinical team.',
+            'Dr. Chhabi Ghosh has over 35 years of experience in infertility treatment and reproductive medicine. She holds an FRCOG from the Royal College of Obstetricians and Gynaecologists (UK) and a Fellowship in Reproductive Endocrinology. Her clinical work includes complex IVF cases, recurrent pregnancy loss, and reproductive endocrinology.',
         achievements: [
             '35+ years of dedicated clinical experience in infertility',
             'FRCOG — Fellow of the Royal College of Obstetricians and Gynaecologists, UK',
             'International fellowship training in Reproductive Endocrinology',
-            'Former Head of Department at a leading Kolkata teaching hospital',
-            'Published researcher in peer-reviewed national and international journals',
-            'Mentored over 50 junior gynaecologists and fertility specialists',
         ],
     },
 ];

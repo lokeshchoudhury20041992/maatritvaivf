@@ -6,10 +6,10 @@ import { ArrowRight, User, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = generatePageMetadata({
-    title: 'Fertility & IVF Blog — Expert Articles by Dr. Ankita Mandal',
-    description: 'Read expert articles on IVF, fertility, PCOS, male infertility, and more by Dr. Ankita Mandal at Maatritva IVF, Kolkata. Evidence-based, patient-friendly information.',
+    title: 'Fertility & IVF Blog — Articles by Dr. Ankita Mandal',
+    description: 'Patient-information articles on IVF, fertility, PCOS, male infertility and more from Maatritva IVF, Kolkata.',
     path: '/blog',
-    keywords: ['IVF blog', 'fertility blog', 'PCOS information', 'IVF success tips', 'fertility articles Kolkata'],
+    keywords: ['IVF blog', 'fertility blog', 'PCOS information', 'IVF information', 'fertility articles Kolkata'],
 });
 
 export default function BlogListingPage() {
@@ -30,7 +30,7 @@ export default function BlogListingPage() {
                     </h1>
                     <p className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
                         Evidence-based deep dives on fertility, IVF, reproductive health, and more —
-                        written by Dr. Ankita Mandal, Dr. Chhabi Ghosh and the expert team.
+                        written by Dr. Ankita Mandal, Dr. Chhabi Ghosh and the clinical team.
                     </p>
                 </div>
             </section>

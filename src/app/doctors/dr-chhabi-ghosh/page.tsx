@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import FAQSection from '@/components/FAQSection';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { getFAQSchema, generatePageMetadata, getBreadcrumbSchema } from '@/lib/schema-helpers';
-import { Award, CheckCircle, ArrowRight, Star, GraduationCap, Users, Heart, Stethoscope } from 'lucide-react';
+import { Award, CheckCircle, ArrowRight, GraduationCap, Stethoscope, Clock } from 'lucide-react';
 import Link from 'next/link';
 import { SITE_URL } from '@/lib/schema-helpers';
 
@@ -17,7 +17,7 @@ const faqs = [
     {
         question: 'What are Dr. Chhabi Ghosh\'s qualifications?',
         answer:
-            'Dr. Chhabi Ghosh holds an <b>MBBS, DGO, DNB (OBG), FRCOG (Fellow of the Royal College of Obstetricians and Gynaecologists, UK)</b>, and a Fellowship in Reproductive Endocrinology. Her qualifications place her among the most decorated fertility specialists in Eastern India.',
+            'Dr. Chhabi Ghosh holds an <b>MBBS, DGO, DNB (OBG), FRCOG (Fellow of the Royal College of Obstetricians and Gynaecologists, UK)</b>, and a Fellowship in Reproductive Endocrinology.',
     },
     {
         question: 'How many years of experience does Dr. Chhabi Ghosh have?',
@@ -42,7 +42,7 @@ function getPersonSchema() {
         '@type': 'Physician',
         name: 'Dr. Chhabi Ghosh',
         url: `${SITE_URL}/doctors/dr-chhabi-ghosh`,
-        description: 'Dr. Chhabi Ghosh is a Senior Fertility Consultant at Maatritva IVF, Kolkata with over 35 years of distinguished experience. FRCOG (UK), Fellowship in Reproductive Endocrinology.',
+        description: 'Dr. Chhabi Ghosh is a Senior Fertility Consultant at Maatritva IVF, Kolkata with over 35 years of experience. FRCOG (UK), Fellowship in Reproductive Endocrinology.',
         medicalSpecialty: 'Reproductive Endocrinology',
         jobTitle: 'Senior Fertility Consultant',
         worksFor: {
@@ -118,7 +118,6 @@ export default function DrChhabiGhosh() {
                             <div className="flex flex-wrap gap-3 mb-8">
                                 <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">35+ Years Experience</span>
                                 <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">FRCOG (UK)</span>
-                                <span className="px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs">Published Researcher</span>
                             </div>
                             <Link
                                 href="#book"
@@ -143,20 +142,13 @@ export default function DrChhabiGhosh() {
                     <h2 className="font-heading text-3xl font-bold text-navy mb-6">About Dr. Chhabi Ghosh</h2>
                     <div className="prose prose-gray max-w-none space-y-4 text-gray-700">
                         <p>
-                            Dr. Chhabi Ghosh brings <strong>over 35 years of distinguished experience</strong> in infertility treatment
-                            and reproductive medicine to Maatritva IVF. With national and international training, including an
+                            Dr. Chhabi Ghosh has <strong>over 35 years of experience</strong> in infertility treatment
+                            and reproductive medicine. She holds an
                             <strong> FRCOG from the Royal College of Obstetricians and Gynaecologists (UK)</strong> and a Fellowship in
-                            Reproductive Endocrinology, she is one of the most decorated fertility consultants in Eastern India.
+                            Reproductive Endocrinology.
                         </p>
                         <p>
-                            Her vast experience spans <strong>complex IVF cases, recurrent pregnancy loss, and reproductive endocrinology</strong>.
-                            Dr. Ghosh&apos;s calm, reassuring demeanour and evidence-based approach make her a pillar of the Maatritva clinical team.
-                            She has been a former Head of Department at a leading Kolkata teaching hospital and has mentored over 50 junior
-                            gynaecologists and fertility specialists throughout her career.
-                        </p>
-                        <p>
-                            Dr. Ghosh is a published researcher with contributions to peer-reviewed national and international journals.
-                            Her depth of experience brings an invaluable perspective to complex and challenging fertility cases at Maatritva IVF.
+                            Her clinical work includes <strong>complex IVF cases, recurrent pregnancy loss, and reproductive endocrinology</strong>.
                         </p>
                     </div>
                 </div>
@@ -170,7 +162,7 @@ export default function DrChhabiGhosh() {
                         {[
                             'Infertility Treatment & ART',
                             'Reproductive Endocrinology',
-                            'Advanced Laparoscopic Surgery',
+                            'Laparoscopic Surgery',
                             'Menopausal Medicine',
                             'Recurrent Pregnancy Loss Management',
                             'Complex IVF Case Management',
@@ -187,15 +179,13 @@ export default function DrChhabiGhosh() {
             {/* Achievements */}
             <section className="py-16 lg:py-24 bg-cream">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="font-heading text-3xl font-bold text-navy mb-8 text-center">Achievements & Recognition</h2>
+                    <h2 className="font-heading text-3xl font-bold text-navy mb-8 text-center">Qualifications & Experience</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { icon: <Star className="w-5 h-5 text-gold" />, text: '35+ years of dedicated clinical experience in infertility' },
+                            // Unverified achievement claims removed (NMC 2026 guidelines, para 8.1(iii)); re-add only with documentary evidence.
+                            { icon: <Clock className="w-5 h-5 text-gold" />, text: '35+ years of clinical experience in infertility' },
                             { icon: <Award className="w-5 h-5 text-rose-deep" />, text: 'FRCOG — Fellow of the Royal College of Obstetricians and Gynaecologists, UK' },
                             { icon: <GraduationCap className="w-5 h-5 text-navy" />, text: 'International fellowship training in Reproductive Endocrinology' },
-                            { icon: <Users className="w-5 h-5 text-sage" />, text: 'Former Head of Department at a leading Kolkata teaching hospital' },
-                            { icon: <Heart className="w-5 h-5 text-rose-deep" />, text: 'Published researcher in peer-reviewed national and international journals' },
-                            { icon: <Users className="w-5 h-5 text-navy" />, text: 'Mentored over 50 junior gynaecologists and fertility specialists' },
                         ].map((item) => (
                             <div key={item.text} className="flex items-start gap-4 bg-white p-5 rounded-xl border border-gray-100">
                                 <div className="shrink-0 mt-0.5">{item.icon}</div>
@@ -213,13 +203,13 @@ export default function DrChhabiGhosh() {
                         Consult Dr. Chhabi Ghosh
                     </h2>
                     <p className="text-white/90 mb-8 text-lg">
-                        35+ years of clinical wisdom and compassion. Request Dr. Ghosh for complex or challenging cases.
+                        You can request an appointment with Dr. Ghosh when contacting the clinic.
                     </p>
                     <Link
                         href="#book"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-white text-rose-deep font-bold rounded-full shadow-lg hover:shadow-xl transition-all"
                     >
-                        Book Your Consultation
+                        Enquire About an Appointment
                         <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>

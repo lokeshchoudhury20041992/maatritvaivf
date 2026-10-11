@@ -156,7 +156,7 @@ export default function ContactForm() {
                     {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
                     {loading ? 'Submitting...' : 'Submit Request'}
                 </button>
-                <p className="text-xs text-center text-gray-400 mt-4">Safe, secure, and 100% confidential.</p>
+                <p className="text-xs text-center text-gray-400 mt-4">Your details are kept confidential and used only to respond to your enquiry.</p>
             </form>
         </div>
     );

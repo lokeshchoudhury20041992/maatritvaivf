@@ -10,7 +10,7 @@ import {
 import SchemaMarkup from '@/components/SchemaMarkup';
 import FAQSection from '@/components/FAQSection';
 import MapPlaceholder from '@/components/MapPlaceholder';
-import { MapPin, Navigation, Star, CheckCircle, Train, Car, Bus } from 'lucide-react';
+import { MapPin, Navigation, CheckCircle, Train, Car, Bus } from 'lucide-react';
 import Link from 'next/link';
 
 export async function generateStaticParams() {
@@ -120,18 +120,13 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                         ))}
                     </div>
 
-                    {/* Testimonial */}
+                    {/* Patient testimonial removed (NMC 2026 guidelines, para 3.2 Expl. V, 6.2, 8.1(v)). */}
                     <div className="bg-gradient-to-br from-rose-pale/50 to-gold-light/20 rounded-2xl p-6 lg:p-8">
-                        <div className="flex items-center gap-1 mb-3">
-                            {[...Array(5)].map((_, i) => (
-                                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-                            ))}
-                        </div>
-                        <p className="text-gray-700 italic leading-relaxed mb-4">
-                            &quot;{location.testimonial.text}&quot;
+                        <p className="text-gray-700 leading-relaxed">
+                            Fertility treatment outcomes vary with age, diagnosis and treatment history, and no
+                            outcome can be guaranteed. Your doctor will discuss the options, risks and likely costs
+                            with you before any treatment begins.
                         </p>
-                        <p className="font-heading font-bold text-navy">{location.testimonial.name}</p>
-                        <p className="text-sm text-gray-500">{location.testimonial.area}</p>
                     </div>
 
                     <div className="text-center mt-10">
@@ -139,7 +134,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                             href="#book"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-rose-deep to-rose-light text-white font-heading font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                         >
-                            Book Your Consultation Today
+                            Enquire About an Appointment
                         </Link>
                     </div>
                 </div>
